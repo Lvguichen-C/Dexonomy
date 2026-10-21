@@ -1,0 +1,2849 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-21T12:50:05.871745+00:00",
+  "experiment_dir": "output/tip20_shadow",
+  "source": {
+    "commit": "d561ff9df8545deef7a3f9e7cfb4045ef66f6913",
+    "tracked_status": "",
+    "tracked_source_unchanged": true
+  },
+  "environment": {
+    "python": "3.10.22",
+    "mujoco": "3.3.3",
+    "torch": "2.5.1+cpu",
+    "warp-lang": "1.8.0",
+    "numpy": "2.2.6",
+    "trimesh": "4.5.3",
+    "qpsolvers": "4.8.0",
+    "clarabel": "0.11.1",
+    "hydra-core": "1.3.2"
+  },
+  "semantics": {
+    "initializations": "Retained proposals; InitFilter may pad invalid proposals to its quota",
+    "grasp_candidates": "Saved after native grasp/pregrasp contact, collision, limit and QP filters",
+    "native_successes": "Existing succ_grasp files/symlinks after unchanged six-axis native evaluation",
+    "native_evaluation": "Gravity disabled; object mass 0.1 kg; +/-XYZ COM force 0.98 N; 2 s per axis; translation <0.05 m and rotation <15 deg",
+    "gravity_lift": "Separate additional continuous-dynamics check; not applied to every native success unless listed in metrics",
+    "random_seed": 12,
+    "random_sequence_note": "First ran d20, then expanded to all five table-top diameters with skip_done. Per-process RNG and already-present scenes influence sampling consumption; reproduce the recorded command order/configs for identical inputs."
+  },
+  "totals": {
+    "initializations": 250,
+    "grasp_candidates": 221,
+    "native_successes": 136,
+    "audit_records": 250,
+    "audit_logged_warning_count": 0,
+    "audit_mujoco_warning_count": 0,
+    "audit_records_with_warnings": 0,
+    "audit_exceptions_or_unsaved": 0,
+    "native_success_rate_of_grasp_candidates": 0.6153846153846154
+  },
+  "per_diameter": [
+    {
+      "scene_id": "cylinder_thin_table_10",
+      "diameter_mm": 10,
+      "height_mm": 40,
+      "initializations": 50,
+      "grasp_candidates": 33,
+      "native_successes": 0,
+      "audit_records": 50,
+      "audit_filter_rejections": {
+        "grasp/contact": 16,
+        "grasp/qp": 1
+      },
+      "audit_iterations": {
+        "2": 50
+      },
+      "audit_logged_warning_count": 0,
+      "audit_mujoco_warning_count": 0,
+      "audit_records_with_warnings": 0,
+      "audit_exceptions_or_unsaved": 0,
+      "passed_candidates": []
+    },
+    {
+      "scene_id": "cylinder_thin_table_15",
+      "diameter_mm": 15,
+      "height_mm": 60,
+      "initializations": 50,
+      "grasp_candidates": 39,
+      "native_successes": 3,
+      "audit_records": 50,
+      "audit_filter_rejections": {
+        "grasp/qp": 11
+      },
+      "audit_iterations": {
+        "4": 18,
+        "3": 14,
+        "2": 18
+      },
+      "audit_logged_warning_count": 0,
+      "audit_mujoco_warning_count": 0,
+      "audit_records_with_warnings": 0,
+      "audit_exceptions_or_unsaved": 0,
+      "passed_candidates": [
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_15/0_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_15/0_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_15/0_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e074ccc688d21314571664606179906314c29c05a1c637e47133b24f0bd9c231"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_15/1_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_15/1_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_15/1_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "0af4b687812fdcb2ba7c5031a227fb43c2dca0f678b22ff0e52130a19def7a7f"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_15/2_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_15/2_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_15/2_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "edb85f7738d5e5b2408483034b2ca4a3a4685500b6e999f52d00d32684d5b315"
+        }
+      ]
+    },
+    {
+      "scene_id": "cylinder_thin_table_20",
+      "diameter_mm": 20,
+      "height_mm": 80,
+      "initializations": 50,
+      "grasp_candidates": 50,
+      "native_successes": 35,
+      "audit_records": 50,
+      "audit_filter_rejections": {},
+      "audit_iterations": {
+        "2": 50
+      },
+      "audit_logged_warning_count": 0,
+      "audit_mujoco_warning_count": 0,
+      "audit_records_with_warnings": 0,
+      "audit_exceptions_or_unsaved": 0,
+      "passed_candidates": [
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/0_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "0ecbacf80b2965c9426cc1c95d433e7671fbd5cdb5fc32a6d9305fee2f40fb11"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/0_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "cc6bdda9f28c5cb960f5dcaff27e7d0decbfe7700be27b4273e9bba7e9e487b1"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/0_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "90e75fa26c748c7a96ce70cbd74324759fba3343b6f67dde8b17acf85e310bf5"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/0_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "1dbffd358cf131ef737f3fc7f91e8c05059e82af0666f436cbc4304a3502a823"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/0_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "f7802779f920413afca6e3adabcf40d7ebc6858ca3a0a01dc55d6f2215de00cc"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/0_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "cc92adf853f917d266ea12d3fa78ea1b85e1442d6caec4a8e2709e0e0c584548"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "2220353a44a41215872fcddcd0008eab5f48a759ca72574d327e62df08722d3a"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "0ae97c8474e8c801d652acd67afac8b254846e19faaf749d62ba10cab419afbc"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "508d242745fff2210e9339642e9e94f35470f96108f2b7bd718d0584cfbb59bb"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "d030212ac88b7579317ae7b0a6c5f720491956732aa989b189a0f359c88f8fbd"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "a617249a271cff74ab6097b401c9265aba8a91e924ead1c3c6f6faad055b1934"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "654f93b9691a5b503dc185b4736a189a85e89745a21eb8693c9ea9f2c630166d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "5ef5c8b842d23c97c34a9a0048bbe39f12950ed86eb189f6b7e514d160a583a8"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/1_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/1_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "64f8a9d78db98283f2645e30f3623d1331dc2b5a8a1b9063771844c02a937cbd"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/2_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "19450e154b9f25d71a7aa2fda27f9560da69d6ea8b131caad6fb158f82a7aae9"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/2_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "4b141d20af51b23d02481cdb01607c00211fe528c98ac863356d65c02dccea2d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/2_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ca5c2215bf78a6191f03572edd727312bb8ae0cfc5576407c7523ee4a4c32d9b"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/2_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "202d65fac2923fb113a7b5c683280df5c7e533f55441b8cf3692c636325d8c9f"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/2_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e9a61ae59ff74abcc32b89b9373b888c6fe5e4452c36d6a31197030fdd13468e"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/2_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "fce39e6d1a022b0519a505a87917acea1c880aa87c9e641b8d9e58bf04018ac5"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/2_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/2_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "4041691296fd685f31ee8dd65fcc23f8c66a6eb1ffcebc7bdcdf65f5194143d0"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/3_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "2a5ad78a38fb5643c6b195362c744aff97be9e93795edfeb1cb55103db164579"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/3_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ace6575cb7b3023ac719d5f069fb9c6eb09a51c5e084c20ebb91ebc0c0113597"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/3_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "96d7c0cb3e6c315c2e39d7fa1e76bd2795497e109687909645df11e81776b3e6"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/3_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "55fc9d409da8d290fbe08faf40ccd3ee8987403a55eefe1a62b34b27283864d6"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/3_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ed6a534f62f9acc8085d372186091298ac898d8cc95b5bbc86d33c91f65515a9"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/3_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/3_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "cccd102e69049b9c7e3bd5ca778fc7ff8103859da9ac2be39df3982e293c606a"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "5347f24024203fa81aa3cd7632cc4be29cf3195de7d2231428d9a6b74b56c8a1"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "0035bfa17e43ac05d94ce4e0a95f4f7bb3a5a2f566f2db88ea374b5db79010a0"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "c1259fb9348d55512848f8cf11c390be7bc9ec653520b8cff069df2944a137e8"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ba7ed30585599ff4313aebc97925310578e4fbbf5c9989ab88e7f6924b9d50e6"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "c3394099b3c0ea6c3a1b7e6a947f00e8789524817c7ec8997725dddd494d9c4c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "bc35c8474a07588aa454965c43759ab054547e85db3a0e026c14ec8bb77a6100"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "fa4bde828161ff7f39b4fa874c349f4d4fdbaf230528ae8dec16f09a5eed39b4"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_20/4_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/4_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "3ed3808e2ba338817e052f57eed214c6bb918a37c5ff99e3c80f74dbaaaeb4d2"
+        }
+      ]
+    },
+    {
+      "scene_id": "cylinder_thin_table_30",
+      "diameter_mm": 30,
+      "height_mm": 120,
+      "initializations": 50,
+      "grasp_candidates": 50,
+      "native_successes": 50,
+      "audit_records": 50,
+      "audit_filter_rejections": {},
+      "audit_iterations": {
+        "3": 50
+      },
+      "audit_logged_warning_count": 0,
+      "audit_mujoco_warning_count": 0,
+      "audit_records_with_warnings": 0,
+      "audit_exceptions_or_unsaved": 0,
+      "passed_candidates": [
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "a48c65618e5667142ab2c28e1f5934c3b0dfd6f6f690d5391de59454b7fea16a"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "58979d1a1b4082870808ddd20a1f517174c9c8398e57a9f304a3899d33bab923"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "d2c1870c38ee14a4b1620ca5c855b0f7ddea571ab07a0f72a3768cdfb322fe7c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "2c9cd65ac6ca5af64278ed12035911b86b2c639e6f9cb679606b6aded068f763"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "83c3539f792cca49a0403524b1d6c8a1442408c63f404e51823841934af6a95a"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "37178ca3e1c9d40eec036a3543031ee6fa763e714a0be98ed22f8017df829f97"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "eee71f8f52e7d3e353ea1261b0e4a83cf393ae3470cc87fe6d6e10a31135c287"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "483f324c423b853a4035d6209cbd6e25ee9bc5bc0b413ae29ddb16936287125c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "be27431c00bd2e018b88dafcc4d9f9e857d5ebee2b1f3c31cfacf63b28a00717"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/0_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "6f89d87637297556b274874ec1686be1ddfb97ace507ef3e6fa3b9498222dbae"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ca6a2efd5e8bde4d4247161751ce930e65babd90d722081051a8c5db91bc81ac"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "b2ce226d992bf54b6163c5ee635e7157c0d3ebc740d9df9cf76116310d98fae6"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "75895e137bb08592ef0fac49aaf31a2e00e6dccb0370ee254ba87c6031a05ff7"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "1d329a70a7076012035c94d48b2096108ba77143c21617285aca6a90c441e5a0"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "d1384d53d26b7a50596d395c4ff623d3c69a031e8a8020e5e8dcae9fc3e61a2c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "6e6689474dc9a87c8ca795db2aa639363397c3a1394b0a24761357c59abd8df5"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "8fc699d398ee838d2ac98783b27355d97d4e3b4d8a6cea72b6e6d38641551135"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "39eacf374bd83abceab55df627c866034f759c454d8a94a2606fa1bddcb50c2a"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "8acd71039781a89a908d022bfc382e0ef0292cc5e5fa6c576d3db07e4621d0f0"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/1_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/1_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "27d46ae0e8b387d9f300b56a0b024ce9ec59318348931db4ad7166a48899b86d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ea068156b119453d9be98d570f43eece74b1bc7923c236780cf59e554deada9e"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "da7c09801522607365d6467666fc4a1f0aaa014c985962f0f0517623ca09aa8c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "65c98aed78a1232ea910d0efbc3948ff7218c12bc4ea26012118861d43d7ef9e"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e3769e6a67485ccc3bbd62801e7ed4792b33e08c1d340e3312e33d96df1375b4"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "80395f1035a6e475aea0494483f5b844b933832002eeb35426f884589c6bbd51"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "5b25dc69d4a73d82f78fdb6c93b7e001041c83364c190f106b75d64e8b919e72"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "914684e9c695f30d28e9fdf4a7f719aa60ec8e4572cbe2d019ff828a55f1a347"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "f3f48e239085a35f5ed2314a99f3d58cd1ba2f8f95d63a2605fca5db3293a846"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "5120bde89e233c6c7ee2535489761661248fb92eab85744e5d2278946fc6a3b6"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/2_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/2_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "b631ec43949048be459ab416e1decf165008959a2ea9a9411f410ba997b2396f"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "7f8c0f3f2a7a393ad819fc30eea15800d0ad85a1ebf4ff36e3ef0a1edeffc131"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "fc78412914d7f31d16ba48a4496dd8318e15408f8127d5beb01ef146a1ed7028"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "3928ec3c576549b1502049379e3bc9712db0913bc5d2d122acdab76e61632171"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "4e9d3fc9c1863fd10ea6f47cf7e915f5055eed8a9ece84917acc98de0aaec535"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "514e46727a4359656d3e95f0f5b9785604a3d2f8d5f6bca6e79b6187c3c59b4c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "49110036ea3646abc9b238c6a3775bd14c828d2946a6236be6a9fc17a3f4ca79"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e6d79583c9289ae9e4dcee7755d14f6eb4ce00f572036c6c36bde3c822a3ca55"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "fd61e3a3aae05c784aa009e4e28ce013b729e659ae70363f9277405f3c59b70d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ee5d379b04def61db7ca7577af94b1e187401a5d1cff0eb9889ae552da6d342b"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/3_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/3_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "323dd433e82d0e93ba4c508b35a7ae56eb1dc1c7477af771f9cae379a8aa52d5"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "314be6c846e00ba5e99277c77df99a80263b38dc8ea7beb4e432eacaa0dfd38c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "10e00866d6b3b1695c05f868998a881775e38255e9ea0531533a7ff4969f4301"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "280fd7cad386a656ccf16b28df3a87e5e599262c06918defd2559fb1c4aa3840"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "728099e8865406c115946fdcc6eba367cff6e457bb5579680c9cf0bffaffb01d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e866375adf776fe7e7c956a51b909a49070b197af30335682b8f9e2df15199b5"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "9f2031ea15fa6397a297363d7ff98ec588c6cd79da8f17866a3cf9f775ccebfb"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "fc96ceabdad06990147c5e35e285b0ab0a0d6f946d6003c48600edceac1219f7"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "1e5ad33692a854c01595d736adabab3fa245b513eeedc1af7c56db9a72bda816"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "8c34836c334c3a0f1fe25d7ca0cbba351e89e2d94c93d0e1919d4b9b43fb5317"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_30/4_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/4_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "1ddde0aa403ff0741125ee6031da422cffbeec96440e3fae328ee023b46a5f54"
+        }
+      ]
+    },
+    {
+      "scene_id": "cylinder_thin_table_40",
+      "diameter_mm": 40,
+      "height_mm": 160,
+      "initializations": 50,
+      "grasp_candidates": 49,
+      "native_successes": 48,
+      "audit_records": 50,
+      "audit_filter_rejections": {
+        "grasp/contact": 1
+      },
+      "audit_iterations": {
+        "3": 45,
+        "15": 2,
+        "16": 1,
+        "14": 1,
+        "2": 1
+      },
+      "audit_logged_warning_count": 0,
+      "audit_mujoco_warning_count": 0,
+      "audit_records_with_warnings": 0,
+      "audit_exceptions_or_unsaved": 0,
+      "passed_candidates": [
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "9d3c4e7e981743c228e5c83a7c8e893e3210a7766aa48e17cd133993056b5c1b"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "2047a84fa9782e9ce330b9aa7dcaa9ade17d78b9a57e488e0ed9bf58db380b9f"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e7eace08aabaa34f6fab081900ef4de60f3f6fa85e9b9e4202fd3d8d34b9230b"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "f3ff83235e36ee3d720fdcba24d256fef6097f0ececcd7bcbd6bb940dfb0d677"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "042246f882ef90900ade3083d5f5fcc792bde656ba711166c92367754fc57475"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "0aaa132571ec1a9b568e2248958c3459fad2be33adba44de5b18856d21e9b48a"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "2f94486cdceeed6ef811d6f61cf9be0a0952992cec2529113c32406b14171bb0"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "29c4b324b4bef60064cc7f84699f86d5a57a1ef59a85d65932a7c94469567a91"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/0_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "d3b7ccac4cf429f0ccfc7389d9c2002411f591d2e6d596ad35bb3b131b1285e9"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "8cb709ce3e66442e373b7ed49efe1b547e9d167d47afcbffa77becc7b8798a75"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "34a78b449532358cde497687a988f8d20eddfb8ae711972858ecd24fa907529c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "4a627ec3cd2f2474f2d00eab77e5ef6029aeaec6dc7e68bd568bce078b4f834d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "b046de436fa97fa4d82e1fde00110818a1c1f4d5d75ea96682ca04cc2b78af44"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e44e1b554a90bcd6001c243cf7bc7c996d471178f325d87443bec7c1b0ba758d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "d43ba1904d932c696e384e2ffd5f1f098484326974f428ee0c79fa13ced25715"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "4e545259eae0abf4edcc01844a11c0d05733035c594010bbc2c6b34d10eece68"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e0d3a1c6b95fb148359aa83a8f41b50c8a0bada03e970decea36ddc0a65bf9f8"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "59baf4c9cf93e86809f3b439994ccc9d300a781e85896a541a00f56f7405fb83"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/1_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/1_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ac6d5336efa375a85dcf3f63b3f6414f53762756d4ab4bc6b79a3bc01edc06c1"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "1f238c8742f0931f8e78cac35055dcabd4bfe6d376d2e14e748e93d53ffc6c1c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "41b93025f76cb52bdefc2075e88be72a1f8ec123bf99c7779025f94490f0e1ed"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "812d60759b90ed1e6136a79d6740a3ff3c3e8baf524530154dc60b71f0603485"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "a73793adadd8592b1fb0d5376a4b037b27fb26231b602efcb65ffd3d0b75893c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "52462bd60fb0ead74ffab6db56c05cc06e111f13351381a1ce7742002fb0a91c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "c191dcba9d5b31850ffa690ef2dc539973a2ce60957675879b9d7994ed4e1325"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "cf65446abbdcf0b790bbba22a8d1fb6ef13c1c0ec25c157a3ec3ddeebaf05d99"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "9e5f4389756796ecca3ad86bdfd7c2d658815bd78c260ec558376ed781355735"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "9943044e99d49cf8e92435979ef957ea8f73b1767f238945a9a2a8582b5babaf"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/2_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/2_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "9368df8344025385e60e931c51f9d6208e7794def1ef5044b7edc437799cbd13"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "c9538d22f7d6ad8d1a5d4422b100391abbd6d2638a03cdccb5deb5c8c0a73855"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ca8d242af7ed90c247af69913e1fbf181119fa8a3c8d8a2cf7c18c6f52511f16"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "6d9940ccaadd37b9b44c1a137212a344a831a730a3064e2fa8a7e2e3ea74af08"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "f2fe50984253af2dd4a42e747ac3311b70361893d1330275968dd9a218cfbed7"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "da35fe7b1c28c90cc8fffa5f143e9ba698176752c3c69d4004626fe64596ff02"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "eac9056ff1b4e7aed6c10cc5c5e5f111952196eabb92e3340b693135be50a393"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "e1e1428ed4aaecffdd2b8656e52c64d8b76cdcb4804dcb678a0b8cd3eb2fd9e5"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_7_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_7_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_7_grasp.npy",
+          "bytes": 2868,
+          "sha256": "bc2a457a0a45a43a21119200bee2e0a20bd236fd86a2610422baacaaa6e625d5"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "de3e262f0eb760bbffff74a0eabf92ae41c3a666dd1d4218a4b3eacc2849995d"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/3_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/3_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "5c017f5167b6bcd56d3530b791df3864293558fc2873bb677cb40826b84b93df"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_0_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_0_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_0_grasp.npy",
+          "bytes": 2868,
+          "sha256": "a50696086fbe3a8a7fe06a0d931b47691098ffd3eaad27e21072560dee63fd87"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_1_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_1_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_1_grasp.npy",
+          "bytes": 2868,
+          "sha256": "3f01a074326eadc7bccc19615989c70bdc02636a13076b66ed65555d6bca4f12"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_2_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_2_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_2_grasp.npy",
+          "bytes": 2868,
+          "sha256": "635b781e4c9e5eef3793c9f20b160caf30fc811ee2586d2f6101eb7fad792936"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_3_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_3_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_3_grasp.npy",
+          "bytes": 2868,
+          "sha256": "39a4f1e7426e7817375f75f0bba8f07a4c4481ebda918db510735239509b4d97"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_4_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_4_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_4_grasp.npy",
+          "bytes": 2868,
+          "sha256": "f14e59f8c81fb99b014f5d81e9f0edede88b453e043f0ebdaf4345f727717888"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_5_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_5_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_5_grasp.npy",
+          "bytes": 2868,
+          "sha256": "94714f2c441dff9ca9b7693cea8ab5a2f0c9f350a8155ffe7373e636eb99cbd8"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_6_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_6_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_6_grasp.npy",
+          "bytes": 2868,
+          "sha256": "212da2c196d3335402bd7c35a238afbcb22f53d4b85cb7f7deda7d710fe1ae6c"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_8_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_8_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_8_grasp.npy",
+          "bytes": 2868,
+          "sha256": "617b834018e8d83d5e913ad700bfbb1e87f6287b3853022bb417ec9dcb6fcec8"
+        },
+        {
+          "success_path": "output/tip20_shadow/succ_grasp/24_Tip_Pinch/cylinder_thin_table_40/4_9_grasp.npy",
+          "is_symlink": true,
+          "symlink_target": "../../../grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_9_grasp.npy",
+          "candidate_path": "output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/4_9_grasp.npy",
+          "bytes": 2868,
+          "sha256": "ebb493470af059d1b0d1981a30fa8cd95a98d48850f05743ff480c297d2f46ea"
+        }
+      ]
+    }
+  ],
+  "detailed_metrics": [
+    {
+      "path": "animations/d10_first/metrics.json",
+      "input": "/workspace/shadow-reproduction/output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_10/0_0_grasp.npy",
+      "input_sha256": "d1f7d167e5393be215970494cb6063adcc09c1c895109978d60c9e767ce56b25",
+      "native_fc": {
+        "passed": false,
+        "directions_attempted": 1,
+        "max_translation_m": 0.004916275390616008,
+        "max_rotation_deg": 19.990219116210938,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gravity_disabled": true
+      }
+    },
+    {
+      "path": "animations/d15_first/metrics.json",
+      "input": "/workspace/shadow-reproduction/output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_15/0_8_grasp.npy",
+      "input_sha256": "e074ccc688d21314571664606179906314c29c05a1c637e47133b24f0bd9c231",
+      "native_fc": {
+        "passed": true,
+        "directions_attempted": 6,
+        "max_translation_m": 0.011263181081526739,
+        "max_rotation_deg": 14.821742057800293,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gravity_disabled": true
+      },
+      "gravity_lift": {
+        "passed": true,
+        "height_gain_from_initial_m": 0.09951215366142455,
+        "drift_from_expected_lifted_pose_m": 0.004812064186549815,
+        "rotation_from_closure_deg": 14.447314262390137,
+        "final_hand_object_contacts": 2,
+        "final_object_table_contacts": 0,
+        "gravity_disabled": false,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "criterion": "height gain >=80mm; drift <20mm; rotation <15deg; >=2 hand-object contacts; zero table contacts"
+      }
+    },
+    {
+      "path": "animations/d20_0_1/metrics.json",
+      "input": "/workspace/shadow-reproduction/output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_20/0_1_grasp.npy",
+      "input_sha256": "0ecbacf80b2965c9426cc1c95d433e7671fbd5cdb5fc32a6d9305fee2f40fb11",
+      "native_fc": {
+        "passed": true,
+        "directions_attempted": 6,
+        "max_translation_m": 0.012442722054876199,
+        "max_rotation_deg": 14.801816940307617,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gravity_disabled": true
+      },
+      "gravity_lift": {
+        "passed": true,
+        "height_gain_from_initial_m": 0.09726049567854461,
+        "drift_from_expected_lifted_pose_m": 0.006417791874354895,
+        "rotation_from_closure_deg": 7.59719181060791,
+        "final_hand_object_contacts": 2,
+        "final_object_table_contacts": 0,
+        "gravity_disabled": false,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "criterion": "height gain >=80mm; drift <20mm; rotation <15deg; >=2 hand-object contacts; zero table contacts"
+      }
+    },
+    {
+      "path": "animations/d30_first/metrics.json",
+      "input": "/workspace/shadow-reproduction/output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_30/0_0_grasp.npy",
+      "input_sha256": "a48c65618e5667142ab2c28e1f5934c3b0dfd6f6f690d5391de59454b7fea16a",
+      "native_fc": {
+        "passed": true,
+        "directions_attempted": 6,
+        "max_translation_m": 0.01017261990289247,
+        "max_rotation_deg": 8.306160926818848,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gravity_disabled": true
+      },
+      "gravity_lift": {
+        "passed": true,
+        "height_gain_from_initial_m": 0.09850627475143725,
+        "drift_from_expected_lifted_pose_m": 0.0050617681408555125,
+        "rotation_from_closure_deg": 6.365077018737793,
+        "final_hand_object_contacts": 2,
+        "final_object_table_contacts": 0,
+        "gravity_disabled": false,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "criterion": "height gain >=80mm; drift <20mm; rotation <15deg; >=2 hand-object contacts; zero table contacts"
+      }
+    },
+    {
+      "path": "animations/d40_first/metrics.json",
+      "input": "/workspace/shadow-reproduction/output/tip20_shadow/grasp_data/24_Tip_Pinch/cylinder_thin_table_40/0_0_grasp.npy",
+      "input_sha256": "9d3c4e7e981743c228e5c83a7c8e893e3210a7766aa48e17cd133993056b5c1b",
+      "native_fc": {
+        "passed": true,
+        "directions_attempted": 6,
+        "max_translation_m": 0.010938214730413773,
+        "max_rotation_deg": 5.705591201782227,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gravity_disabled": true
+      },
+      "gravity_lift": {
+        "passed": true,
+        "height_gain_from_initial_m": 0.0991206878617556,
+        "drift_from_expected_lifted_pose_m": 0.004935849727678638,
+        "rotation_from_closure_deg": 3.9813191890716553,
+        "final_hand_object_contacts": 2,
+        "final_object_table_contacts": 0,
+        "gravity_disabled": false,
+        "finite_states": true,
+        "unexpected_time_resets": [],
+        "max_warning_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "criterion": "height gain >=80mm; drift <20mm; rotation <15deg; >=2 hand-object contacts; zero table contacts"
+      }
+    }
+  ],
+  "configurations": [
+    {
+      "path": "output/tip20_shadow/log/eval_0/.hydra/config.yaml",
+      "sha256": "70d5c297028d35c9ae7a5ba4c4d0bee023466cd14e94fc680138bb20161d5db2",
+      "overrides_path": "output/tip20_shadow/log/eval_0/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=eval\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n"
+    },
+    {
+      "path": "output/tip20_shadow/log/eval_all_diameters/.hydra/config.yaml",
+      "sha256": "907aa5cb005b87b5b50cdc2ddc09e37087809cfb404eac2a3010490a58ef8077",
+      "overrides_path": "output/tip20_shadow/log/eval_all_diameters/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=eval\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n- log_id=all_diameters\n"
+    },
+    {
+      "path": "output/tip20_shadow/log/eval_d20full/.hydra/config.yaml",
+      "sha256": "a1bac19f1b5e9abbfe9443bb95a0b3121c3dc0adf828bbe5897dd6259f4acefd",
+      "overrides_path": "output/tip20_shadow/log/eval_d20full/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=eval\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n- log_id=d20full\n"
+    },
+    {
+      "path": "output/tip20_shadow/log/grasp_0/.hydra/config.yaml",
+      "sha256": "24514de620469040ed1a5ac914077f96a2c9bb9048bded8fca2a94dbded883d8",
+      "overrides_path": "output/tip20_shadow/log/grasp_0/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=grasp\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n"
+    },
+    {
+      "path": "output/tip20_shadow/log/grasp_all_diameters/.hydra/config.yaml",
+      "sha256": "dcbdd3c159ec8fa9978d4b3d678ba666351bd44f58daa4d6bb750da5e3613c4a",
+      "overrides_path": "output/tip20_shadow/log/grasp_all_diameters/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=grasp\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n- log_id=all_diameters\n"
+    },
+    {
+      "path": "output/tip20_shadow/log/grasp_audited/.hydra/config.yaml",
+      "sha256": "0e41fc42b872a406b4e9e91edad0634e08fbd87fe8ab7acc9c16629d64c30771",
+      "overrides_path": "output/tip20_shadow/log/grasp_audited/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=grasp\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n- log_id=audited\n"
+    },
+    {
+      "path": "output/tip20_shadow/log/init_0/.hydra/config.yaml",
+      "sha256": "1c9c5ca668470f317820ec8c447338c1067db396491795804639c61c93d38fd5",
+      "overrides_path": "output/tip20_shadow/log/init_0/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=init\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n- op.device=cpu\n- op.object.cfg_path=/workspace/Dexonomy/assets/object/small_cyl/scene_cfg/cylinder_thin/table_top/d20.npy\n- op.object.n_cfg=1\n- op.object.batch_size=1\n"
+    },
+    {
+      "path": "output/tip20_shadow/log/init_all_diameters/.hydra/config.yaml",
+      "sha256": "0814b16f8397e7fdf892e735b5980c5653b1d4a0dc0c4e23dc77c3856689f44e",
+      "overrides_path": "output/tip20_shadow/log/init_all_diameters/.hydra/overrides.yaml",
+      "overrides_yaml": "- op=init\n- hand=shadow\n- exp_name=tip20\n- tmpl_name=24_Tip_Pinch\n- n_worker=1\n- tmpl_upd_mode=disabled\n- save_root=/workspace/shadow-reproduction/output\n- op.device=cpu\n- op.object.cfg_path=/workspace/Dexonomy/assets/object/small_cyl/scene_cfg/cylinder_thin/table_top/*.npy\n- op.object.n_cfg=5\n- op.object.batch_size=1\n- log_id=all_diameters\n"
+    }
+  ],
+  "artifact_hashes": {
+    "animations/all_candidates/all_candidates.concat.txt": {
+      "bytes": 530,
+      "sha256": "8e3cd7bb29e4ceccac4de50d82fd4969e93a2b52966fb41833c98d398914940c"
+    },
+    "animations/all_candidates/all_candidates.mp4": {
+      "bytes": 3514968,
+      "sha256": "202aa725d493f87104125051b014b6c0ee3fac073354495bc42b3757c2f6b598"
+    },
+    "animations/all_candidates/coverage-summary.json": {
+      "bytes": 893,
+      "sha256": "715dac6b94eb552e02ecf74944e4cbb4ccea85c6ac8f6dbcc7f485d9b5c151c2"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/all_candidates.concat.txt": {
+      "bytes": 400,
+      "sha256": "b29689c3c933bf75809149fce55a5c150d12c4fb1c09142c894cc31f7ba03b71"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/all_candidates.mp4": {
+      "bytes": 498144,
+      "sha256": "9f68590978878e2a803a28f1adf69503a39d976e734fcb90a140900ab7303529"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_0_grasp.mp4": {
+      "bytes": 18160,
+      "sha256": "f1892d10b3bbbb08a08cc26138c17d15cfc771e51c1e225226c74117337979e0"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_1_grasp.mp4": {
+      "bytes": 19156,
+      "sha256": "20e9ea1f4917d99e8e1ee3dabbf9696579aa99a44609fb91114734ea0d203dfc"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_2_grasp.mp4": {
+      "bytes": 15520,
+      "sha256": "a270600abd2b08710abbce775c9087af5825cf18944e4e82dec55a763fff2d88"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_4_grasp.mp4": {
+      "bytes": 17762,
+      "sha256": "28db446b9c60b1a00cdf79935edde5d58c00767fb37bc0d6d1b78460e907d7eb"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_5_grasp.mp4": {
+      "bytes": 16020,
+      "sha256": "461e2ea610ca713b71e938b4f379fab147e0ad4f9719c4d7e6084c54b63d9a5b"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_6_grasp.mp4": {
+      "bytes": 16946,
+      "sha256": "b885d48571353365192b466f0e52e8032840f504db6575cacbc570ca269ce1ec"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_7_grasp.mp4": {
+      "bytes": 16881,
+      "sha256": "55bdad7ce51e5d2433a99d69d85d4b31cddd779cc4112cc4b5384b0874d0af2b"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_8_grasp.mp4": {
+      "bytes": 16584,
+      "sha256": "85e52665129655c6bdaba94c0c3e6da25778d62f92cad59515637ff150c8a3ed"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_0_9_grasp.mp4": {
+      "bytes": 16080,
+      "sha256": "af9f707a4dc9c8b554cd36a68234aaac6d66aaa57620124aaee63a9800e9b111"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_1_3_grasp.mp4": {
+      "bytes": 15684,
+      "sha256": "6db8ede0f24d01b8e17c9c00b6f0b3b40348bf007de9aa668f70f5da6e75e29d"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_1_4_grasp.mp4": {
+      "bytes": 16118,
+      "sha256": "49361ad5436713ad28da4ddb0ef39151b84aae2f20295301740c96723240459d"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_1_5_grasp.mp4": {
+      "bytes": 19189,
+      "sha256": "de0ecd80f3d0917fbfaae5c64d57fb56cb74511db9db46f3da33bf6bf75a4df5"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_1_6_grasp.mp4": {
+      "bytes": 17085,
+      "sha256": "e83c3b35783993d5200344db34a5a85358811498b7640ae7fcd77e58323c4714"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_1_8_grasp.mp4": {
+      "bytes": 19004,
+      "sha256": "daccda89e8f2f3987ffaceab86a8b06a1e30d569d7e66a7159c65a196ac47e99"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_2_0_grasp.mp4": {
+      "bytes": 17266,
+      "sha256": "8f123b23da2567ca2b5768c91f6231df10b61c9aaf6f5fc835b5d8791add5811"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_2_4_grasp.mp4": {
+      "bytes": 15919,
+      "sha256": "f81327863b1226f290f579e9bc4793b23b21d8382869b2dd885ab0e3842e6a8d"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_2_6_grasp.mp4": {
+      "bytes": 18115,
+      "sha256": "be7e97458870bd0440a45513ee304cdbf6d06292459a008ae7dab38a61d7b47b"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_2_8_grasp.mp4": {
+      "bytes": 18074,
+      "sha256": "2a33e8818c14fcbfde8a266b509c25748f91750e5c74d76fc67c1fb1bf68c59a"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_2_9_grasp.mp4": {
+      "bytes": 16689,
+      "sha256": "05bef30d6759b06ae73a524bc7a750fecc8efb9806cc822987a01b7d5f176e92"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_3_1_grasp.mp4": {
+      "bytes": 16511,
+      "sha256": "598d1f3ffc8003253d868e2e69636f4c97e927b68aa5be7cfad9b39018a28f12"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_3_2_grasp.mp4": {
+      "bytes": 19551,
+      "sha256": "43085f6dc91155263bba0b5612c1829eeb65520157cbdc58654f894519ae9176"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_3_3_grasp.mp4": {
+      "bytes": 16945,
+      "sha256": "b671b8b06bfe5953b75e2c6dde9a6cf342da6bc7a2e066fea25b4c5116116278"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_3_6_grasp.mp4": {
+      "bytes": 16625,
+      "sha256": "4e8e449f1ee12f088b0dd1287feac96f8d3257fa6c667acd0c93cfee03cfa28a"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_3_7_grasp.mp4": {
+      "bytes": 19057,
+      "sha256": "509a78e3f86965256681c328d24afa430b277502be823c79b2cfa7ef2c7f2729"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_3_8_grasp.mp4": {
+      "bytes": 18170,
+      "sha256": "92090e9c354fa4140c34d0aa7db110dadea6e04f34377de1094e409bc302cb94"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_3_9_grasp.mp4": {
+      "bytes": 17980,
+      "sha256": "d661d466ef6847f9887828516384f12462c863abbe82f17501f66b733488d7a5"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_4_1_grasp.mp4": {
+      "bytes": 16826,
+      "sha256": "be0c3bcdf22ad97c350899d2617610fec9d1a321ef55b46f2a332bf8957baec4"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_4_3_grasp.mp4": {
+      "bytes": 16785,
+      "sha256": "a980aa430ce5a63caf6246cd83a1889ca0b1f54adfa62eb5aceb3d1aff4929bb"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_4_4_grasp.mp4": {
+      "bytes": 16715,
+      "sha256": "cd38986f1b6376cb12ab3641682097e384b7a8ec723e30b7a8ef01d77bf595f9"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_4_5_grasp.mp4": {
+      "bytes": 17489,
+      "sha256": "e22483852276dcae39a22239ca5cb3359de5cc271e1ef8135a7c013c1b92c683"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_4_6_grasp.mp4": {
+      "bytes": 14974,
+      "sha256": "371df8c2d9f8bd22d92fb5458df6639acec74f30a272a8b03259c1952b3f38c5"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_4_7_grasp.mp4": {
+      "bytes": 15030,
+      "sha256": "cb1bd66731de1fecdab815be4fa0d454057a4ef856f754ea2b213df10c42d7c0"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/clips/24_Tip_Pinch_4_8_grasp.mp4": {
+      "bytes": 19261,
+      "sha256": "ee5f2a2e4a1f713a81c539475a76f8664029f4e8b29993d3e7fa4f32f72e4718"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/index.json": {
+      "bytes": 124785,
+      "sha256": "e775c605390d497fc01494b038f3eced8e6500e8a8f2090dda6f64717c1db63f"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/job.json": {
+      "bytes": 17103,
+      "sha256": "0eb818bbb45bcfad44768c166572ba2ad9b4eb4dad658ed8d8d3e8c6ff7a1df0"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/page_001.mp4": {
+      "bytes": 134511,
+      "sha256": "4d76eb204d52b42b65ac3825ffd891fd76da2393d540829bcc7b06e8afa1cc4a"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/page_002.mp4": {
+      "bytes": 137780,
+      "sha256": "a1e4f70ede3dfa750662ab7cd6d609960c605219365cc6f9bd6c72c89fcd9229"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/page_003.mp4": {
+      "bytes": 139122,
+      "sha256": "1006b40247606ce2ff1782b921b53c20836d4450254938e5cc7e30ca7ac1b941"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/page_004.mp4": {
+      "bytes": 89154,
+      "sha256": "430e98eca76a8bbd0258ea231c0ce72faf3af97bb1e51987fafe670c3bb5aeb5"
+    },
+    "animations/all_candidates/cylinder_thin_table_10/worker.log": {
+      "bytes": 2937,
+      "sha256": "7df739fa4af84de9a2035090ab0639f234878992447733c9582e3eb6f28ecf90"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/all_candidates.concat.txt": {
+      "bytes": 500,
+      "sha256": "d18ceb609eb865d4430feecf6242beb8e0172226436c7460d8010e0e7267ccb6"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/all_candidates.mp4": {
+      "bytes": 605419,
+      "sha256": "7652eba79a64fe16e5e38a2caef339bcb79b276f516551122c8a25a64296a424"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_1_grasp.mp4": {
+      "bytes": 14914,
+      "sha256": "309dbab31771f676318ec98e2675b2f0c352eb175aab32f29ce82b76e04f33cf"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_2_grasp.mp4": {
+      "bytes": 17039,
+      "sha256": "544f4770764c29fcb6be5baf11a8a4cfa10a54eee878578133d428f9cd2e4f65"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_3_grasp.mp4": {
+      "bytes": 16543,
+      "sha256": "5c2d6928427222955c2109be1a3faaf003f38039fffd0f3a7965df1b64d5648d"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_4_grasp.mp4": {
+      "bytes": 16633,
+      "sha256": "8071de0a8dcbc8cbc6c4837a8a3792b56ae49d86a63799cb0368073b0761c2a6"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_5_grasp.mp4": {
+      "bytes": 19905,
+      "sha256": "ef31e6a3b5e795ab59a047e439245e5d7fd67519db532415334af97ce4a39e27"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_6_grasp.mp4": {
+      "bytes": 19605,
+      "sha256": "81f1d771bfe04ba588a3d94b1af85194417b0e59502457669172fd6a318449cd"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_8_grasp.mp4": {
+      "bytes": 17230,
+      "sha256": "6f7e4b11559d21f680d3769400c9e1cb8a2c13a31dda45d6ec4ce2040aba3089"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_0_9_grasp.mp4": {
+      "bytes": 18773,
+      "sha256": "535941888eb902a862673fa4ef15909af20510f6d2e4eb86e455464ebfaf677d"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_1_0_grasp.mp4": {
+      "bytes": 17237,
+      "sha256": "f392f042bcb8b77d0f5a56a15cca987733e9eb43f22e6f915f7b1e7948c0e2c4"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_1_1_grasp.mp4": {
+      "bytes": 19402,
+      "sha256": "f0068c19747f8e853ac553a917543f416b8faf9354e4e39ee253dfb7740265da"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_1_3_grasp.mp4": {
+      "bytes": 17059,
+      "sha256": "b96c96d90623918ff51884facae0686fa9592cdfec831a0862dab08f3deac71b"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_1_7_grasp.mp4": {
+      "bytes": 16072,
+      "sha256": "115423370122cd9aef8301cdbd4cbe083e9a443f6d0e358f91474989c01c1412"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_1_8_grasp.mp4": {
+      "bytes": 17290,
+      "sha256": "6877c1bc7e082fa368b42ccc14dc885a89726fee185d22c1109fe2bdf5b47351"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_1_9_grasp.mp4": {
+      "bytes": 14747,
+      "sha256": "1c916f66db258079ab5d3d09fc0c69c32ae6d8d15af6d4a496373967f368e6ec"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_0_grasp.mp4": {
+      "bytes": 17032,
+      "sha256": "aa085e92e4c28871364bde220341914c2f80a0b8f0c1af86b7429a874ee89414"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_1_grasp.mp4": {
+      "bytes": 19291,
+      "sha256": "cd24ebc699d966d52018a0972bcfa95c3028b8a45b376208dcc0a56256ac8603"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_3_grasp.mp4": {
+      "bytes": 19455,
+      "sha256": "5c2e9d5adf9f1db1c3017a369a4427cfe0c3893fc3b503a63efc81e80687e44f"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_4_grasp.mp4": {
+      "bytes": 14716,
+      "sha256": "07aa543d32485f8d678035569646769307d54fed87833df10a4c41799032fb0b"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_5_grasp.mp4": {
+      "bytes": 18440,
+      "sha256": "92351db40e01743bca9516b566e544ada6f11c979a6a6dfa7b85e4f8acc7e591"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_6_grasp.mp4": {
+      "bytes": 18788,
+      "sha256": "fb1b350c6ef5dd11f58e3f63ce2e8602ad5a211ab540c8232176cd1449c57ef7"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_7_grasp.mp4": {
+      "bytes": 16372,
+      "sha256": "e94b8264b38eef2b976560e86f0bcc9e40a2cf69ce42290c924fcbdfb065752b"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_2_8_grasp.mp4": {
+      "bytes": 17946,
+      "sha256": "9abc237b1b930e02a165d7026efc10086f2049412d919d848ce5e7649464b52f"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_0_grasp.mp4": {
+      "bytes": 19616,
+      "sha256": "6eb1e9fc396726e8f867ce093c593ea8915327cb9e15015699e52ce109c7d421"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_1_grasp.mp4": {
+      "bytes": 15300,
+      "sha256": "2766efbba4c9ff334531574fa9ff6576e8b2ddc0a348ac08e561b9239b80e4b0"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_2_grasp.mp4": {
+      "bytes": 16637,
+      "sha256": "e71eda1bb1bf993b79febba1ed2346758668c76706209b71caf5f4fc2d8e580a"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_3_grasp.mp4": {
+      "bytes": 18626,
+      "sha256": "52cb940d924c9afff24f4f0c353e8e25373ad080fed7a4f3a748767cd0ca79ca"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_4_grasp.mp4": {
+      "bytes": 18593,
+      "sha256": "a116f7f14ebf98449db58472bb4695d4f92c2a2bc9d423aec804d0333b8ad0c0"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_5_grasp.mp4": {
+      "bytes": 14356,
+      "sha256": "6c65557fc6db90177974f8fbc3629f420ff2999067c0cf0888a2447696a59fe0"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_6_grasp.mp4": {
+      "bytes": 18371,
+      "sha256": "a9484d10f1a4161d24d26519c1b6287d4f413bc9754c2ae2af1d48486ebebe4e"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_7_grasp.mp4": {
+      "bytes": 19693,
+      "sha256": "f3e3d7036ffbc9f41af6285811d209b4266981090af2ea25b06714aa083efc42"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_8_grasp.mp4": {
+      "bytes": 17927,
+      "sha256": "86f59ca572b396d7335140d5fff95dfa3c1be62f3fc32c98ecfb095e8bfd5857"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_3_9_grasp.mp4": {
+      "bytes": 18743,
+      "sha256": "84323edd742282f4337d4ec789a24eccc87785b54b0a6ab60f8637f50ca272fb"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_4_0_grasp.mp4": {
+      "bytes": 19645,
+      "sha256": "a5a8b7b62209090f4ede78cb3adc8d7bcc54aab452e15634e4763d2a3db418f6"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_4_1_grasp.mp4": {
+      "bytes": 17631,
+      "sha256": "5b62708178b39ef8adc899ec51be39915c9a09f141c1a401f3e2622168907744"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_4_2_grasp.mp4": {
+      "bytes": 16591,
+      "sha256": "b0bbda27f1b91596873177eee0ba3799971ccaff6a3d78c4c05491518eaed2f9"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_4_4_grasp.mp4": {
+      "bytes": 17488,
+      "sha256": "f661c28c4db5f5f68d53977b4361478755910ac50d2da51cce4737d4393b9489"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_4_5_grasp.mp4": {
+      "bytes": 18852,
+      "sha256": "3f773760b61ae9411c99c222557652dcbe3f6361658b50e02906caf771aa771f"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_4_6_grasp.mp4": {
+      "bytes": 19471,
+      "sha256": "309cc68f0539b90ecf61cc978c00f94b597d22afed76dc880c78016fa524f79f"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/clips/24_Tip_Pinch_4_7_grasp.mp4": {
+      "bytes": 14876,
+      "sha256": "1027078a0ec87931074b64500f5161311a49fef2e260a4e4d7bb350a90505cc8"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/index.json": {
+      "bytes": 147833,
+      "sha256": "9af25e46623b3ab90eb845899530bd5a110f9d19867be4ba270c8b9245bd72f6"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/job.json": {
+      "bytes": 20667,
+      "sha256": "7bdce40d24504ecf97161b21b14e557ad49cf47a17b3c5ccb9dbf3823dcb57f3"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/page_001.mp4": {
+      "bytes": 139399,
+      "sha256": "68cd5827cf9ecbc82fbd89ab83989636a4e39582f1ae8ed67fc7d3439e8e6d48"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/page_002.mp4": {
+      "bytes": 136192,
+      "sha256": "e35d5e246a69dff0292c80a529b64983eb0744735f945ed4fe5b2bbcf85b5f2f"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/page_003.mp4": {
+      "bytes": 141452,
+      "sha256": "9aa2c26b670dd4f31a03ec33736f765fc43f0592d1873e503b8cb7ee55898f17"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/page_004.mp4": {
+      "bytes": 142555,
+      "sha256": "66b6fc1fd2060a9ff559850fc5ef4947a179d7163bbc4dd25cd7441e5f336577"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/page_005.mp4": {
+      "bytes": 49059,
+      "sha256": "75d58789a9da3a9860044cb86cabd4ada740de91d60a598a333f607a37ed04fe"
+    },
+    "animations/all_candidates/cylinder_thin_table_15/worker.log": {
+      "bytes": 3471,
+      "sha256": "684cb4bdfa2b7b05a22ae38f545cac7ffd4c29af2fd6eb9a6d33097ef3fc44ef"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/all_candidates.concat.txt": {
+      "bytes": 600,
+      "sha256": "f6ca74927c51f5900a6dbfe655af20c22f4f826889a9adad1276004a36358186"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/all_candidates.mp4": {
+      "bytes": 793593,
+      "sha256": "e5117bdc9fcbd85dfd8cd91fa3cfb6715796b9c9a78c9b3eac86adaa931c98b2"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_0_grasp.mp4": {
+      "bytes": 18219,
+      "sha256": "dd6f438fd1280ede9da1194b3e48bbefd926fe902de6479631c3fe8d87093ecd"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_1_grasp.mp4": {
+      "bytes": 19423,
+      "sha256": "90f012af3f99424542f50f2f1d57ca21c93c35f8885c62fff378d52a374374ce"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_2_grasp.mp4": {
+      "bytes": 18360,
+      "sha256": "0738a8cefc7a5b4577934f1aadad5a511bd48bd07960e1c79fe554981b034401"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_3_grasp.mp4": {
+      "bytes": 19533,
+      "sha256": "9a0ca9b3bd1a7409059be851cbbc5d2680e844606db4e69bf75ae1cdfb703cd4"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_4_grasp.mp4": {
+      "bytes": 17413,
+      "sha256": "4095ff2e16796f2d20a7303eea91a6c3601823858503995b6c6c22f2004c3bbe"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_5_grasp.mp4": {
+      "bytes": 19606,
+      "sha256": "3243e6a29a75734d2358156f75a0275db8d17b3f84f17787563d33ae6c2c8167"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_6_grasp.mp4": {
+      "bytes": 17117,
+      "sha256": "e69bbaf2e4ab1bcccc7b4455a6152505cceac80c91c91cf968ed5d9a6f71d06d"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_7_grasp.mp4": {
+      "bytes": 18420,
+      "sha256": "f53d82189c5070e7391d8c699299277278c8eb3779db5241e3a5c25c109253b9"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_8_grasp.mp4": {
+      "bytes": 15609,
+      "sha256": "006d52df7b4db03a5739bf2c8c315d2d05d315f01f846121d33524154bc25c56"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_0_9_grasp.mp4": {
+      "bytes": 14864,
+      "sha256": "80f5a197f175667e6cb05e3108319f96f7eca0ed51f82fd0dc02f28a25c84479"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_0_grasp.mp4": {
+      "bytes": 15780,
+      "sha256": "7f3c93fe3ea32a4e301fb746872b9fee79b5db725af0e66768031e8f1e295724"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_1_grasp.mp4": {
+      "bytes": 17134,
+      "sha256": "e8034b6a917e25af8d999493cb10f30524362ee39cadcd22160e06410b0e410f"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_2_grasp.mp4": {
+      "bytes": 18671,
+      "sha256": "9eba4c587eb85b69f024fe1915967633f6167dad477fe9fbf32bcf7e5c695222"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_3_grasp.mp4": {
+      "bytes": 18592,
+      "sha256": "82d8f5482990d3aa30f7090629002628b453703059a4af9d23c5f4d39c124bdd"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_4_grasp.mp4": {
+      "bytes": 19410,
+      "sha256": "599535228f9c85a65376f821103f891f826e46ffb7f8dcc7367513c53cb47924"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_5_grasp.mp4": {
+      "bytes": 19175,
+      "sha256": "80405ff28dd216e6b7afc2bb8c48aa1cf249ad6aa5a3e792e1a92d2eb873ec21"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_6_grasp.mp4": {
+      "bytes": 18702,
+      "sha256": "37be995540b886a2bf3054fcee924ed9035354e15f19fb9b80547bf512362122"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_7_grasp.mp4": {
+      "bytes": 18728,
+      "sha256": "232da95fb2a73b6a15a9740d31910e4ef89d5d0906a56cb170b87029daf6a082"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_8_grasp.mp4": {
+      "bytes": 19812,
+      "sha256": "ece9cd8f4d9d443857e558fcd81931571a9c0bfe146514464ca8fe6d6af4b758"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_1_9_grasp.mp4": {
+      "bytes": 17396,
+      "sha256": "ae8c757bab29a1bd189cd95416654b81906dd3f5ba9f5c531b24acf4a1a148e2"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_0_grasp.mp4": {
+      "bytes": 19524,
+      "sha256": "c8dcd61e14b30ecca044bf4165a4e373de1fcf4938994eb47474173f0a06ea34"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_1_grasp.mp4": {
+      "bytes": 17927,
+      "sha256": "7f7bb38ea847b7b87ac8f8f051e534d82ac875ab4c1fdead4a31842473a362bd"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_2_grasp.mp4": {
+      "bytes": 17364,
+      "sha256": "b2bb79fbd3388268398bd1e04d91d784fda7c79795ff66a2a551ebd387b1b2dc"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_3_grasp.mp4": {
+      "bytes": 19231,
+      "sha256": "563840056230a635ef13c59444e738e4ce277d53a2ee146d80ebef2d148baa26"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_4_grasp.mp4": {
+      "bytes": 19755,
+      "sha256": "1a4d009683f5a8da4887a0b042e419e1f74b1686bc03cb58296886bec0640f38"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_5_grasp.mp4": {
+      "bytes": 18212,
+      "sha256": "4a3ac93653583c3c9c0df6a88285f2606b04677a63cd12e4794e4fb627c3f825"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_6_grasp.mp4": {
+      "bytes": 18374,
+      "sha256": "a43d9fa05af21ceda66dc5c5e852b2b3dfb161867df5fc9970cebe0719dc0a3d"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_7_grasp.mp4": {
+      "bytes": 15707,
+      "sha256": "b4083f77098056d472f04f577f2b4900c59d512335114d63c440dacbb8bf2157"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_8_grasp.mp4": {
+      "bytes": 15950,
+      "sha256": "9d2c1833dc60a90d17402114d541057c36d1dd8244d245a830bfa31760aa7fa5"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_2_9_grasp.mp4": {
+      "bytes": 19416,
+      "sha256": "60ba6e0e08107dfc0bce89b437212c51f53060d2aa9f9625aae413dccd3e32be"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_0_grasp.mp4": {
+      "bytes": 19272,
+      "sha256": "75d93fda7abd6365f85f047b20b0e2827001b6478e61e0a7afbcb0eddc6fc4f3"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_1_grasp.mp4": {
+      "bytes": 16192,
+      "sha256": "7f5a7963cacdc319b0a78ac3b979309446c647d5305f2e7fd736f59b80b6841b"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_2_grasp.mp4": {
+      "bytes": 16808,
+      "sha256": "e9434566edb2c4fc156bf20e70c3614a9d679e3519dd9662022fff04d584d31e"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_3_grasp.mp4": {
+      "bytes": 19130,
+      "sha256": "b23dfa6dd5195474837d0a1b19367856dc1a7bc88ca3a56b1993276569220355"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_4_grasp.mp4": {
+      "bytes": 16519,
+      "sha256": "fa640a5933726d62dc8cd4e2462e0b764cc49b8628f636cbf9baad8a0b570956"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_5_grasp.mp4": {
+      "bytes": 20290,
+      "sha256": "eb6919cddb3aa3f6ff4409c8c733e0bb9988f8c87f38057d4cd63da82b08e85e"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_6_grasp.mp4": {
+      "bytes": 17701,
+      "sha256": "7a9362dbaf0575e3c02056e9bc23cdab57ba4f5f5013cbcb217398cd78a2a506"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_7_grasp.mp4": {
+      "bytes": 15951,
+      "sha256": "7e490d7cd5efa78b083d9a74303083c5d66b9828f060e5a344f40290ecabc765"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_8_grasp.mp4": {
+      "bytes": 17981,
+      "sha256": "e4aa6a68caee208069fd3f8004dcbdaf608082d25e88975e4f243edab4335769"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_3_9_grasp.mp4": {
+      "bytes": 18645,
+      "sha256": "eae9ced017342671118817bbde359cf484c5d7e35871322ea79208449d245c3a"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_0_grasp.mp4": {
+      "bytes": 18224,
+      "sha256": "0da11b427a11bbb7d126f325f34cfbe14313ec90fc63d83df62c189ca2793325"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_1_grasp.mp4": {
+      "bytes": 16577,
+      "sha256": "baedb643f530fd801f643c7fd562895f26b5a075654199ea58117e093ba86e8b"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_2_grasp.mp4": {
+      "bytes": 19514,
+      "sha256": "5f231c1401d97de9c7104c32e932deec343c4861c7b9aaf2d62211beff041c79"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_3_grasp.mp4": {
+      "bytes": 14955,
+      "sha256": "ee97b1d42a99e3539a04d7ee03e67a7be6901df4055669763ce7e995e493c193"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_4_grasp.mp4": {
+      "bytes": 18438,
+      "sha256": "04d41d75f5a5018419898f415efb3e79d0ddbecb5eb9a31b9ce7bebbddc7969b"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_5_grasp.mp4": {
+      "bytes": 19613,
+      "sha256": "fbbedc526c96ede3a5ce41372dce36139b82e405a0dcd907b951e0c68913a13e"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_6_grasp.mp4": {
+      "bytes": 14766,
+      "sha256": "a8f5598bac20245890e5ece8adac5f247015c9757c4a58412da70a7f01d5ef58"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_7_grasp.mp4": {
+      "bytes": 19854,
+      "sha256": "69c1775b57b31f44658efc52b96756bd2cfe17156f625c4f0bfc70ee00b130ff"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_8_grasp.mp4": {
+      "bytes": 19262,
+      "sha256": "3bf6164c6d632d6f291f3c3c96331dc0a7c1f8ef523866488cfde07ca3386a3e"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/clips/24_Tip_Pinch_4_9_grasp.mp4": {
+      "bytes": 19410,
+      "sha256": "0480e0408b1586f5c59593f36f1a5e2a3c04cc2e231121df97b05100a332117e"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/index.json": {
+      "bytes": 194750,
+      "sha256": "2f02f1ccd28143c5969085cefae1e0b822913bac7625c54241e16d6252823c10"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/job.json": {
+      "bytes": 31706,
+      "sha256": "1c1437d2b0f4c308356c7d01a1a87367e48bddaa556d3e01a23c47cb872e881f"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/page_001.mp4": {
+      "bytes": 144472,
+      "sha256": "2fadade67f0354933792fbb20e14c2cf0f562b224c5afbbf0e9db7d9a0b5bddb"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/page_002.mp4": {
+      "bytes": 142232,
+      "sha256": "6e32cdf35453baeb885ccb62f15176ce002a12cd182bc388cb6d8f8daca2f547"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/page_003.mp4": {
+      "bytes": 149097,
+      "sha256": "82a81aa4782a0f15ee7766343da9e93b7c5ee92c1ee14940ae977b548be9865c"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/page_004.mp4": {
+      "bytes": 139425,
+      "sha256": "9ba12225e4724fea668e76687356729494b965ce5988907e34f44768c065a7f2"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/page_005.mp4": {
+      "bytes": 139268,
+      "sha256": "ff58814bd31405a69575f14a6694a0e656e7aa06eb0982e6dfc36a8e0ed0f6f4"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/page_006.mp4": {
+      "bytes": 83160,
+      "sha256": "3c93f182f1b3237ab599e4ca51aaf7f93c89f258eeb428637114ec128f8d15dc"
+    },
+    "animations/all_candidates/cylinder_thin_table_20/worker.log": {
+      "bytes": 4450,
+      "sha256": "540a50cc8ed2469e97da5c5addadda8eb8994d231acc9104c1c7d8266f2ad7a4"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/all_candidates.concat.txt": {
+      "bytes": 600,
+      "sha256": "a18e648175cdd41ac21eba5d94e4f3388b539dca9b36840f39bd6d1a33505650"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/all_candidates.mp4": {
+      "bytes": 807040,
+      "sha256": "64b796b9b6505f8ef8f146e12b1a0f1e8c44ebc59f38eb82908c77c576f66893"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_0_grasp.mp4": {
+      "bytes": 20053,
+      "sha256": "7218303250d8b134a2013e186eb350de1832433f3362379eb21471bed31d0971"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_1_grasp.mp4": {
+      "bytes": 15820,
+      "sha256": "55f68b671d20355c1610bbbfbd9e3ffceb948d85ff861db63217b2793d6cefce"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_2_grasp.mp4": {
+      "bytes": 18169,
+      "sha256": "8e1230701ba9ca563bd8c2ed38ab65198aa50d6e1b35a844f3740a959e30cb72"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_3_grasp.mp4": {
+      "bytes": 18918,
+      "sha256": "a794f5475f2b6a5a9d92303d9072943a3cb74e1bbb52f2969babc65e647ac788"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_4_grasp.mp4": {
+      "bytes": 19366,
+      "sha256": "ab090853aaadf571d92bbf35a543caa0b1e144f002cfe1fc19dadf0acf53e1c6"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_5_grasp.mp4": {
+      "bytes": 16258,
+      "sha256": "d4d154bd21a965f86b91eff5a66467706c3ca191b5368ff4a3153389e98c6e68"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_6_grasp.mp4": {
+      "bytes": 20891,
+      "sha256": "82ebadc3b0f714ab09705e0ab3506117970324485989090878f2b20f65716754"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_7_grasp.mp4": {
+      "bytes": 20162,
+      "sha256": "4ffbc4fa4fd77ed05717c5a123187749f1d9b9e5563794cf9455e54312e5108e"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_8_grasp.mp4": {
+      "bytes": 18090,
+      "sha256": "db4af633ab697817de8036b9de8658ec187b4aef8b67a86bda05465b3c820b05"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_0_9_grasp.mp4": {
+      "bytes": 15277,
+      "sha256": "5b5944c07657fb73fcb6a01ddf22f65e0926fb73bdad3170d648f064b651fa16"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_0_grasp.mp4": {
+      "bytes": 18165,
+      "sha256": "49ab75bd55f82def94a5bed78efd4a4ef9e56d7387ae455a2af35f576e193019"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_1_grasp.mp4": {
+      "bytes": 18616,
+      "sha256": "1b0cd6b312bd2addb562af1f5792e8e3b0b3fde022e15eb0e247b1aba8906c2b"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_2_grasp.mp4": {
+      "bytes": 19655,
+      "sha256": "383ce5114ec57b82086e30841555440bdc170b4502621b44f0c1a93cd473a27b"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_3_grasp.mp4": {
+      "bytes": 17784,
+      "sha256": "d1db0e45acc8f3cfb36010dad2a3ea352043cdf43c2192c4ab3fcaf769155445"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_4_grasp.mp4": {
+      "bytes": 20112,
+      "sha256": "225635c56c6418952623bbd7c17ccc9cb357ac5fe971537dcd93d8a64c2d4b2d"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_5_grasp.mp4": {
+      "bytes": 18735,
+      "sha256": "7c94cf3fcf5bda3a30c6764230bf1ecbf6119bd6e24725516ef6e8c18dfca633"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_6_grasp.mp4": {
+      "bytes": 18765,
+      "sha256": "74f86b9562fb6c2dd5a94593617ed27b70fa3579d22bdd38146f6bf8ca436f54"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_7_grasp.mp4": {
+      "bytes": 16884,
+      "sha256": "8ac26f717d2a97c612ea6367d56226f836ef5f5e386c2d65270af92c6f70a0ee"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_8_grasp.mp4": {
+      "bytes": 16020,
+      "sha256": "a9a283d927616db0d7f13e1c83fb4b1cf9965d8fc38a1ea010742df2edbdd8c6"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_1_9_grasp.mp4": {
+      "bytes": 18666,
+      "sha256": "491a999142d5a577d459f16f878a6bb67f001999d5d903f77d3a4f84c760407e"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_0_grasp.mp4": {
+      "bytes": 20285,
+      "sha256": "5d3e612bd9cbfe5f7c9968afc55321b05865d8a765e539cea05db61a2692d05d"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_1_grasp.mp4": {
+      "bytes": 17580,
+      "sha256": "a6700ffbf2905049a0b3ede25f46e9bbc9ef795006b97c486789eb85fe1f4c53"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_2_grasp.mp4": {
+      "bytes": 16585,
+      "sha256": "f040d28409f47abb48acbbbf009544a33e94e96b506de3fecaa1a105b3106b59"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_3_grasp.mp4": {
+      "bytes": 15889,
+      "sha256": "6fbaa6b2aba1600ead3f8f431875ce9274c686728a00bd6b16d6278e934ef28b"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_4_grasp.mp4": {
+      "bytes": 17647,
+      "sha256": "fff01ba44032674f425124b84c27452d6061b516d1049ab3d4edd689b5103ac4"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_5_grasp.mp4": {
+      "bytes": 20379,
+      "sha256": "12f692ab408736ecff593ee62f7e9f9ee4b4fb992cdfccbecdf974d537468097"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_6_grasp.mp4": {
+      "bytes": 19111,
+      "sha256": "e9a55673b4064fe815956a73e608c75ead399fc9a45afb21bbeb3564a16bf929"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_7_grasp.mp4": {
+      "bytes": 18772,
+      "sha256": "2c0c8f7840690cf8a5bd7b98e0728ef3a7fe05ca02a893fc9f47282e1a017218"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_8_grasp.mp4": {
+      "bytes": 19110,
+      "sha256": "3421edc2a671e574db98e9655186bb6211c659b0d3979751457f71b6102ee261"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_2_9_grasp.mp4": {
+      "bytes": 20031,
+      "sha256": "713bc64fd920ed41e3f96be03e842f807833cc60a6ff432391246e45907f3de4"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_0_grasp.mp4": {
+      "bytes": 15343,
+      "sha256": "bc05c28f3a69b546ce1f49ed0173fda135a2f3ad318d39069540152d839cf462"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_1_grasp.mp4": {
+      "bytes": 19351,
+      "sha256": "5ab83e4fc3224e3bdf431f159ff601390853c334053e1bc13ba6c1f658171923"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_2_grasp.mp4": {
+      "bytes": 19877,
+      "sha256": "2e25cacee6bcfb58256a512224b2e19792d504c3fe42a8ce98fa28c388a974de"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_3_grasp.mp4": {
+      "bytes": 17728,
+      "sha256": "7ab9ddd59b356dd8d60900d4d6dee14dd9588918b1ca68c2818038514f331f15"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_4_grasp.mp4": {
+      "bytes": 19520,
+      "sha256": "e35b671ca59dabb6132373c7721b5d16d8294233ce1636542671445b3ee65a0d"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_5_grasp.mp4": {
+      "bytes": 16343,
+      "sha256": "ed4ab8e9ebf3ec5823fb9045764eaec58d2c186f4b83560726ff655b5406efa4"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_6_grasp.mp4": {
+      "bytes": 19687,
+      "sha256": "e5ea11e9ef8ada76c53f80d0f488e0d5d021b39e4183b69dcddce0cf721cc27e"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_7_grasp.mp4": {
+      "bytes": 19140,
+      "sha256": "9519c93120c33d601d6586a97132f03847d42a3dd6437fac29abc1d464240e83"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_8_grasp.mp4": {
+      "bytes": 16626,
+      "sha256": "ae8e2ab9b9c80982f6e5ff230c714de17daa193dd570cc9b5536cf59853bb7bd"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_3_9_grasp.mp4": {
+      "bytes": 17786,
+      "sha256": "9e55cf7e227ab545f1483e04f735febe9b448ba5ea559573661265e82ba1b045"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_0_grasp.mp4": {
+      "bytes": 19337,
+      "sha256": "b12b572c84d7726e23a313342def6b954ec148c45d4d65964e602781e59d484d"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_1_grasp.mp4": {
+      "bytes": 15660,
+      "sha256": "5ba3a82af75c1ab903a77848be3be7367de3253ee2c537b23530684953b1df25"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_2_grasp.mp4": {
+      "bytes": 18574,
+      "sha256": "0eeb81c2ad44d6cf498fad884708ce638a79275fb5a304c06b334bd42ef37bcf"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_3_grasp.mp4": {
+      "bytes": 18054,
+      "sha256": "8b45fb5a7aaa0cd2a892d477f7e5a5b4972491ded164fb9e54b3d07f44d13b97"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_4_grasp.mp4": {
+      "bytes": 17710,
+      "sha256": "fa63b65c5bfea29ded0a2b863b85605a4e968ef3051114d3651eab24b4d8e20b"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_5_grasp.mp4": {
+      "bytes": 19577,
+      "sha256": "c909d0f176891a33a3a62b55eb35821bcca97484f32c1361c3c02e2193f1fb75"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_6_grasp.mp4": {
+      "bytes": 16173,
+      "sha256": "60360da5652a4aac6c23f8fbbc258c4fe6985fc7577405052dab1d3c9a1e188b"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_7_grasp.mp4": {
+      "bytes": 20035,
+      "sha256": "abeedc5a2de30e781d2f749eb1be0dace8f594fe9f4df03dd366006ebd74e310"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_8_grasp.mp4": {
+      "bytes": 19942,
+      "sha256": "706bafd805e7112a03c6f8b801e54b94ddd250499b0bb8bb278ad2a8dcde7da5"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/clips/24_Tip_Pinch_4_9_grasp.mp4": {
+      "bytes": 19265,
+      "sha256": "f844519075e98578e8176104c0b652b8803507bf87bbf40ef877d89707f22f77"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/index.json": {
+      "bytes": 197432,
+      "sha256": "a3e84f5d661222a806d2cd7a5c01851f40456631bc278a29343ebd0b3164dffa"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/job.json": {
+      "bytes": 34256,
+      "sha256": "6715a5c59f7680d1e876b38abcee402a85f86b40c44640ec9f56c99ee36381c4"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/page_001.mp4": {
+      "bytes": 149002,
+      "sha256": "932585f50c35ae36407036501ba21767b190929d47b67ee08198b005058cadf1"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/page_002.mp4": {
+      "bytes": 143748,
+      "sha256": "e2d5084052ddf7806166a57483ea7043ff78ba95f5b542202283b3a5548215d2"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/page_003.mp4": {
+      "bytes": 141705,
+      "sha256": "23d209ccf7232117ca54cf7c73377e958d17c18f27bbb3e9f459869bbda27b01"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/page_004.mp4": {
+      "bytes": 146828,
+      "sha256": "6c12708ff1e15b78f8831ab77196204bab4bc76da0c11361689e1bf1264406f3"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/page_005.mp4": {
+      "bytes": 144470,
+      "sha256": "bb88f186f976570297d657e66329c1fccaad548e7e8c230dc6a69baf367f5fc3"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/page_006.mp4": {
+      "bytes": 85332,
+      "sha256": "e6635478ec1a448bf137e1f7a176114c11dca7c9be992275260a46a114ec4644"
+    },
+    "animations/all_candidates/cylinder_thin_table_30/worker.log": {
+      "bytes": 4450,
+      "sha256": "0807ba2bae78a5e8609a4d09fa38dbab6274435adc60a363d2790a42bbdf8bdd"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/all_candidates.concat.txt": {
+      "bytes": 600,
+      "sha256": "94a7c72d1fcec7ed785fd5382794a5d88a7cac33ef79e40d4cf072938bf9cb76"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/all_candidates.mp4": {
+      "bytes": 814168,
+      "sha256": "371eeca87aec7cb43c45e3b0bbeafe2d0521ec265c8c0c22c38c0b52de702891"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_0_grasp.mp4": {
+      "bytes": 16387,
+      "sha256": "8ad2cdcc54e8f474e93cc980724b53de03e98f7eae0318bfe62e5025828e198d"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_1_grasp.mp4": {
+      "bytes": 18347,
+      "sha256": "1f8c839a066670a27b4892de6b67e2eb84ffd236a2730b4bd04371db0e52eaf9"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_2_grasp.mp4": {
+      "bytes": 19076,
+      "sha256": "c71bdcf00257022eabc4100018c3622d9a3376c86aff89d84e3111c9313adcb1"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_4_grasp.mp4": {
+      "bytes": 18647,
+      "sha256": "1e693ae36ba1a3753f8c3af800e96785dd5561193ef3f4fdaff607453682482b"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_5_grasp.mp4": {
+      "bytes": 18887,
+      "sha256": "a8463092257083e0cc47aa1ee1f121a554f60fb22ef904eadc142439131af251"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_6_grasp.mp4": {
+      "bytes": 19454,
+      "sha256": "6c406fdfabb8d4e43b2d20b3a684b80407c33b5aa280ab9acb2f383064aeb621"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_7_grasp.mp4": {
+      "bytes": 19846,
+      "sha256": "7fe3acd1aa7ba25162b5bcf0ef18d47a556f2ded61b0dd59a371266ba2ca818f"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_8_grasp.mp4": {
+      "bytes": 18933,
+      "sha256": "7295f9ebecded507446f05cbf3d4122dcf19127def806932ab0bf723b0320836"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_0_9_grasp.mp4": {
+      "bytes": 20017,
+      "sha256": "eb652f28fbfc68962ee2d965ea7c0af7674cf1f93b9bb032a7e69d1d4da4f99a"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_0_grasp.mp4": {
+      "bytes": 18605,
+      "sha256": "2ef47af180b350f31b6aa93ae9af481fbc700232b390f70b20b7931109857dab"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_1_grasp.mp4": {
+      "bytes": 19484,
+      "sha256": "f448489e3157ca2452c0eb4d59d32a60588e46117c474a405138d163c33a1513"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_2_grasp.mp4": {
+      "bytes": 20256,
+      "sha256": "81c65df161173c77d6ba0d7d4bf4cd23544b6e6d54599ee9893729a1f761549f"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_3_grasp.mp4": {
+      "bytes": 18938,
+      "sha256": "46cfe517784da016b904f381e80ccc49d5c7e5f3e8c4c412fc2c48f09c8eb001"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_4_grasp.mp4": {
+      "bytes": 17248,
+      "sha256": "dd8281f3c15410adeb2d4619969ac7fb1ac36dad99715c5c9634f1c1f8cde449"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_5_grasp.mp4": {
+      "bytes": 18391,
+      "sha256": "b0a9685095269516abfde18a81524b8b711d58ce41f2b56319d66de6a926ea74"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_6_grasp.mp4": {
+      "bytes": 18774,
+      "sha256": "a3188b0f7961c09b2234d45f0971b49e3b26a640e8d46ed4b2540b7f7f05cf16"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_7_grasp.mp4": {
+      "bytes": 20408,
+      "sha256": "6934ff3a35ec02d728ebc9206b49549c102e91cdf17c922b209ad47a56a2e11a"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_8_grasp.mp4": {
+      "bytes": 19467,
+      "sha256": "fadf725e8bea91eb719f32de8c9d9605a04c19184b7ad560e11ae482925065fb"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_1_9_grasp.mp4": {
+      "bytes": 16511,
+      "sha256": "b95def7a712e4ce1b0a6176836374f5e9a0d1b904f7516e3a8cd2c27d809af3a"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_0_grasp.mp4": {
+      "bytes": 19703,
+      "sha256": "fa25528a89ebaed5f38d4fc3f893588c184f977b2a3952d9479475ac53d90fc9"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_1_grasp.mp4": {
+      "bytes": 19133,
+      "sha256": "463c576081a511db75311d358f477d6aee5549dd56c91ae6d2f2e4a79765fb3c"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_2_grasp.mp4": {
+      "bytes": 20460,
+      "sha256": "bfca12634322c9930fb3161e17eac3ae80084a3b07498b9c899e77f54f18bfbd"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_3_grasp.mp4": {
+      "bytes": 19105,
+      "sha256": "3f03066c6ca9cb9bd9434ac8876272d556e1926a0a0c262b3066287dad020aaa"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_4_grasp.mp4": {
+      "bytes": 17848,
+      "sha256": "c4a4f603e7e9b9d0bb951346ebf35432bdae9d4d2702bfbff06a18c7dbe6438c"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_5_grasp.mp4": {
+      "bytes": 19850,
+      "sha256": "5599bd1382c762b5c8e21b1a3c8b18db4db0f4447cffb8ee0ae7a4dc8f598206"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_6_grasp.mp4": {
+      "bytes": 19258,
+      "sha256": "4d75f3e8882a7173f73bc1dfbfe5b65e26385b1f611e9ebc30382bcb691dc7b8"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_7_grasp.mp4": {
+      "bytes": 16379,
+      "sha256": "efa2944b941aed1bc84808d61566542e1a368daf6f0b7be10668bc909cd1396a"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_8_grasp.mp4": {
+      "bytes": 19054,
+      "sha256": "58649e4ccfb4efdfbe58ad725739a63576d2038f766e731e82b1ca2219025fca"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_2_9_grasp.mp4": {
+      "bytes": 19965,
+      "sha256": "9a4aeda9bcf0ea6a1eacac4e57ad25ca587380f8ee84039c66174b71a51dc2a9"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_0_grasp.mp4": {
+      "bytes": 17195,
+      "sha256": "e99d56ead81ddb0c651890d5c125a2a7a00919b2f834a1282ef68ada1e9c7ac5"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_1_grasp.mp4": {
+      "bytes": 17398,
+      "sha256": "04a0ecb21781a0c4c4ee9264e6708270449295254fa994add015b05577f2b484"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_2_grasp.mp4": {
+      "bytes": 16620,
+      "sha256": "cea13c10fbf77ad959a238a458bf9758c42376f005f179a3f7e3e47ef40c9494"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_3_grasp.mp4": {
+      "bytes": 16675,
+      "sha256": "9ae625f92563476cd7aa71b858c44523e9184fc221aeb2d924fb061c6c39dd37"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_4_grasp.mp4": {
+      "bytes": 20549,
+      "sha256": "92a39eaac2b788b4e70e12c77f7a0e0468ea39558a53281a2de79c59abf0f620"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_5_grasp.mp4": {
+      "bytes": 18674,
+      "sha256": "41269900d794f23385f60d1960c96e6a56099d1006ab9c47dd17e2473288270c"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_6_grasp.mp4": {
+      "bytes": 18445,
+      "sha256": "0f1256b6f6c421b73468576ba101ee182d6142861054eff7b4fbb1a85bec943a"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_7_grasp.mp4": {
+      "bytes": 20045,
+      "sha256": "89459a5f949db9312fd1b7891ab0a1ad306e97e48bae5d3fe663d248c7f7adc0"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_8_grasp.mp4": {
+      "bytes": 19954,
+      "sha256": "9d7b5fdd119ba4f5ed383c643935d62106184ee95c116aba64882ddaac219124"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_3_9_grasp.mp4": {
+      "bytes": 19535,
+      "sha256": "f2cf0f31fc6fc6313c2f2e8d9520823154807d15656dc8f8e1ad1b53aa1bc37e"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_0_grasp.mp4": {
+      "bytes": 20253,
+      "sha256": "f573f2af2fb4531d8725bc8b9aaf31c8012beda50f79943591f688ffebf34fc5"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_1_grasp.mp4": {
+      "bytes": 19520,
+      "sha256": "047c7c5b0ed38231d0a32ee18f9571bafdd84bd822dfa34ef0e87c8646b0facc"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_2_grasp.mp4": {
+      "bytes": 16453,
+      "sha256": "fb7c2c2dbeddb3c1d47604cc6c5400f9eb1bc1a20566655406c74c7c6095df91"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_3_grasp.mp4": {
+      "bytes": 18729,
+      "sha256": "7a805e1f585e79ffa6d19daf55bc3368150689807928e51a248b6e25d7c7d033"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_4_grasp.mp4": {
+      "bytes": 18555,
+      "sha256": "0e24018bb1f7f49c83334f63234b10fddaedfe19f7476df6b0cadeb42d4cfe8b"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_5_grasp.mp4": {
+      "bytes": 17827,
+      "sha256": "f2a86049c8f661bd52807984c28ed9e95f606c11c8a6d2a093990ca1adbd73b5"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_6_grasp.mp4": {
+      "bytes": 18806,
+      "sha256": "77ce0a7e560f5a3847ba2fbcb6905e25043fa21d53d5b97d4dbeca3304d0f70e"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_7_grasp.mp4": {
+      "bytes": 19396,
+      "sha256": "31e20af2ed1c22c61f7910e2218e50d6600c9cdf6f48122a8425c7add29c2697"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_8_grasp.mp4": {
+      "bytes": 18626,
+      "sha256": "feb3db8f1c4049ea46f3ed3dea6f7158013af6d1cf27ea3b1d5b5d71aff0b3a8"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/clips/24_Tip_Pinch_4_9_grasp.mp4": {
+      "bytes": 19585,
+      "sha256": "6771018f315c209c75e4e8152a16bd83306df9b0b74d7d47712e785cb0d31fdf"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/index.json": {
+      "bytes": 193332,
+      "sha256": "35e7779b795a5251cdcd0f16a161e9b70bfafff5cc96d5803552cb72ac97a0de"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/job.json": {
+      "bytes": 33407,
+      "sha256": "94c77a95439ab7696f18277431f0ac0ef8125b79cb886ad87b42eec2c26908b8"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/page_001.mp4": {
+      "bytes": 150935,
+      "sha256": "22846931b7b48ca3f6a048a1e13aff133ee00a5416a39ecfdd927fef3de465cc"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/page_002.mp4": {
+      "bytes": 151697,
+      "sha256": "17dbea54ec3fa108e87175c0290478d31d5a9ba3999fc97011df27f36e9be009"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/page_003.mp4": {
+      "bytes": 148311,
+      "sha256": "1124f1994191027c1356938be698c7a7b4906153400bb0ee4628c2c52ff72f12"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/page_004.mp4": {
+      "bytes": 145280,
+      "sha256": "4044d8ad4e54d0d8510cea415109b813c4360e7046207086c9aba72bdb0b859f"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/page_005.mp4": {
+      "bytes": 152816,
+      "sha256": "d9ec9b72aa19726df9abc71e8a9a0bbc99fb724f127a9a5ddc02d0c2c20142a5"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/page_006.mp4": {
+      "bytes": 69182,
+      "sha256": "80184a075a8911543721cdf841fdfafa3d57b614689579c91f17d5ba90dccca3"
+    },
+    "animations/all_candidates/cylinder_thin_table_40/worker.log": {
+      "bytes": 4361,
+      "sha256": "c2ddd17f320590eecaa635bf1370306637d49207e243034a4b74d6d499daf3fb"
+    },
+    "animations/all_candidates/index.json": {
+      "bytes": 858297,
+      "sha256": "69432f8521fcd648823dc274cdbe8b9ac3955130753d1726534e1b9938c33113"
+    },
+    "animations/all_candidates/input_snapshot.json": {
+      "bytes": 135939,
+      "sha256": "e805d0722c7c56277dec528be70a8295f944084e3cdfb71577d399a07916343d"
+    },
+    "animations/all_candidates_smoke/all_candidates.concat.txt": {
+      "bytes": 112,
+      "sha256": "b545999e14ce59f255ea57a9b9527588e605e019a24db37ee3767a9407b2149e"
+    },
+    "animations/all_candidates_smoke/all_candidates.mp4": {
+      "bytes": 35616,
+      "sha256": "9385e330f677deb32ca4f38bba6c4752f352d568a623c7b9802c86f2e5cf504c"
+    },
+    "animations/all_candidates_smoke/check.png": {
+      "bytes": 82128,
+      "sha256": "78604f7dfe3d1543bd4534c17069fd43c0669105c563143a6b8303f7e72f8761"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/all_candidates.concat.txt": {
+      "bytes": 106,
+      "sha256": "68a7b2b9b825147074e9240e2ec5d8eea39fe0afe9f0673509c3cb9ab9e32cc4"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/all_candidates.mp4": {
+      "bytes": 35616,
+      "sha256": "9385e330f677deb32ca4f38bba6c4752f352d568a623c7b9802c86f2e5cf504c"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/clips/24_Tip_Pinch_0_0_grasp.mp4": {
+      "bytes": 18219,
+      "sha256": "dd6f438fd1280ede9da1194b3e48bbefd926fe902de6479631c3fe8d87093ecd"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/clips/24_Tip_Pinch_0_1_grasp.mp4": {
+      "bytes": 19423,
+      "sha256": "90f012af3f99424542f50f2f1d57ca21c93c35f8885c62fff378d52a374374ce"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/index.json": {
+      "bytes": 8178,
+      "sha256": "7df3611f8d8c637e001769d51795684245387dfa52b56c3159886e56ba07a5db"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/job.json": {
+      "bytes": 1500,
+      "sha256": "01f00af45464327cd1e4ce35b89840bcef6f55912c6ad8d1051fc74073fc20ad"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/page_001.mp4": {
+      "bytes": 35578,
+      "sha256": "da84331c3e4fd38663a501890adf5c2abfaaac69fef3b16787e81ccffe42207a"
+    },
+    "animations/all_candidates_smoke/cylinder_thin_table_20/worker.log": {
+      "bytes": 178,
+      "sha256": "fade1178b75d510596b9ca67097c3fbd99b3ca5959c890e2322a68a8a8f211b5"
+    },
+    "animations/all_candidates_smoke/index.json": {
+      "bytes": 8967,
+      "sha256": "665d582aa60d17d1b23aa911aac1f0866bba023cd7b598937bcffdad6ebb9a4e"
+    },
+    "animations/all_candidates_smoke/input_snapshot.json": {
+      "bytes": 1517,
+      "sha256": "935f3bd788f7e61e6e8fe51efc16d55d761f88306339f78daa2d881f0c8a6935"
+    },
+    "animations/d10_first/metrics.json": {
+      "bytes": 1770,
+      "sha256": "0a6f013f1f699d26fdf9a962db200ae783ce8071e7cd08a3d70a935ba370d697"
+    },
+    "animations/d10_first/native_fc_trace.npz": {
+      "bytes": 115033,
+      "sha256": "cc3c3f443cd21e36314a8c3cd3c0c12c219238d0b04e581bd62e86ce4a14179f"
+    },
+    "animations/d15_first/gravity_lift_trace.npz": {
+      "bytes": 540066,
+      "sha256": "cd3b4409d8b6aa83e77fab4f60bbdf5f330712cc41d88960997c8256c4065ad3"
+    },
+    "animations/d15_first/metrics.json": {
+      "bytes": 21090,
+      "sha256": "07116c3c63dffdd0fe3de436971da29ac36d4447ca6e7d3f3d1bcedd3ec346a3"
+    },
+    "animations/d15_first/native_fc_trace.npz": {
+      "bytes": 2230077,
+      "sha256": "aa4fd74ba5f30658ca8dbb54d68ef93a814dd7f433a5ce89ac7639c91f183699"
+    },
+    "animations/d20_0_1/gravity_lift.mp4": {
+      "bytes": 56605,
+      "sha256": "562874c98a95ff0a526f8e1360885cc700530b8ea74f2ef48e51411f88b91d15"
+    },
+    "animations/d20_0_1/gravity_lift_first.png": {
+      "bytes": 41424,
+      "sha256": "46227bcd9e65b6b36350b8eff9955031db93df39433b0a73e4d651e3345835a6"
+    },
+    "animations/d20_0_1/gravity_lift_last.png": {
+      "bytes": 42136,
+      "sha256": "880c521b0933fd374bb326bd82f82a01d5752856e9da84a151c001b8b3ac83df"
+    },
+    "animations/d20_0_1/gravity_lift_trace.npz": {
+      "bytes": 532875,
+      "sha256": "a2cbdfd5f94f7f387de8fdec1994cfff30d2c494cc1b91637c9a07aa255a09f7"
+    },
+    "animations/d20_0_1/metrics.json": {
+      "bytes": 21074,
+      "sha256": "8ffe77b49a61e171c28a21a27da235042d6437ee1b856f376253c03f950bab55"
+    },
+    "animations/d20_0_1/native_fc.mp4": {
+      "bytes": 265993,
+      "sha256": "4fb936c1b4d901498618deda7679562820a735f4e845401c94597e0e076c280c"
+    },
+    "animations/d20_0_1/native_fc_first.png": {
+      "bytes": 52866,
+      "sha256": "01c5c3fdb2fd0b4dcd8fa9fbdec15f3cf776f3d96e3500570167ae1adf34414f"
+    },
+    "animations/d20_0_1/native_fc_last.png": {
+      "bytes": 50597,
+      "sha256": "d4be44619322490dfb94f1b00bb43c13345f2b8b62036d3f169640e1800aa116"
+    },
+    "animations/d20_0_1/native_fc_trace.npz": {
+      "bytes": 2214484,
+      "sha256": "c1473ac7783184b17b504747586302c4d34c799ee4983b544adbcfc97091e3cc"
+    },
+    "animations/d30_first/gravity_lift.mp4": {
+      "bytes": 61881,
+      "sha256": "9bf8dff6b62d7223514663374cd409a7e2cf4a1338bfc3c34fb8fae02d4b4431"
+    },
+    "animations/d30_first/gravity_lift_first.png": {
+      "bytes": 45045,
+      "sha256": "d2cf965a02eaf0edf1bc58f81a83828eb98016a1aedf8505e219703b1e29953c"
+    },
+    "animations/d30_first/gravity_lift_last.png": {
+      "bytes": 52460,
+      "sha256": "6903b11d84c3e191f733fd3a1a2145b4797bbe1a5b5f3afbea30c052b34515e1"
+    },
+    "animations/d30_first/gravity_lift_trace.npz": {
+      "bytes": 528725,
+      "sha256": "0790a2b83a4453a6a706152e86b2fbd22aba418e41bd0eee3b9b9ec58590480b"
+    },
+    "animations/d30_first/metrics.json": {
+      "bytes": 21051,
+      "sha256": "adcb3cf286eb9a9daa9a95cf83b18d7795156b136db300a6b882c73343e54ce3"
+    },
+    "animations/d30_first/native_fc.mp4": {
+      "bytes": 265441,
+      "sha256": "455f491fc3b71856c0fef489114331b6d30bd480edd3cfcc5bcff48baea9c775"
+    },
+    "animations/d30_first/native_fc_first.png": {
+      "bytes": 59196,
+      "sha256": "51af9a76e22dfbd6c6bf9cbbd3d8d59935f8ae302228e08b75ca78efd3bcc245"
+    },
+    "animations/d30_first/native_fc_last.png": {
+      "bytes": 60705,
+      "sha256": "ac5be3a1383a00fbfab3311e3162756093e6528746eabdcf68f22dccf54fb677"
+    },
+    "animations/d30_first/native_fc_trace.npz": {
+      "bytes": 2195768,
+      "sha256": "b2a22c16cd705917ce4235519e8d943caf02dc43276dc6f174a92ca34c2a8d66"
+    },
+    "animations/d40_first/gravity_lift_trace.npz": {
+      "bytes": 531039,
+      "sha256": "825fa2ddff86c3222fd799ae4a24700980483c41b6e601e16568aaebf1e1b695"
+    },
+    "animations/d40_first/metrics.json": {
+      "bytes": 21052,
+      "sha256": "a910b2373b3d252791212065f8d47f58f471616111025cf89741502a270071bf"
+    },
+    "animations/d40_first/native_fc_trace.npz": {
+      "bytes": 2185719,
+      "sha256": "39a0cf31dab17c23bd1ef3bec520718251551076e24a924186a28840b17978a4"
+    },
+    "assets-manifest.json": {
+      "bytes": 4235,
+      "sha256": "780962a4ec3f7dbc7fc5776e0987bfeef83a6fe5ea4a949bff4e8714f3f4d5d1"
+    },
+    "assets-validation.json": {
+      "bytes": 662,
+      "sha256": "7577dd237d2924aba9f3ebe9b7e614d752ad88ea4e5cc5e45e936539164df284"
+    },
+    "audit_grasp.py": {
+      "bytes": 8404,
+      "sha256": "be6bfe10ccc1c18034d0d49e805cbdb2b709d6815ff11c9f15944690e10e0f3c"
+    },
+    "cpu_warp_smoke.json": {
+      "bytes": 923,
+      "sha256": "658c5ed98cd7f8e7cb53a96945be44b84620a2b223fcd290bdccb369da677532"
+    },
+    "create_assets.py": {
+      "bytes": 6067,
+      "sha256": "fc07bf393a049817fadae58a3f17d3ed96e831a832dc0377ee2273e5e8e90145"
+    },
+    "package_results.py": {
+      "bytes": 7820,
+      "sha256": "71905602412056ba956f3b71f3058135777fa1f63592eec8613262ea13d6aa95"
+    },
+    "previous-success-snapshot.json": {
+      "bytes": 2313,
+      "sha256": "e8465b15b01ac5a6694ea6507adc7c482edc6e54de34240ff74c390ee16ef9de"
+    },
+    "publish_results.py": {
+      "bytes": 8695,
+      "sha256": "c2c28ccaf353578a52eb79d607631f9b19f9000fcbec93958b68542d220984c3"
+    },
+    "render_all_candidates.py": {
+      "bytes": 19136,
+      "sha256": "59792ca416771cbd041f5f2f11ab8b096e93be9f895354ad72f0319bd4f6a379"
+    },
+    "render_all_closures.py": {
+      "bytes": 7869,
+      "sha256": "0df217d31ae3276faaf34bb8c9359a8adf8d5149ff7be08196da142d15279602"
+    },
+    "render_validate.py": {
+      "bytes": 15802,
+      "sha256": "25b4c78f409682defe063f08e2ff5c60f207b8a99cea5245f860fd65b49256fc"
+    },
+    "representative-validation-summary.json": {
+      "bytes": 2857,
+      "sha256": "3f336356d4bc743e4fea6a243ab645c57935dbe6e8655e5e1df2527565040cc2"
+    },
+    "run_cpu.sh": {
+      "bytes": 290,
+      "sha256": "721f5fba30aa86f6f032f8b8da0c5dbcdfe6fd39b77ddecc7e72b8a64008cb0b"
+    },
+    "run_pipeline.py": {
+      "bytes": 1032,
+      "sha256": "7004c951b4fdd141dc0e429a3c5c58a3cb7d831404c44201a1f11fb88664b72e"
+    },
+    "run_reproduction.sh": {
+      "bytes": 3326,
+      "sha256": "34f3eb69835bc7eb59c098cdfe816cbcdd4ced7f9f93ed24481c7bfa50ec9d2a"
+    },
+    "runtime/sitecustomize.py": {
+      "bytes": 962,
+      "sha256": "b4312f093b32756dd23ba084e51a2d126f38ab7b68735295aefb4c7f16a1dbf0"
+    },
+    "runtime/smoke_cpu_warp.py": {
+      "bytes": 2027,
+      "sha256": "77af55df464f58796444d8709100f56a3bc03d26f08cbad51694f360ecd4930b"
+    },
+    "summarize_results.py": {
+      "bytes": 13669,
+      "sha256": "ad00aca122ea8e41b56172dfa8448d32022b0dd67eff1272d5e83bf9a897295f"
+    },
+    "video_writer.py": {
+      "bytes": 1414,
+      "sha256": "0761305759fa7c8cf16148162aa68f1aa58f50ec733465d558ceff95aa971a45"
+    }
+  },
+  "integrity_issues": {
+    "broken_success_links": [],
+    "unrecognized_scene_paths": [],
+    "unreadable_audit_or_metrics": []
+  }
+}

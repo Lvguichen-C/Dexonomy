@@ -1,0 +1,42 @@
+{
+  "scope": "Own generated Shadow reproduction artifacts only; no uploaded user attachments or credentials",
+  "archive_entries": 1252,
+  "success_npy_symlinks_materialized": true,
+  "files": [
+    {
+      "name": "SHADOW_REPRODUCTION.md",
+      "bytes": 14185,
+      "sha256": "778447d199e967d910b0578051d0d23bdec57d4801fbfa65939c358d6580657b"
+    },
+    {
+      "name": "results_summary.json",
+      "bytes": 145729,
+      "sha256": "41951e4a5599c9f4fe6b0706f6335f6887a6ebce78c98c75dbede51c4975e909"
+    },
+    {
+      "name": "representative_metrics.json",
+      "bytes": 21074,
+      "sha256": "8ffe77b49a61e171c28a21a27da235042d6437ee1b856f376253c03f950bab55"
+    },
+    {
+      "name": "shadow_native_fc.mp4",
+      "bytes": 265993,
+      "sha256": "4fb936c1b4d901498618deda7679562820a735f4e845401c94597e0e076c280c"
+    },
+    {
+      "name": "shadow_gravity_lift.mp4",
+      "bytes": 56605,
+      "sha256": "562874c98a95ff0a526f8e1360885cc700530b8ea74f2ef48e51411f88b91d15"
+    },
+    {
+      "name": "all_candidates.mp4",
+      "bytes": 3514968,
+      "sha256": "202aa725d493f87104125051b014b6c0ee3fac073354495bc42b3757c2f6b598"
+    },
+    {
+      "name": "shadow_reproduction_results.zip",
+      "bytes": 36519986,
+      "sha256": "4f23d9644a21c7d5d2b5c51f4e8cf71d219d8015cd41ca1f98c2ce793cbcb4e4"
+    }
+  ]
+}
