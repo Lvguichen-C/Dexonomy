@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "scope": "Only own generated adaptive Shadow sweep outputs; excludes uploaded attachments, credentials and environments",
+  "archive_entries": 2822,
+  "archives": [
+    "adaptive_lift_results.zip"
+  ],
+  "files": [
+    {
+      "name": "adaptive_lift_summary.json",
+      "bytes": 3603152,
+      "sha256": "1bbc6db9b8a79d7347546fe53d879041730b11a95bf935e591f7e50961275f0d"
+    },
+    {
+      "name": "ADAPTIVE_LIFT_REPORT.md",
+      "bytes": 10184,
+      "sha256": "47235957eed68a82289d46405c905ff8d851d82154e1bd533d13ca6e54abc725"
+    },
+    {
+      "name": "PROTOCOL_REVIEW.md",
+      "bytes": 8120,
+      "sha256": "824115db47333f73f9ebb2c2f07cd2026281ba18340a129580dba2dd3a9a584b"
+    },
+    {
+      "name": "motion-protocol-summary.json",
+      "bytes": 728956,
+      "sha256": "c5d5d95e6d2f5d4011877fe4361cecf808c2dae4e58e4af4114ea47086121b26"
+    },
+    {
+      "name": "all_12_diameters.mp4",
+      "bytes": 513290,
+      "sha256": "3a21b724ef3312e250744f93ad951ddace4b3f26d59c3958eeb3eb7b1ebcef0a"
+    },
+    {
+      "name": "d001_full_sequence.mp4",
+      "bytes": 129409,
+      "sha256": "79530c36c0aeba53b20a8046ae6656a0b7936eca5375bce6dc82ff4fb6c15d01"
+    },
+    {
+      "name": "d005_full_sequence.mp4",
+      "bytes": 156145,
+      "sha256": "79980b4ff3e43c041e0fa0329b3230e6bee2137cf6d01829d8b3f77c856fea08"
+    },
+    {
+      "name": "d010_full_sequence.mp4",
+      "bytes": 159064,
+      "sha256": "d5fffd5b0dda5afa0b3365a1e1a5cb9ab61561fcfff38fb38f6c74e11c794a75"
+    },
+    {
+      "name": "d020_full_sequence.mp4",
+      "bytes": 122019,
+      "sha256": "9436b5b5aa8e3cdb567f6e382696820088de66736d73e00b7012e6ddbecca34e"
+    },
+    {
+      "name": "d030_full_sequence.mp4",
+      "bytes": 148240,
+      "sha256": "b70bf88f25a9c695aa35d8d588ec4e5e271ca6f9ea6dd8f8884f221dd849cf22"
+    },
+    {
+      "name": "d040_full_sequence.mp4",
+      "bytes": 105404,
+      "sha256": "4823dfa66871d7678665208298efdddd30cb868d21758cb72306affb806cd22e"
+    },
+    {
+      "name": "d050_full_sequence.mp4",
+      "bytes": 116903,
+      "sha256": "ede62ac60516acbfe4c3a30492eb602e490c43af191d21701642884e9a3d873c"
+    },
+    {
+      "name": "d060_full_sequence.mp4",
+      "bytes": 126753,
+      "sha256": "de64b28937ce54a6b4a67e3605dc52a67a7fb534a13132de67dd5df1f920858e"
+    },
+    {
+      "name": "d070_full_sequence.mp4",
+      "bytes": 138945,
+      "sha256": "f5d18639ccff7b650e23457e0ee04018fc928282e0542f56fca8f6c94ea3f60c"
+    },
+    {
+      "name": "d080_full_sequence.mp4",
+      "bytes": 119281,
+      "sha256": "f6de6836b11246eb4d3ac2c14d1a0204b0b7400d123ce7a8e955de25d62aafde"
+    },
+    {
+      "name": "d090_full_sequence.mp4",
+      "bytes": 126730,
+      "sha256": "ac1ee7c1497c8524ae1cf2b94bf3935b9a674c4a604331b7a989e79cc72c48bb"
+    },
+    {
+      "name": "d100_full_sequence.mp4",
+      "bytes": 106832,
+      "sha256": "ee9381cbe100cfbfc1b9a9a1398c67c78834e2f048ac2c93ddce6a8a71480a7d"
+    },
+    {
+      "name": "adaptive_lift_results.zip",
+      "bytes": 21246942,
+      "sha256": "74fb2d64c5dd9d78ec6e8f2602d041564b5e9ab0d5d28d19f28ad484017f807b"
+    }
+  ]
+}
