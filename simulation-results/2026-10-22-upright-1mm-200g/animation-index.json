@@ -1,0 +1,4806 @@
+{
+  "schema_version": 1,
+  "benchmark": "upright D1mm H4mm 200g",
+  "rendering": "Exact original compiled MJB models and recorded qpos/ctrl/mocap state replay with mj_forward only; no mj_step, no state interpolation. Context and tracking closeup are views of the same recorded state.",
+  "start_policy": "Native pregrasp +100mm worldZ, no-hand-contact visible pause0.5s, vertical approach2s, then original close/squeeze, loaded hold1s, lift100mm5s, hold5s, release.",
+  "renderer": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/render_upright.py",
+  "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+  "dependencies": {
+    "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/fixtures/fixture_scene.py": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+    "/workspace/shadow-lift-sweep-200g/evaluate_lifts.py": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+    "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/run_upright_trials.py": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+    "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_profiles.py": "2a23f16d5d0d6e39005a6c36277c3dd0e1d99824193474fc6e13eff2394aa654"
+  },
+  "timestamp_matching_tolerance_s": 1e-05,
+  "sources": [
+    {
+      "trial_id": "plain__vertical_center",
+      "fixture": "plain",
+      "variant": "vertical_center",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_center.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_center/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_center/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_center/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_center/model.xml",
+      "source_sha256": {
+        "metrics": "ad8fbc6570370a71d431e8ebe4b56985b1f99487dc83e11eb0047a1035e5a246",
+        "trace": "a41307326d2554a013c98346fb0fa1a52b4475e2077bdcc60c4bd17b85784d8f",
+        "model_mjb": "4296b151243a07e06566583587d8bfa47fb06cefc3e62cc0eb05b8c8c49d3236",
+        "model_xml": "b3af936f1e5ffca363774d329973cfacd79e21da7450a5beeb479b57844f1841",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "e006c6238b70d26a353451e0e1fd64fb7895ec6df009d854b1907408604f1adf"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.6764518830170723,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_000.png",
+          "sha256": "f8e9c8d0fe89535a36919c1694e618cba0df84270b58020f6ee014a5dd9e4630",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_005.png",
+          "sha256": "690a04414a23902eecdbdba05540e5eaf0b9f9cbf6c35a7845e60d4e41cb7f50",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_025.png",
+          "sha256": "2f001f64d2a28155603094f09eb5e5389d36bda0007aed388c7facd212423177",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_042.png",
+          "sha256": "123f2e8b35259a5c3a6585fcae2f4ecdd45df856b43d40ca2636e5000ce0d75e",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_092.png",
+          "sha256": "b549b51469b06d66e638c7da26960f24619c04704e005d1f851c70ac41139b82",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_197.png",
+          "sha256": "d45aad0b5d27bfc66cd086665c92e0102093228178e7d8293cae0b9c3a247a94",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/per_frame.csv",
+        "sha256": "8298d6c1bf14512189d67d364018da591db8187830c882a310d90e2c30087bf1"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_center/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0033821557789573548,
+          0.05803682532123935,
+          0.11187215971304515
+        ],
+        "distance": 0.6513685271737787,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "a5cb00907b4d13aa9774338aff5e4ae242b7ade8fc921cd79a2bc14ffc6b17fe",
+        "source_trial_id": "plain__vertical_center",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "plain__vertical_close_slow",
+      "fixture": "plain",
+      "variant": "vertical_close_slow",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_close_slow.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slow/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slow/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slow/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slow/model.xml",
+      "source_sha256": {
+        "metrics": "0509a06c52f4b24d11a77167ac23be7bc34684597fff323ed2a8047de0973553",
+        "trace": "127c82bc4d6be87c94742fcba75151d0017b756de4b912ffa24a4735e2f2d522",
+        "model_mjb": "4296b151243a07e06566583587d8bfa47fb06cefc3e62cc0eb05b8c8c49d3236",
+        "model_xml": "b3af936f1e5ffca363774d329973cfacd79e21da7450a5beeb479b57844f1841",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "5eff81f3b282bb75837d5ba0df7d11a57ebec51b107044cb8d7f3bcd02ae1d31"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 519,
+      "final_recorded_time_s": 20.40000000000195,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.6752060372033548,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 205,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_000.png",
+          "sha256": "8c9ace84c96639bf7b247c47cc8104443bd90e6182f573b1e0e751f02cc2a997",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_005.png",
+          "sha256": "ddcd26bafa9990bcddb4ddfdf422a9f4296c4994c13e2654fee06dc187ba559d",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_025.png",
+          "sha256": "d5505ee061e43a3fcac6ac71f0a925211b1f40a5fb98e203d41d99f152f7d8f7",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_049.png",
+          "sha256": "afc7dc82e9952742223de8e00942d5778285ba5d352680c8c8cc84a0c12b117d",
+          "frame": 49,
+          "recorded_time_s": 4.899999999999971
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_099.png",
+          "sha256": "bae5c1b376e557b619cfd188d4dcc3c26a15fcced150f44e760eb46527b1263d",
+          "frame": 99,
+          "recorded_time_s": 9.899999999999952
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_204.png",
+          "sha256": "906e558c7feda806a76799cacaef1341b92a3da130d1afda36dd2cc742433b3d",
+          "frame": 204,
+          "recorded_time_s": 20.40000000000195
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/per_frame.csv",
+        "sha256": "42ec18a5953471aabf2a3b52e4784001b34bb88928bc4a99716d7f09b781df52"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slow/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003459842528124951,
+          0.057673488930969345,
+          0.11194220112068029
+        ],
+        "distance": 0.6527724479329671,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 205,
+        "fps": 10,
+        "duration_s": 20.5,
+        "sha256": "09c6e0dd3adcdb9645a1aced43c72fd50ac492fa109f773b847602e46e65523f",
+        "source_trial_id": "plain__vertical_close_slow",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "205",
+              "nb_read_frames": "205"
+            }
+          ],
+          "format": {
+            "duration": "20.500000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "plain__vertical_close_slower",
+      "fixture": "plain",
+      "variant": "vertical_close_slower",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_close_slower.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slower/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slower/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slower/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slower/model.xml",
+      "source_sha256": {
+        "metrics": "1f5ee6cf72af52bd639b6afe5fc98a454e963ceb2a91b32cfcd41935e0b44de5",
+        "trace": "d02d4c12e97bfd26bbcb4927bbb1dc7a1031381d72d528c0f36c4bd78e31238f",
+        "model_mjb": "4296b151243a07e06566583587d8bfa47fb06cefc3e62cc0eb05b8c8c49d3236",
+        "model_xml": "b3af936f1e5ffca363774d329973cfacd79e21da7450a5beeb479b57844f1841",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "3800acd594a25dddde12b91837648761a35d12d9b3fcb9920674360cd1aa7857"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 536,
+      "final_recorded_time_s": 21.100000000002805,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.6697770668097425,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 212,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_000.png",
+          "sha256": "f9aed588d86d6a6196d498a55be0a9919fcc67dc68ad51bfde2487b2d3c2dca0",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_005.png",
+          "sha256": "20825d2611b0195a049242e1e6334720817ace1b1973a7f94789c8d7ae907ec9",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_025.png",
+          "sha256": "3cdc11032ed0573d6380c6d2bdf2f34624a9e571dd850257f77afa37f6497437",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_056.png",
+          "sha256": "b8b39d6d20e0708f5fe54dd8dfdf52b829f25b3702d2ee50e529cec2412b66c1",
+          "frame": 56,
+          "recorded_time_s": 5.600000000000205
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_106.png",
+          "sha256": "074f944da861f4f18a5c6a2512d07d34dc007662d634dfea05a873d114ccd590",
+          "frame": 106,
+          "recorded_time_s": 10.599999999999564
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_211.png",
+          "sha256": "9e224e823fbc6b79c9f12a3dbc00ba63487a27c4666151316d44b31e7a8da8d6",
+          "frame": 211,
+          "recorded_time_s": 21.100000000002805
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/per_frame.csv",
+        "sha256": "69d14ca280de656c1a4a52ad0ffa7b4e57d77bb4b66fd8a6e488d618d20b8577"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_close_slower/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003472973812233285,
+          0.05783510796984738,
+          0.1119475260547598
+        ],
+        "distance": 0.6521531399499652,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 212,
+        "fps": 10,
+        "duration_s": 21.2,
+        "sha256": "bf75906322492e32615ec155e56137350803e55c8940dcbf62971615d44f908f",
+        "source_trial_id": "plain__vertical_close_slower",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "212",
+              "nb_read_frames": "212"
+            }
+          ],
+          "format": {
+            "duration": "21.200000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "plain__vertical_x_minus",
+      "fixture": "plain",
+      "variant": "vertical_x_minus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_x_minus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_minus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_minus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_minus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_minus/model.xml",
+      "source_sha256": {
+        "metrics": "395b8e0963c0375a57957a4dcba62a082b3b3617860e8c56d60997aff048629d",
+        "trace": "c3a2b9f6f48c8291644bcc15035034393ce2fc7e33c763de4005e5823ed389af",
+        "model_mjb": "12cf76bf801bffaf6f70f87b508bd4c3c1b1dc320cbf339f414b26aa64b966f0",
+        "model_xml": "b3af936f1e5ffca363774d329973cfacd79e21da7450a5beeb479b57844f1841",
+        "input": "5cf2eb21f18e052db458409bfb8e0c2715a50d07b069941468099b8fc448d12a",
+        "diagnostics": "a8deb5237579a4887e7550a0aa29a06f12d5d46b50d86da97d05f0bfef1326c9"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.6762656519882735,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_000.png",
+          "sha256": "eec23ad3840bf0f0b2e9c19be964d22de3f4af9ddfd71f31fe45b1d48c3f4734",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_005.png",
+          "sha256": "94eade5ae08cbe65a7299b7967d240b6602c8f8b1ed439decf4d018c6311317c",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_025.png",
+          "sha256": "9785c6fa48f38320fdd4527aac2309f78f30c0c3f0e12661e8193996f64817bf",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_042.png",
+          "sha256": "8ee43cdb7337fe551e4805d7fbb2953c9b859aa78f83b29a3c2c7634d229a540",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_092.png",
+          "sha256": "87f4a0356c262d3d91705922ae4764d64e3808d07c1d59186a7fd444bb15523f",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_197.png",
+          "sha256": "e4f3ae4d86aac8776b433ec291cdaaff0fe5558e6bfdf7aff463608fb297b8e4",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/per_frame.csv",
+        "sha256": "f5cd37418ebc4deacc6a4f64b4a5d7b0e91ef34e224558e82e130845af636d33"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_minus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003529446597352555,
+          0.058038724584429845,
+          0.11186659635921672
+        ],
+        "distance": 0.6513761242265407,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "5cf2eb21f18e052db458409bfb8e0c2715a50d07b069941468099b8fc448d12a",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "44e9d5ed29721e599b5b47dba0e4bce7d6707c6d4b963f7ea6400c8593a4aef7",
+        "source_trial_id": "plain__vertical_x_minus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "plain__vertical_x_plus",
+      "fixture": "plain",
+      "variant": "vertical_x_plus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_x_plus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_plus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_plus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_plus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_plus/model.xml",
+      "source_sha256": {
+        "metrics": "7b472831a1e29ad1e88ad2955403524bac43e1aabb1ea67116b893303fe9acba",
+        "trace": "6b520285af67f3910dfafe4301f8e5461dea94574c94a0a83ba0b167213c9a4c",
+        "model_mjb": "7c5bd8a4577543bc241d6bedba24cb34a7e1c6a1ae82ba7016fac9bb463b91c6",
+        "model_xml": "b3af936f1e5ffca363774d329973cfacd79e21da7450a5beeb479b57844f1841",
+        "input": "8a2e884d12e875d324bd9d35ee7f0d663038835c72e686e133bfbf8c6b106d36",
+        "diagnostics": "7549f8bb7b4f60d7f30d88e15836ce46296423820000b2238ee6a08c8b8e4405"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.676892041743899,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_000.png",
+          "sha256": "95232800d5835a52f384c3b2a6194da1c34085da71084dfaec96fc6fa23aa4ec",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_005.png",
+          "sha256": "7785a24c518f15de2ca64d1cd64729ca84f98ad8ad345c29db6d0c71791aec87",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_025.png",
+          "sha256": "65e7fadbee7eac2135779bc4a75877036b94ded2248d6b4898ef088f23337e6f",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_042.png",
+          "sha256": "ead51644e60b89cd8204cedfc6e0ea0d55a6d03268347c2b9359849017355757",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_092.png",
+          "sha256": "005bf30a717127b4289b79b04bf42d582aa15728b9649bf12c9b590a5577c5e9",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_197.png",
+          "sha256": "ed720ab57afbf6273d123a5ec2306f5a8be7d8659195f899933dd9a2e3f7347a",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/per_frame.csv",
+        "sha256": "388ad79edb7ed718354ee27c08957c401441eb22699be665dd403c410a6ffa92"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_x_plus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0032341784670703658,
+          0.05803475053979403,
+          0.11187546933604503
+        ],
+        "distance": 0.6513602280479974,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "8a2e884d12e875d324bd9d35ee7f0d663038835c72e686e133bfbf8c6b106d36",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "5ddb539fa7c23825b0a96d34b0f308b5b2ff28607530425d18fb26e00b7077d4",
+        "source_trial_id": "plain__vertical_x_plus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "plain__vertical_y_minus",
+      "fixture": "plain",
+      "variant": "vertical_y_minus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_y_minus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_minus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_minus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_minus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_minus/model.xml",
+      "source_sha256": {
+        "metrics": "93b7a3deec22eb1d2ead9e3c750ece18022b4d1e56f67674138a7ce36c78a961",
+        "trace": "13ec1878b0428c82b34c367d06e22a9eab7dbba4f00cb4ed42ab1a4f50c3c0d8",
+        "model_mjb": "c9a9dfdf0a9f9fba851e5f7d6a73025fa5eb4e757ed93eb74a936730238ecb49",
+        "model_xml": "b3af936f1e5ffca363774d329973cfacd79e21da7450a5beeb479b57844f1841",
+        "input": "c0dd929395c1c8f0ce825314e478783d04e4bbe4e595b2154187daefc25dc177",
+        "diagnostics": "bbf82482693b93af21e1856ac4b8bcdfef82136f03b1084460fa42baeb9a11cb"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.6691093124143714,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_000.png",
+          "sha256": "be3511e9a728d908bf82c8440c6c2911fe290dd0aa2d376e1a7e31e1194e4a0e",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_005.png",
+          "sha256": "dff4e8863f98022991e4844c2ff0ef050c51b370cf6d3cd94f4c25d9ceda9891",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_025.png",
+          "sha256": "e359e5a0f7a7aac30afbd6375688b64caccbdad84ee2fb60dbb02412a7b6530a",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_042.png",
+          "sha256": "401825b9d0b8424e04779eb276da95f153781e93b24f25af1439f882043046bf",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_092.png",
+          "sha256": "a4f3f1c16c5d2bcd51919fd7f6c556ce45b6bb82d815fa2fffbf0e1f8f6b3ff1",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_197.png",
+          "sha256": "4e703328fbd6f47c4e2dd0e0d862faef64d450f59858d0b1014f86717027c74a",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/per_frame.csv",
+        "sha256": "6450295bebac1f5cd7af2398a7a7edbda6f7082c0f0b2774dc13afbd4ff5841e"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_minus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003387943336449449,
+          0.05788320622906195,
+          0.11187253325693802
+        ],
+        "distance": 0.6513540609617006,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "c0dd929395c1c8f0ce825314e478783d04e4bbe4e595b2154187daefc25dc177",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "1bfb0dabbd93eefc0924768a2a97b68115ebb9f51eafacec05794935f1eeca76",
+        "source_trial_id": "plain__vertical_y_minus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "plain__vertical_y_plus",
+      "fixture": "plain",
+      "variant": "vertical_y_plus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_y_plus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_plus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_plus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_plus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_plus/model.xml",
+      "source_sha256": {
+        "metrics": "4578f6bd154360479247e61793b1947e07f27b361bd94aec7bf5a846da3e202c",
+        "trace": "898ff2be51b281d71cbe3db28e3d8039b65d93a69d1b52ccfa99e32c9a231ab2",
+        "model_mjb": "da2b4faffccb4cade276877395fb1eab0c5b8061b83e92c842c94a78b4b163f2",
+        "model_xml": "b3af936f1e5ffca363774d329973cfacd79e21da7450a5beeb479b57844f1841",
+        "input": "75c92492f2975908bf0abbd5f342dad068a63017efe8f2f5e264f26508d9bc81",
+        "diagnostics": "45bf60d59e6fa2e183fd0c7d7cce460380c983346386c2f74d5b3a852fd7d725"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.6701675304671222,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_000.png",
+          "sha256": "d4cebc4846cd0a2690fa7eeeca41161052d8236323fb5a1dbc728cfebe6184ba",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_005.png",
+          "sha256": "1989d753bec5f4be83b44d71f816703848e4e1fa7dc1545ab278084da7980d71",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_025.png",
+          "sha256": "0104e2a23c0c0756f6f80cce7167816d3f4e07a56431809459352fdf8210386c",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_042.png",
+          "sha256": "006111169d7d0a0ea19834c64a048911206e1366e05c656d81015c1782e433de",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_092.png",
+          "sha256": "e8d0fe9e6f48ca0428ed64f44e447c96564fe21b65a9da758752825422b69d81",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_197.png",
+          "sha256": "ec6173fbba902afa149092e86ba129902c7222129ee9bd4179a941a2a3e32605",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/per_frame.csv",
+        "sha256": "84f418024d46c48af0eb0ed1cb8b8705d9ac0bad0b5a8eac215174df983b7a37"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/plain/vertical_y_plus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0033818762079974446,
+          0.058189421607945234,
+          0.11187725899656911
+        ],
+        "distance": 0.6513789021639708,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75c92492f2975908bf0abbd5f342dad068a63017efe8f2f5e264f26508d9bc81",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "c8e8531adc690c949c0cd705a61ac68167715ff865e9edc8b54bd2dfdbc8f926",
+        "source_trial_id": "plain__vertical_y_plus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "shallow__vertical_center",
+      "fixture": "shallow",
+      "variant": "vertical_center",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_center.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_center/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_center/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_center/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_center/model.xml",
+      "source_sha256": {
+        "metrics": "840038ce201f14a3e3b4a576b7dd548bea254c171a8b46c78a246ea68cf57f7f",
+        "trace": "f38b56930c38dd7644b405ea1bd570131270e8382db92e8d2ed0769e39ad1cb3",
+        "model_mjb": "58cf2d4724f7e1e30d0cb4e954273ea25bb5db7b9e4bdfc5f4db0fc08addfb99",
+        "model_xml": "602bda845435a9390e351ba79a18b4f2255b217321be6b9d86317d4816b101e2",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "9b83544c8d3992f03e20edf034ed127e6dc3e5a41266528e85d88d416bf7482b"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": 0.018956002436533708,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_000.png",
+          "sha256": "a64f1ab11788527023465a696bcb4d1bafe16770bc0cc7a4630f78844a42f74a",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_005.png",
+          "sha256": "77acffa4d9e81f502f455b4ffed6a1cca6f4c5264ac0ec2babf8bd64ee1996d3",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_025.png",
+          "sha256": "d69c58f37cdd898b0e94403b4b32c16179b32eb152210e8b88ddeb54a3d69474",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_042.png",
+          "sha256": "7496221a0ce1adfe14b9183e3aa30d4a798f3f9e774059dbf0b1ff738813a400",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_092.png",
+          "sha256": "a217387a4815a5640567dd6aa85e1b12529620286c3a8d347aa5d1c7ca2cd95f",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_197.png",
+          "sha256": "7771f97ef99e08c0cc147a2079b9aefd18868fb9174a2027a3932ede0e1b6344",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/per_frame.csv",
+        "sha256": "a755a4a978dd3e645efb56db4dbea22da5d2b09c757662d3f2ef3a0683edc32d"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_center/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0033569713622434855,
+          0.05806700967769878,
+          0.11176160119086254
+        ],
+        "distance": 0.6514892645996164,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "14c4fdd1c378304e354b06e3f8fb2d7ff57a05e2934aa5ff6994fdfc3234de5b",
+        "source_trial_id": "shallow__vertical_center",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "shallow__vertical_close_slow",
+      "fixture": "shallow",
+      "variant": "vertical_close_slow",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_close_slow.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slow/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slow/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slow/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slow/model.xml",
+      "source_sha256": {
+        "metrics": "7fcd5c083acd1d08129f08395997deb9505757b8439bdb2a104e8ad835b62651",
+        "trace": "7a5d477e1e476507d95c4d6f23531a8cd371c8ea2bee854bd12cb18809ac01e2",
+        "model_mjb": "58cf2d4724f7e1e30d0cb4e954273ea25bb5db7b9e4bdfc5f4db0fc08addfb99",
+        "model_xml": "602bda845435a9390e351ba79a18b4f2255b217321be6b9d86317d4816b101e2",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "9de889209d750572717992e2a76ae7618e22d6affc3eafc3ef5e1b6883a48c01"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 519,
+      "final_recorded_time_s": 20.40000000000195,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -0.0018248837472035519,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 205,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_000.png",
+          "sha256": "b3e79b367e258141dc677fde190040d93fbb7b81c1bc4475d4d2fcecd04d09b2",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_005.png",
+          "sha256": "2dad805aa69b3457a562715afc7b81a1918de14284522b53207b42bedf43786b",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_025.png",
+          "sha256": "d2112886f045ff9913ed937ed9f61a27b2a5fe115d9c7358c7ccd12f08b83a62",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_049.png",
+          "sha256": "c3ee22bf77ab8429531f025a9c45b0df90e72d071fff01a91c21de7d8f691aaa",
+          "frame": 49,
+          "recorded_time_s": 4.899999999999971
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_099.png",
+          "sha256": "0ab9b05c6d34e6c98f2beaea6cbb758bac57a8df7883a59ffe54b8d6ad17e40e",
+          "frame": 99,
+          "recorded_time_s": 9.899999999999952
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_204.png",
+          "sha256": "5f1af4d8220ba45f05b0b1954805e18ba85cca1db9dc9c2059c1c1599e1039d4",
+          "frame": 204,
+          "recorded_time_s": 20.40000000000195
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/per_frame.csv",
+        "sha256": "ef89c1dd60c31872f2d5d11dd6682f85cac7a0777b4c3fe1ce8f9898025080a6"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slow/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003433612772656962,
+          0.057775212290917,
+          0.11177908483905377
+        ],
+        "distance": 0.6526518722220022,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 205,
+        "fps": 10,
+        "duration_s": 20.5,
+        "sha256": "b13a88589a7ad5cda6fc5b8cd1a78df81f02dc85afbbc3670e6a5c6b98af05e4",
+        "source_trial_id": "shallow__vertical_close_slow",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "205",
+              "nb_read_frames": "205"
+            }
+          ],
+          "format": {
+            "duration": "20.500000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "shallow__vertical_close_slower",
+      "fixture": "shallow",
+      "variant": "vertical_close_slower",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_close_slower.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slower/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slower/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slower/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slower/model.xml",
+      "source_sha256": {
+        "metrics": "bc62104e33b4cbce16d49c7a0d4790d4309b233ad8f79c6850b7495db2c31ec1",
+        "trace": "3922f36ca19d2c5fdbb3d3c1411c33f77da6caa08bbce73e4da0c26fe9be555f",
+        "model_mjb": "58cf2d4724f7e1e30d0cb4e954273ea25bb5db7b9e4bdfc5f4db0fc08addfb99",
+        "model_xml": "602bda845435a9390e351ba79a18b4f2255b217321be6b9d86317d4816b101e2",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "3bbc16c06e876c7edb46bc3567896ff13c177fc6365b283621aff4aadfca6d0c"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 536,
+      "final_recorded_time_s": 21.100000000002805,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -0.010789281204978338,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 212,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_000.png",
+          "sha256": "54fbfb62e41f6d2674b4f5ff2943d3ccf52c4922c0e475c07c56e858ff668233",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_005.png",
+          "sha256": "8cf624f053f5f5e91227f88facc87b9ca105cc88af1f7237749011927391d27d",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_025.png",
+          "sha256": "4d3ed696b9e351f04550b9c27272684ff5e57a5a50aeafe414548ba7386f9760",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_056.png",
+          "sha256": "9d630f30fbba8b85edffb8568c63a7aaf0e5f4f81bd579465646c7e2322054b8",
+          "frame": 56,
+          "recorded_time_s": 5.600000000000205
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_106.png",
+          "sha256": "a7cf4603f9854107ec9ce694e46fd5343ff8cd8265861e3c5dbfb1053f8cb8b8",
+          "frame": 106,
+          "recorded_time_s": 10.599999999999564
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_211.png",
+          "sha256": "9df9eda37b67f1a536aa2d2ea2fccda7fbcf28ca9f236c73e13a0f62f2cebdbb",
+          "frame": 211,
+          "recorded_time_s": 21.100000000002805
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/per_frame.csv",
+        "sha256": "c2c32ceede99943dcf38880bf3f11104aff3f0e1e48dc45abe4a3f8862527c36"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_close_slower/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0033520405496560435,
+          0.0579213258788922,
+          0.11179654855642329
+        ],
+        "distance": 0.6520649415763426,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 212,
+        "fps": 10,
+        "duration_s": 21.2,
+        "sha256": "1673d50947aadb0b10d56dc0254507682c200e5d54997067bcfeb0f85091babb",
+        "source_trial_id": "shallow__vertical_close_slower",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "212",
+              "nb_read_frames": "212"
+            }
+          ],
+          "format": {
+            "duration": "21.200000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "shallow__vertical_x_minus",
+      "fixture": "shallow",
+      "variant": "vertical_x_minus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_x_minus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_minus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_minus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_minus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_minus/model.xml",
+      "source_sha256": {
+        "metrics": "74535d31bf7fbacbfb613a2b1e268ef29ce2386d0beab1e1e3b5c4f68a9b4b4f",
+        "trace": "738d60eb4d21b8e55239503eaea17bc6e1ade4e4f12684b52d897c8b2b07d3d0",
+        "model_mjb": "5ab4a9f1a77b7893203a01cc8c2cf6aaf992ee8c3a405f934f479d87578ba769",
+        "model_xml": "602bda845435a9390e351ba79a18b4f2255b217321be6b9d86317d4816b101e2",
+        "input": "5cf2eb21f18e052db458409bfb8e0c2715a50d07b069941468099b8fc448d12a",
+        "diagnostics": "c612c12bd1c06421c33a6ca8ed8a1d41fd8a7325310cfe8ce8c3d902f80acded"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -0.03422057291936316,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_000.png",
+          "sha256": "a921da86d4628578be3f2a37cd192839526568c6d8e57756ee75c4bcf5bdcc87",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_005.png",
+          "sha256": "e9750ff64cee95b0558407d0bb711486af005cc8b61fe1eb2c1a02126971e641",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_025.png",
+          "sha256": "66da90fb13ade556d75b00461b27ecf8ba6a1fa07fdeae1af6d70460795dc328",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_042.png",
+          "sha256": "5aff1fa7e239212809ab3d177723f4b3f25e85ddd8c600f56e687ee1575f231b",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_092.png",
+          "sha256": "97a7a0fb6d3c8dcdccd485fbf589365570d29140c0a14041044afda64ed21c41",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_197.png",
+          "sha256": "cdd8bfba0c0e9d31689fe386cfe839e062e79257a9ae4fb80ebc20bce490ad3c",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/per_frame.csv",
+        "sha256": "84975403a84358466d708e8b3cccf94374637d84bee8018432f12ea277acec70"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_minus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0035226091821080677,
+          0.05806989350535507,
+          0.11176671140713848
+        ],
+        "distance": 0.6515007999102416,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "5cf2eb21f18e052db458409bfb8e0c2715a50d07b069941468099b8fc448d12a",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "c37df027b54276b296acdf0d33392a395db084f018b68434cec080627e6881e1",
+        "source_trial_id": "shallow__vertical_x_minus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "shallow__vertical_x_plus",
+      "fixture": "shallow",
+      "variant": "vertical_x_plus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_x_plus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_plus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_plus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_plus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_plus/model.xml",
+      "source_sha256": {
+        "metrics": "63ec0900ba654999bacf57291309110b0681548796be6541af00aa435c2d90b8",
+        "trace": "0d2756c2834dc49833aa5808c1d086a6386657745b575e94e6f17f9c30419734",
+        "model_mjb": "b89d9d33f8f738869d479d4fb90b707a81026a103839a0ce5d33c97d2d3e48a3",
+        "model_xml": "602bda845435a9390e351ba79a18b4f2255b217321be6b9d86317d4816b101e2",
+        "input": "8a2e884d12e875d324bd9d35ee7f0d663038835c72e686e133bfbf8c6b106d36",
+        "diagnostics": "90547ed219eb9e34755a2cff32eaef2c5f7a1c91b6a194a44df66a84a129b2af"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -0.035883894381873255,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_000.png",
+          "sha256": "8b4852b47288619b532f3258a6e95e1d9ab8d3f83c5d5d6d87580cdd5a08d9eb",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_005.png",
+          "sha256": "89d57ced0cfb40e7023c39983563f98ebcfcb2ae1b78281524897b938703a3fb",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_025.png",
+          "sha256": "7b18f8a6355ab1bd86aec8051b93e105ca3677acec363d609ac9d3b7c7924faa",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_042.png",
+          "sha256": "9227ecb7434a838e8769f69d0ab95a9c1713805e5f4325dccf938aeb1493e666",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_092.png",
+          "sha256": "64c108361d01e79a1a38e11afdcd60888e2e3bfe321d5878d5caa6eb2141812c",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_197.png",
+          "sha256": "cbbf24800b1b10075fa194f378a03e6dc608de814c64263e939892aa53da12d2",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/per_frame.csv",
+        "sha256": "ba36807f69cce9af4635cc8b2c4b7a07edc4158fb96faa8ad26048bdad109e7b"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_x_plus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003222977507949594,
+          0.058065135819011925,
+          0.11176765929374557
+        ],
+        "distance": 0.651481769164869,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "8a2e884d12e875d324bd9d35ee7f0d663038835c72e686e133bfbf8c6b106d36",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "e3d5a2569f03d6898b1c2c9f3657a93be391b5c9fc11e63210865c9d0d9bcd25",
+        "source_trial_id": "shallow__vertical_x_plus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "shallow__vertical_y_minus",
+      "fixture": "shallow",
+      "variant": "vertical_y_minus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_y_minus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_minus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_minus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_minus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_minus/model.xml",
+      "source_sha256": {
+        "metrics": "f96f6a624374cb80e9ace7bde3206700b7fadd85bcdb055b3a29d547b771aa18",
+        "trace": "43d9a277ee05e3a38cc0729575bd7a47b633b045d8c96b09d40aaf209ec56619",
+        "model_mjb": "f93a3f3e981d85f8d517d6b058173c8dd0a25888c699a99b0643a024dd058d05",
+        "model_xml": "602bda845435a9390e351ba79a18b4f2255b217321be6b9d86317d4816b101e2",
+        "input": "c0dd929395c1c8f0ce825314e478783d04e4bbe4e595b2154187daefc25dc177",
+        "diagnostics": "1169c65a2420a1dc036264cf29063a2acfba8cdd6f8126615095e245fa025a72"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -0.029567238317986314,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_000.png",
+          "sha256": "22aabd907e09fdc3f17c43d7af4d3d6f22510dd8fcca67eea5f24be23e7093a2",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_005.png",
+          "sha256": "4c7ebc61bbf363f148e7dbfeff05629a3997d0251d147bdea8527ae610834f87",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_025.png",
+          "sha256": "8cc778d76fe0dff7e03deba671a10fe6e1e271d12e23e8f8defbfbc446917833",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_042.png",
+          "sha256": "590abd868215ae3ca01fa589a975ef2eba9996e04dc996219567fcbc42fb4e96",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_092.png",
+          "sha256": "4a948a057b012ccff695496f0c2dca9b5d153566b614ebf5a0cf725ba942195d",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_197.png",
+          "sha256": "3e9b6301e7ef4dc8088cc748e7c757cde65b7f63aebabf3f4602151d17a324b4",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/per_frame.csv",
+        "sha256": "aa3267b8701b26ade18aa87e473900a43955a05dbd34d908e340b64a083c6095"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_minus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003373382429121545,
+          0.05791903292153363,
+          0.11176496712812026
+        ],
+        "distance": 0.6514973677315873,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "c0dd929395c1c8f0ce825314e478783d04e4bbe4e595b2154187daefc25dc177",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "fb13ffaf6d9509f69291265cf37d240403f72c349dab7ad886ed76e63fa18ce7",
+        "source_trial_id": "shallow__vertical_y_minus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "shallow__vertical_y_plus",
+      "fixture": "shallow",
+      "variant": "vertical_y_plus",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_y_plus.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_plus/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_plus/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_plus/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_plus/model.xml",
+      "source_sha256": {
+        "metrics": "beb0271b7a424364494838208f505c25a4f2c7edb63ecd012225ec12bae1d1d6",
+        "trace": "33f1acfad8f5389a9392108f16bb8d7ae77cd01bcaf1bd5af327e0855ed42583",
+        "model_mjb": "5bbd5e2299f3d7c74235e90a5af52a558c00e62193e4a42060b4ef8a70d6ced2",
+        "model_xml": "602bda845435a9390e351ba79a18b4f2255b217321be6b9d86317d4816b101e2",
+        "input": "75c92492f2975908bf0abbd5f342dad068a63017efe8f2f5e264f26508d9bc81",
+        "diagnostics": "ed603d59b5278732ade16877ba7550e3c81a3da61036f369a281394516f56c30"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -0.035930778995971455,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_000.png",
+          "sha256": "6a1fa8adb5dc9fc1cfb41f7b3bfedca0072d5ee8afc8221eb05cddd9c3c09d25",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_005.png",
+          "sha256": "6116c03b630fcc4ecec353f77a20260dba4a01e52e610381897b247d76440ef0",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_025.png",
+          "sha256": "6f08e4c1cf1276fc0d83aad7ddbbb309c64dcdea76970d023754d03bddfe6205",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_042.png",
+          "sha256": "4a8af1e87f43d63b09f77e749b53a0b3aaab73aee2d53e9cead2fd3fd3c42814",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_092.png",
+          "sha256": "4f2f3fbc3ab19d989df622740a6cfbeaf747357849c3d9a14d0cc170efa5a2b4",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_197.png",
+          "sha256": "c6993fa5b3fb6c751e8a52780a9b461e00a31cfbb8e732b825ba5e46af36d399",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/per_frame.csv",
+        "sha256": "00d8173f4dd0819f2aec754bbcfd27cbd98e2f7768c93fd0e441606b58b49c84"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/trials/shallow/vertical_y_plus/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003376232450541493,
+          0.05821757707646335,
+          0.11176986226566948
+        ],
+        "distance": 0.6514915240380432,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75c92492f2975908bf0abbd5f342dad068a63017efe8f2f5e264f26508d9bc81",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "baseline",
+      "controller_intervention": null,
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "11abaec1c2de83c15887d972d2a57fe012419994293520f87e06e611e645a461",
+        "source_trial_id": "shallow__vertical_y_plus",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true
+      }
+    },
+    {
+      "trial_id": "root_5ms__plain__vertical_center",
+      "fixture": "plain",
+      "variant": "vertical_center",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_center.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/plain/vertical_center/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/plain/vertical_center/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/plain/vertical_center/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/plain/vertical_center/model.xml",
+      "source_sha256": {
+        "metrics": "699d071bdc2e7be91cffd80613fef06455977c82de0824b0ceb9e1ecd7d6a1c8",
+        "trace": "b2915763ab7152b563f2174a0dd49a0243c1616074a2eb65086b42f66bc61e69",
+        "model_mjb": "8f63e84557c15b396d55c8a6d814e19f4e6610bd8d04d6465e503ec1d7358681",
+        "model_xml": "a0831cd06eb8abb0fe8c66a1e39c692aaeb8fa5096e24f005c7b36babb165276",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "bf4fb14ad31a1343116f4fc758f086d5d75ffe02118de594b87e47a352997b7d"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.6700251197904419,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_000.png",
+          "sha256": "ab0be48ebc7b71c4a3dee19dc70c4de9cbc72448134606834850ee05bda6912c",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_005.png",
+          "sha256": "bd4c660e7581609e5fc300c266e3b4b5fa9f3b227f79e784889b2592042ca55c",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_025.png",
+          "sha256": "753a6e6914567f96cefe0f51475dd1bbbe53f0bef3b0a1d4071cd1e07936561a",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_042.png",
+          "sha256": "fba6a681a94c4981fbf4344d127ded59d17882f0a791a31934fbf484f5945afe",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_092.png",
+          "sha256": "eceb882aac6d6ad9397b5661d7f2ab040949cde7172abb0b4749960c6a77895f",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_197.png",
+          "sha256": "1f4b9bc00a015a05bc88c61fe7dba8e5fe2bfaea48d7ad34d05717cd1cde124a",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/per_frame.csv",
+        "sha256": "cdf0156cf239e944e73edd1e905d092f6582b4219803e65b880e8a5ea094dd38"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/plain/vertical_center/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0034988890187361496,
+          0.057617872115857775,
+          0.11187620712215951
+        ],
+        "distance": 0.6496927143522524,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "root_5ms",
+      "controller_intervention": {
+        "profile": "root_5ms",
+        "equality_id": 0,
+        "original_eq_solref": [
+          0.02,
+          1.0
+        ],
+        "original_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "original_position_gains": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "original_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "applied_eq_solref": [
+          0.005,
+          1.0
+        ],
+        "applied_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "applied_position_gains": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "applied_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "position_gain_multiplier": 1.0,
+        "object_or_fixture_parameters_changed": false,
+        "rod_force_or_pose_control_added": false,
+        "adapter_source": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_profiles.py",
+        "adapter_sha256": "2a23f16d5d0d6e39005a6c36277c3dd0e1d99824193474fc6e13eff2394aa654",
+        "meaning": "Independent controller sensitivity; does not replace baseline or imply successful grasp"
+      },
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "b904827cbc0339236ee660898af777ab3223eb1da5d51cbe704284cbf95699cb",
+        "source_trial_id": "root_5ms__plain__vertical_center",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true,
+        "controller_profile_label": "根5ms",
+        "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/full_sequence_original_labels.mp4",
+        "original_caption_video_sha256": "f7ff81e84c0eabd7af380a34c1e9218fa0fc84da3bbd9627a250d6e41fc6fd33",
+        "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+      },
+      "controller_caption": {
+        "label": "vertical_center · 控制：根5ms · 未通过",
+        "processor": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/label_controller_profiles.py",
+        "processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1",
+        "original_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/full_sequence_original_labels.mp4",
+        "original_video_sha256": "f7ff81e84c0eabd7af380a34c1e9218fa0fc84da3bbd9627a250d6e41fc6fd33",
+        "modified_region_pixels": [
+          0,
+          26,
+          640,
+          49
+        ],
+        "physical_states_and_timestamps_changed": false
+      }
+    },
+    {
+      "trial_id": "root_5ms__shallow__vertical_center",
+      "fixture": "shallow",
+      "variant": "vertical_center",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_center.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/shallow/vertical_center/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/shallow/vertical_center/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/shallow/vertical_center/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/shallow/vertical_center/model.xml",
+      "source_sha256": {
+        "metrics": "2ea734df49ce450de0e3852eb461f5589281af7ddf53f7d69f695690c409c115",
+        "trace": "3809479978ed1b4cdbb11986f7b7887bd0910add5e10d3708ae43cc0444276b8",
+        "model_mjb": "c5ab5fd92e726da711854ceebf10c3794415ef1d89034fa96674714c14741d4c",
+        "model_xml": "919a4a8335f42fc81a7bfe7a4351b9ffd448ef5eee30babe9b9d18a414cf2977",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "e1a3d924493e01ced8d7275c52928833c676001d1e31a3658e4da276437deb88"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": 0.03183309908344088,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_000.png",
+          "sha256": "0b9654676cd47c2d5120680f6234776e9a4e0ee904a47216f5e79f14589a27b4",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_005.png",
+          "sha256": "4083f3a5c2aae9c6ed5ca2264acb2dbe3d9cb2b6d4241b85132aeca9e969f927",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_025.png",
+          "sha256": "68eceaa895caac521bb4346acd1e175c93c13d099a3e15a6d54f72f2016c4c05",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_042.png",
+          "sha256": "25dad0d6a7f343986d30b06eac2bd0203cfdeb789039189b872480442cf08c08",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_092.png",
+          "sha256": "ed92d6644652d58e07d077c4180b31bc2462bddc648c097d6e1cc17db2fd11f3",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_197.png",
+          "sha256": "e3dedcdf7233fdfc8ae527d8daa810e4b55326d418c545908c3fe7372406bd32",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/per_frame.csv",
+        "sha256": "58705f58349d6afd354b08203312704c10423922661a425440e727b2745b7e4c"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/root_5ms/shallow/vertical_center/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.003496086926434709,
+          0.05764648391280857,
+          0.1118140509736961
+        ],
+        "distance": 0.6498071615400556,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "root_5ms",
+      "controller_intervention": {
+        "profile": "root_5ms",
+        "equality_id": 0,
+        "original_eq_solref": [
+          0.02,
+          1.0
+        ],
+        "original_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "original_position_gains": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "original_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "applied_eq_solref": [
+          0.005,
+          1.0
+        ],
+        "applied_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "applied_position_gains": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "applied_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "position_gain_multiplier": 1.0,
+        "object_or_fixture_parameters_changed": false,
+        "rod_force_or_pose_control_added": false,
+        "adapter_source": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_profiles.py",
+        "adapter_sha256": "2a23f16d5d0d6e39005a6c36277c3dd0e1d99824193474fc6e13eff2394aa654",
+        "meaning": "Independent controller sensitivity; does not replace baseline or imply successful grasp"
+      },
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "e6881520a9cbcaa2578deade0a64b7e1ab50d04f5129be92da97f3bf0dc1f3f3",
+        "source_trial_id": "root_5ms__shallow__vertical_center",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true,
+        "controller_profile_label": "根5ms",
+        "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/full_sequence_original_labels.mp4",
+        "original_caption_video_sha256": "bbce6b4b32cc63c1fec6707866bc5f46008861c165d6108f9204b04a514ea796",
+        "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+      },
+      "controller_caption": {
+        "label": "vertical_center · 控制：根5ms · 未通过",
+        "processor": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/label_controller_profiles.py",
+        "processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1",
+        "original_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/full_sequence_original_labels.mp4",
+        "original_video_sha256": "bbce6b4b32cc63c1fec6707866bc5f46008861c165d6108f9204b04a514ea796",
+        "modified_region_pixels": [
+          0,
+          26,
+          640,
+          49
+        ],
+        "physical_states_and_timestamps_changed": false
+      }
+    },
+    {
+      "trial_id": "root_5ms_kp10__plain__vertical_center",
+      "fixture": "plain",
+      "variant": "vertical_center",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_center.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/plain/vertical_center/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/plain/vertical_center/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/plain/vertical_center/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/plain/vertical_center/model.xml",
+      "source_sha256": {
+        "metrics": "93871a91ef18885520298025aa1ab9189d13ad21bb11133d582b0aa8ff15baca",
+        "trace": "c5b66440776b04ee21bb47ecda1011ee2d3e91cd729efc6bf2f590b0dd693aaa",
+        "model_mjb": "b81491498be1359961d0504bafdd3a529e02689878a5e4194d25b57ebbd35846",
+        "model_xml": "a3c5ff2804c9930266a3f20b84f42c8d1bdd9c2497f42efd47e305b3e8351242",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "3c6c4ddd33af0022eab2307511961232acd7ea942b2ef0cb212ca7dc33baef36"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": null,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": -1.670162636303282,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_000.png",
+          "sha256": "f37480869136154da0883ec3c0ad9194c7b19169eadfdc34f53cabcc2b75bb2f",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_005.png",
+          "sha256": "51c563784872491c9b9538c4a8216779eea021553367a33b4412cce916e6dca2",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_025.png",
+          "sha256": "00059c88f67d2b15f23c212439424cf7402efbd9bd8cbbae0c358fb93f975cea",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_042.png",
+          "sha256": "3f25efca46af2ca2aeb30c51c56c216ed6e27c9d1e2d0579d5a2b7f251c590b9",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_092.png",
+          "sha256": "d71e658195979bf5431afe2c44f405af37c7633dc7f603761b569e99a5e403af",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_197.png",
+          "sha256": "a635ac7cadd287db04f191b366d184b223f808ef096036b2b72b9f4df47c96ad",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/per_frame.csv",
+        "sha256": "9e3820f33a09900233c6720d13da903b9039296819e412c3a238f1e77b8c63df"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/plain/vertical_center/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0034959679228932297,
+          0.05762844723749127,
+          0.11183831059709248
+        ],
+        "distance": 0.6497350148387864,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "root_5ms_kp10",
+      "controller_intervention": {
+        "profile": "root_5ms_kp10",
+        "equality_id": 0,
+        "original_eq_solref": [
+          0.02,
+          1.0
+        ],
+        "original_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "original_position_gains": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "original_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "applied_eq_solref": [
+          0.005,
+          1.0
+        ],
+        "applied_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "applied_position_gains": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "applied_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "position_gain_multiplier": 10.0,
+        "object_or_fixture_parameters_changed": false,
+        "rod_force_or_pose_control_added": false,
+        "adapter_source": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_profiles.py",
+        "adapter_sha256": "2a23f16d5d0d6e39005a6c36277c3dd0e1d99824193474fc6e13eff2394aa654",
+        "meaning": "Independent controller sensitivity; does not replace baseline or imply successful grasp"
+      },
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "bef2961605fe904c1cb60f2b7da6a122c497e09a8a7ed49dbcd4f29aee9b47eb",
+        "source_trial_id": "root_5ms_kp10__plain__vertical_center",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true,
+        "controller_profile_label": "根5ms+增益×10",
+        "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/full_sequence_original_labels.mp4",
+        "original_caption_video_sha256": "6280827d073c74f2a9d8a15e87982f0591e8f76760c0b68b7481730998796855",
+        "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+      },
+      "controller_caption": {
+        "label": "vertical_center · 控制：根5ms+增益×10 · 未通过",
+        "processor": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/label_controller_profiles.py",
+        "processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1",
+        "original_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/full_sequence_original_labels.mp4",
+        "original_video_sha256": "6280827d073c74f2a9d8a15e87982f0591e8f76760c0b68b7481730998796855",
+        "modified_region_pixels": [
+          0,
+          26,
+          640,
+          49
+        ],
+        "physical_states_and_timestamps_changed": false
+      }
+    },
+    {
+      "trial_id": "root_5ms_kp10__shallow__vertical_center",
+      "fixture": "shallow",
+      "variant": "vertical_center",
+      "input": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/grasp_search/candidates/vertical_center.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/shallow/vertical_center/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/shallow/vertical_center/trace.npz",
+      "model_mjb": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/shallow/vertical_center/model.mjb",
+      "model_xml": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/shallow/vertical_center/model.xml",
+      "source_sha256": {
+        "metrics": "90275f4de3813e2a3dfb064e60cfd960c10f663174d416219417d82a18f174ac",
+        "trace": "86efed3da3b09c03d3c2cc98cb4eacdc27297fdd11c9d781da884c18cefd89e3",
+        "model_mjb": "075699af3d2e9d2f060fb4966591da0af60872c7b3a1ee666107b3b533cae0ca",
+        "model_xml": "4a9de962e4e476a998f4505a2334a6177432ffc062941960049cc41ee4c33f5c",
+        "input": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "diagnostics": "42bc25a1b280e1333c48c9fb6cdb22d4fc180e2df412fd9e6e2abedca17e0c50"
+      },
+      "mass_kg": 0.19999999539770816,
+      "physics_timestep_s": 0.001,
+      "fixture_priority": 1,
+      "initial_hover_no_hand_contact": true,
+      "final_trace_index": 501,
+      "final_recorded_time_s": 19.700000000001094,
+      "full_sequence_passed": false,
+      "lift_hold_passed": false,
+      "measured_object_lift_mm": 0.032284127689073766,
+      "phase_names": [
+        "start_pause",
+        "approach",
+        "approach_close_squeeze",
+        "loaded_hold",
+        "lift",
+        "postlift_hold",
+        "release_open",
+        "release_retreat",
+        "release_settle"
+      ],
+      "video_frames": 198,
+      "previews": [
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_000.png",
+          "sha256": "6b4d81db85486fb9ffeb5a47b664bb725bac4c89b42ffa890e99708c481dda53",
+          "frame": 0,
+          "recorded_time_s": 0.0
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_005.png",
+          "sha256": "57368d646a4bc0352cbb62711b847dd3a1a531b0fc66ba5a5e81b00c109b7365",
+          "frame": 5,
+          "recorded_time_s": 0.5000000000000003
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_025.png",
+          "sha256": "25e267cd85c71ae333eabb2a2f49f76ccd3834c687d1bfe59a66b3c47a96cbac",
+          "frame": 25,
+          "recorded_time_s": 2.4999999999998357
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_042.png",
+          "sha256": "c2bc476c33bc474e4b994e5776a2e87a5728ab47723f90b857df1b2174d3409e",
+          "frame": 42,
+          "recorded_time_s": 4.199999999999737
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_092.png",
+          "sha256": "1d200e2aa6a8c0d8549a7745b6c3598e8bec7ccc17f5ebed67cc554f7a3d17c9",
+          "frame": 92,
+          "recorded_time_s": 9.20000000000034
+        },
+        {
+          "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_197.png",
+          "sha256": "0ae9bc5b3bb500738b958b905431af70ff72ef3991f828c81b3f20e482560414",
+          "frame": 197,
+          "recorded_time_s": 19.700000000001094
+        }
+      ],
+      "numerical_output": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/per_frame.csv",
+        "sha256": "2ae95707b1132e975ec0e2a6cf18cb729cf7b433960a9c3e9b584000927c7168"
+      },
+      "diagnostics": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_ablation/kp10/root_5ms_kp10/shallow/vertical_center/diagnostics.npz",
+      "original_trace_hz": 25.0,
+      "camera": {
+        "lookat": [
+          -0.0034959123330466496,
+          0.05764728163857712,
+          0.11177563063412996
+        ],
+        "distance": 0.6498103524431298,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      },
+      "upright_provenance": {
+        "runner_sha256": "c6ed670891193eac9d2cbad84088531cb586df2552a3d19b6e47eeb60293905f",
+        "fixture_source_sha256": "8e5468ee643dfac5997e856691db0c2456a30c8b3ffa05c2bbf833a15ff35dc4",
+        "frozen_evaluator_sha256": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+        "input_sha256": "75fb0449074b1a85ad8fefc02bb0722a886eccddb62e3a8470d7a0484348350e",
+        "hand_xml_sha256": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07"
+      },
+      "controller_profile": "root_5ms_kp10",
+      "controller_intervention": {
+        "profile": "root_5ms_kp10",
+        "equality_id": 0,
+        "original_eq_solref": [
+          0.02,
+          1.0
+        ],
+        "original_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "original_position_gains": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "original_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "applied_eq_solref": [
+          0.005,
+          1.0
+        ],
+        "applied_eq_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "applied_position_gains": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "applied_actuator_force_ranges": [
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ],
+          [
+            -3.0,
+            3.0
+          ]
+        ],
+        "position_gain_multiplier": 10.0,
+        "object_or_fixture_parameters_changed": false,
+        "rod_force_or_pose_control_added": false,
+        "adapter_source": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/controller_profiles.py",
+        "adapter_sha256": "2a23f16d5d0d6e39005a6c36277c3dd0e1d99824193474fc6e13eff2394aa654",
+        "meaning": "Independent controller sensitivity; does not replace baseline or imply successful grasp"
+      },
+      "renderer_sha256": "a48bc09e51d16ad83e3d3649f50271366503f3c237a25a419381b9b228906822",
+      "upright_protocol_checks": {
+        "start_root_vertical_offset_100mm": true,
+        "initial_positive_true_hand_object_gap": true,
+        "pause_has_no_hand_object_contact": true,
+        "completed_500ms_pause": true,
+        "one_initial_reset_only": true,
+        "object_never_externally_forced": true,
+        "no_fixture_or_plane_support_throughout_five_second_hold": false,
+        "closure_duration_preserved": true
+      },
+      "support_clearance_policy": "No fixture/plane contacts and lowest oriented cylinder point above0.80mm(shallow) or0.05mm(plain); bottom uses radius0.5mm/halfheight2mm and original observed pose.",
+      "video": {
+        "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/full_sequence.mp4",
+        "width": 640,
+        "height": 480,
+        "frames": 198,
+        "fps": 10,
+        "duration_s": 19.8,
+        "sha256": "728eb456d53cf748f18de6e18932810b05163b8b95dcb2f45614b4c942e1c8c6",
+        "source_trial_id": "root_5ms_kp10__shallow__vertical_center",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "10/1",
+              "avg_frame_rate": "10/1",
+              "nb_frames": "198",
+              "nb_read_frames": "198"
+            }
+          ],
+          "format": {
+            "duration": "19.800000"
+          }
+        },
+        "full_decode_passed": true,
+        "controller_profile_label": "根5ms+增益×10",
+        "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/full_sequence_original_labels.mp4",
+        "original_caption_video_sha256": "faaf72f7b31b90d21e66b6923fa3bd9e158b812993a2451bb06e86ab57ef9bac",
+        "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+      },
+      "controller_caption": {
+        "label": "vertical_center · 控制：根5ms+增益×10 · 未通过",
+        "processor": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/label_controller_profiles.py",
+        "processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1",
+        "original_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/full_sequence_original_labels.mp4",
+        "original_video_sha256": "faaf72f7b31b90d21e66b6923fa3bd9e158b812993a2451bb06e86ab57ef9bac",
+        "modified_region_pixels": [
+          0,
+          26,
+          640,
+          49
+        ],
+        "physical_states_and_timestamps_changed": false
+      }
+    }
+  ],
+  "videos": [
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "a5cb00907b4d13aa9774338aff5e4ae242b7ade8fc921cd79a2bc14ffc6b17fe",
+      "source_trial_id": "plain__vertical_center",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 205,
+      "fps": 10,
+      "duration_s": 20.5,
+      "sha256": "09c6e0dd3adcdb9645a1aced43c72fd50ac492fa109f773b847602e46e65523f",
+      "source_trial_id": "plain__vertical_close_slow",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "205",
+            "nb_read_frames": "205"
+          }
+        ],
+        "format": {
+          "duration": "20.500000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 212,
+      "fps": 10,
+      "duration_s": 21.2,
+      "sha256": "bf75906322492e32615ec155e56137350803e55c8940dcbf62971615d44f908f",
+      "source_trial_id": "plain__vertical_close_slower",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "212",
+            "nb_read_frames": "212"
+          }
+        ],
+        "format": {
+          "duration": "21.200000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "44e9d5ed29721e599b5b47dba0e4bce7d6707c6d4b963f7ea6400c8593a4aef7",
+      "source_trial_id": "plain__vertical_x_minus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "5ddb539fa7c23825b0a96d34b0f308b5b2ff28607530425d18fb26e00b7077d4",
+      "source_trial_id": "plain__vertical_x_plus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "1bfb0dabbd93eefc0924768a2a97b68115ebb9f51eafacec05794935f1eeca76",
+      "source_trial_id": "plain__vertical_y_minus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "c8e8531adc690c949c0cd705a61ac68167715ff865e9edc8b54bd2dfdbc8f926",
+      "source_trial_id": "plain__vertical_y_plus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "14c4fdd1c378304e354b06e3f8fb2d7ff57a05e2934aa5ff6994fdfc3234de5b",
+      "source_trial_id": "shallow__vertical_center",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 205,
+      "fps": 10,
+      "duration_s": 20.5,
+      "sha256": "b13a88589a7ad5cda6fc5b8cd1a78df81f02dc85afbbc3670e6a5c6b98af05e4",
+      "source_trial_id": "shallow__vertical_close_slow",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "205",
+            "nb_read_frames": "205"
+          }
+        ],
+        "format": {
+          "duration": "20.500000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 212,
+      "fps": 10,
+      "duration_s": 21.2,
+      "sha256": "1673d50947aadb0b10d56dc0254507682c200e5d54997067bcfeb0f85091babb",
+      "source_trial_id": "shallow__vertical_close_slower",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "212",
+            "nb_read_frames": "212"
+          }
+        ],
+        "format": {
+          "duration": "21.200000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "c37df027b54276b296acdf0d33392a395db084f018b68434cec080627e6881e1",
+      "source_trial_id": "shallow__vertical_x_minus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "e3d5a2569f03d6898b1c2c9f3657a93be391b5c9fc11e63210865c9d0d9bcd25",
+      "source_trial_id": "shallow__vertical_x_plus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "fb13ffaf6d9509f69291265cf37d240403f72c349dab7ad886ed76e63fa18ce7",
+      "source_trial_id": "shallow__vertical_y_minus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "11abaec1c2de83c15887d972d2a57fe012419994293520f87e06e611e645a461",
+      "source_trial_id": "shallow__vertical_y_plus",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "b904827cbc0339236ee660898af777ab3223eb1da5d51cbe704284cbf95699cb",
+      "source_trial_id": "root_5ms__plain__vertical_center",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true,
+      "controller_profile_label": "根5ms",
+      "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/full_sequence_original_labels.mp4",
+      "original_caption_video_sha256": "f7ff81e84c0eabd7af380a34c1e9218fa0fc84da3bbd9627a250d6e41fc6fd33",
+      "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "e6881520a9cbcaa2578deade0a64b7e1ab50d04f5129be92da97f3bf0dc1f3f3",
+      "source_trial_id": "root_5ms__shallow__vertical_center",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true,
+      "controller_profile_label": "根5ms",
+      "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/full_sequence_original_labels.mp4",
+      "original_caption_video_sha256": "bbce6b4b32cc63c1fec6707866bc5f46008861c165d6108f9204b04a514ea796",
+      "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "bef2961605fe904c1cb60f2b7da6a122c497e09a8a7ed49dbcd4f29aee9b47eb",
+      "source_trial_id": "root_5ms_kp10__plain__vertical_center",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true,
+      "controller_profile_label": "根5ms+增益×10",
+      "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/full_sequence_original_labels.mp4",
+      "original_caption_video_sha256": "6280827d073c74f2a9d8a15e87982f0591e8f76760c0b68b7481730998796855",
+      "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/full_sequence.mp4",
+      "width": 640,
+      "height": 480,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "728eb456d53cf748f18de6e18932810b05163b8b95dcb2f45614b4c942e1c8c6",
+      "source_trial_id": "root_5ms_kp10__shallow__vertical_center",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 640,
+            "height": 480,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true,
+      "controller_profile_label": "根5ms+增益×10",
+      "original_caption_video": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/full_sequence_original_labels.mp4",
+      "original_caption_video_sha256": "faaf72f7b31b90d21e66b6923fa3bd9e158b812993a2451bb06e86ab57ef9bac",
+      "caption_processor_sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain_vs_shallow_center.mp4",
+      "width": 1280,
+      "height": 720,
+      "frames": 198,
+      "fps": 10,
+      "duration_s": 19.8,
+      "sha256": "f4bb0d4c4ab58b65eefdbc00f763506b2c2d0fb45745b488fa007d1b4d36af66",
+      "source_trial_ids": [
+        "plain__vertical_center",
+        "shallow__vertical_center"
+      ],
+      "rendering": "Side by side original aspect. If different sequence durations, completed trial final recorded state is held until longest video ends.",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "198",
+            "nb_read_frames": "198"
+          }
+        ],
+        "format": {
+          "duration": "19.800000"
+        }
+      },
+      "full_decode_passed": true
+    }
+  ],
+  "previews": [
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_000.png",
+      "sha256": "f8e9c8d0fe89535a36919c1694e618cba0df84270b58020f6ee014a5dd9e4630",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_005.png",
+      "sha256": "690a04414a23902eecdbdba05540e5eaf0b9f9cbf6c35a7845e60d4e41cb7f50",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_025.png",
+      "sha256": "2f001f64d2a28155603094f09eb5e5389d36bda0007aed388c7facd212423177",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_042.png",
+      "sha256": "123f2e8b35259a5c3a6585fcae2f4ecdd45df856b43d40ca2636e5000ce0d75e",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_092.png",
+      "sha256": "b549b51469b06d66e638c7da26960f24619c04704e005d1f851c70ac41139b82",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/preview_197.png",
+      "sha256": "d45aad0b5d27bfc66cd086665c92e0102093228178e7d8293cae0b9c3a247a94",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_000.png",
+      "sha256": "8c9ace84c96639bf7b247c47cc8104443bd90e6182f573b1e0e751f02cc2a997",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_005.png",
+      "sha256": "ddcd26bafa9990bcddb4ddfdf422a9f4296c4994c13e2654fee06dc187ba559d",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_025.png",
+      "sha256": "d5505ee061e43a3fcac6ac71f0a925211b1f40a5fb98e203d41d99f152f7d8f7",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_049.png",
+      "sha256": "afc7dc82e9952742223de8e00942d5778285ba5d352680c8c8cc84a0c12b117d",
+      "frame": 49,
+      "recorded_time_s": 4.899999999999971
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_099.png",
+      "sha256": "bae5c1b376e557b619cfd188d4dcc3c26a15fcced150f44e760eb46527b1263d",
+      "frame": 99,
+      "recorded_time_s": 9.899999999999952
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/preview_204.png",
+      "sha256": "906e558c7feda806a76799cacaef1341b92a3da130d1afda36dd2cc742433b3d",
+      "frame": 204,
+      "recorded_time_s": 20.40000000000195
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_000.png",
+      "sha256": "f9aed588d86d6a6196d498a55be0a9919fcc67dc68ad51bfde2487b2d3c2dca0",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_005.png",
+      "sha256": "20825d2611b0195a049242e1e6334720817ace1b1973a7f94789c8d7ae907ec9",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_025.png",
+      "sha256": "3cdc11032ed0573d6380c6d2bdf2f34624a9e571dd850257f77afa37f6497437",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_056.png",
+      "sha256": "b8b39d6d20e0708f5fe54dd8dfdf52b829f25b3702d2ee50e529cec2412b66c1",
+      "frame": 56,
+      "recorded_time_s": 5.600000000000205
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_106.png",
+      "sha256": "074f944da861f4f18a5c6a2512d07d34dc007662d634dfea05a873d114ccd590",
+      "frame": 106,
+      "recorded_time_s": 10.599999999999564
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/preview_211.png",
+      "sha256": "9e224e823fbc6b79c9f12a3dbc00ba63487a27c4666151316d44b31e7a8da8d6",
+      "frame": 211,
+      "recorded_time_s": 21.100000000002805
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_000.png",
+      "sha256": "eec23ad3840bf0f0b2e9c19be964d22de3f4af9ddfd71f31fe45b1d48c3f4734",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_005.png",
+      "sha256": "94eade5ae08cbe65a7299b7967d240b6602c8f8b1ed439decf4d018c6311317c",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_025.png",
+      "sha256": "9785c6fa48f38320fdd4527aac2309f78f30c0c3f0e12661e8193996f64817bf",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_042.png",
+      "sha256": "8ee43cdb7337fe551e4805d7fbb2953c9b859aa78f83b29a3c2c7634d229a540",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_092.png",
+      "sha256": "87f4a0356c262d3d91705922ae4764d64e3808d07c1d59186a7fd444bb15523f",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/preview_197.png",
+      "sha256": "e4f3ae4d86aac8776b433ec291cdaaff0fe5558e6bfdf7aff463608fb297b8e4",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_000.png",
+      "sha256": "95232800d5835a52f384c3b2a6194da1c34085da71084dfaec96fc6fa23aa4ec",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_005.png",
+      "sha256": "7785a24c518f15de2ca64d1cd64729ca84f98ad8ad345c29db6d0c71791aec87",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_025.png",
+      "sha256": "65e7fadbee7eac2135779bc4a75877036b94ded2248d6b4898ef088f23337e6f",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_042.png",
+      "sha256": "ead51644e60b89cd8204cedfc6e0ea0d55a6d03268347c2b9359849017355757",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_092.png",
+      "sha256": "005bf30a717127b4289b79b04bf42d582aa15728b9649bf12c9b590a5577c5e9",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/preview_197.png",
+      "sha256": "ed720ab57afbf6273d123a5ec2306f5a8be7d8659195f899933dd9a2e3f7347a",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_000.png",
+      "sha256": "be3511e9a728d908bf82c8440c6c2911fe290dd0aa2d376e1a7e31e1194e4a0e",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_005.png",
+      "sha256": "dff4e8863f98022991e4844c2ff0ef050c51b370cf6d3cd94f4c25d9ceda9891",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_025.png",
+      "sha256": "e359e5a0f7a7aac30afbd6375688b64caccbdad84ee2fb60dbb02412a7b6530a",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_042.png",
+      "sha256": "401825b9d0b8424e04779eb276da95f153781e93b24f25af1439f882043046bf",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_092.png",
+      "sha256": "a4f3f1c16c5d2bcd51919fd7f6c556ce45b6bb82d815fa2fffbf0e1f8f6b3ff1",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/preview_197.png",
+      "sha256": "4e703328fbd6f47c4e2dd0e0d862faef64d450f59858d0b1014f86717027c74a",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_000.png",
+      "sha256": "d4cebc4846cd0a2690fa7eeeca41161052d8236323fb5a1dbc728cfebe6184ba",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_005.png",
+      "sha256": "1989d753bec5f4be83b44d71f816703848e4e1fa7dc1545ab278084da7980d71",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_025.png",
+      "sha256": "0104e2a23c0c0756f6f80cce7167816d3f4e07a56431809459352fdf8210386c",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_042.png",
+      "sha256": "006111169d7d0a0ea19834c64a048911206e1366e05c656d81015c1782e433de",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_092.png",
+      "sha256": "e8d0fe9e6f48ca0428ed64f44e447c96564fe21b65a9da758752825422b69d81",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/preview_197.png",
+      "sha256": "ec6173fbba902afa149092e86ba129902c7222129ee9bd4179a941a2a3e32605",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_000.png",
+      "sha256": "a64f1ab11788527023465a696bcb4d1bafe16770bc0cc7a4630f78844a42f74a",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_005.png",
+      "sha256": "77acffa4d9e81f502f455b4ffed6a1cca6f4c5264ac0ec2babf8bd64ee1996d3",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_025.png",
+      "sha256": "d69c58f37cdd898b0e94403b4b32c16179b32eb152210e8b88ddeb54a3d69474",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_042.png",
+      "sha256": "7496221a0ce1adfe14b9183e3aa30d4a798f3f9e774059dbf0b1ff738813a400",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_092.png",
+      "sha256": "a217387a4815a5640567dd6aa85e1b12529620286c3a8d347aa5d1c7ca2cd95f",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/preview_197.png",
+      "sha256": "7771f97ef99e08c0cc147a2079b9aefd18868fb9174a2027a3932ede0e1b6344",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_000.png",
+      "sha256": "b3e79b367e258141dc677fde190040d93fbb7b81c1bc4475d4d2fcecd04d09b2",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_005.png",
+      "sha256": "2dad805aa69b3457a562715afc7b81a1918de14284522b53207b42bedf43786b",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_025.png",
+      "sha256": "d2112886f045ff9913ed937ed9f61a27b2a5fe115d9c7358c7ccd12f08b83a62",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_049.png",
+      "sha256": "c3ee22bf77ab8429531f025a9c45b0df90e72d071fff01a91c21de7d8f691aaa",
+      "frame": 49,
+      "recorded_time_s": 4.899999999999971
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_099.png",
+      "sha256": "0ab9b05c6d34e6c98f2beaea6cbb758bac57a8df7883a59ffe54b8d6ad17e40e",
+      "frame": 99,
+      "recorded_time_s": 9.899999999999952
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/preview_204.png",
+      "sha256": "5f1af4d8220ba45f05b0b1954805e18ba85cca1db9dc9c2059c1c1599e1039d4",
+      "frame": 204,
+      "recorded_time_s": 20.40000000000195
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_000.png",
+      "sha256": "54fbfb62e41f6d2674b4f5ff2943d3ccf52c4922c0e475c07c56e858ff668233",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_005.png",
+      "sha256": "8cf624f053f5f5e91227f88facc87b9ca105cc88af1f7237749011927391d27d",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_025.png",
+      "sha256": "4d3ed696b9e351f04550b9c27272684ff5e57a5a50aeafe414548ba7386f9760",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_056.png",
+      "sha256": "9d630f30fbba8b85edffb8568c63a7aaf0e5f4f81bd579465646c7e2322054b8",
+      "frame": 56,
+      "recorded_time_s": 5.600000000000205
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_106.png",
+      "sha256": "a7cf4603f9854107ec9ce694e46fd5343ff8cd8265861e3c5dbfb1053f8cb8b8",
+      "frame": 106,
+      "recorded_time_s": 10.599999999999564
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/preview_211.png",
+      "sha256": "9df9eda37b67f1a536aa2d2ea2fccda7fbcf28ca9f236c73e13a0f62f2cebdbb",
+      "frame": 211,
+      "recorded_time_s": 21.100000000002805
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_000.png",
+      "sha256": "a921da86d4628578be3f2a37cd192839526568c6d8e57756ee75c4bcf5bdcc87",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_005.png",
+      "sha256": "e9750ff64cee95b0558407d0bb711486af005cc8b61fe1eb2c1a02126971e641",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_025.png",
+      "sha256": "66da90fb13ade556d75b00461b27ecf8ba6a1fa07fdeae1af6d70460795dc328",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_042.png",
+      "sha256": "5aff1fa7e239212809ab3d177723f4b3f25e85ddd8c600f56e687ee1575f231b",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_092.png",
+      "sha256": "97a7a0fb6d3c8dcdccd485fbf589365570d29140c0a14041044afda64ed21c41",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/preview_197.png",
+      "sha256": "cdd8bfba0c0e9d31689fe386cfe839e062e79257a9ae4fb80ebc20bce490ad3c",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_000.png",
+      "sha256": "8b4852b47288619b532f3258a6e95e1d9ab8d3f83c5d5d6d87580cdd5a08d9eb",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_005.png",
+      "sha256": "89d57ced0cfb40e7023c39983563f98ebcfcb2ae1b78281524897b938703a3fb",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_025.png",
+      "sha256": "7b18f8a6355ab1bd86aec8051b93e105ca3677acec363d609ac9d3b7c7924faa",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_042.png",
+      "sha256": "9227ecb7434a838e8769f69d0ab95a9c1713805e5f4325dccf938aeb1493e666",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_092.png",
+      "sha256": "64c108361d01e79a1a38e11afdcd60888e2e3bfe321d5878d5caa6eb2141812c",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/preview_197.png",
+      "sha256": "cbbf24800b1b10075fa194f378a03e6dc608de814c64263e939892aa53da12d2",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_000.png",
+      "sha256": "22aabd907e09fdc3f17c43d7af4d3d6f22510dd8fcca67eea5f24be23e7093a2",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_005.png",
+      "sha256": "4c7ebc61bbf363f148e7dbfeff05629a3997d0251d147bdea8527ae610834f87",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_025.png",
+      "sha256": "8cc778d76fe0dff7e03deba671a10fe6e1e271d12e23e8f8defbfbc446917833",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_042.png",
+      "sha256": "590abd868215ae3ca01fa589a975ef2eba9996e04dc996219567fcbc42fb4e96",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_092.png",
+      "sha256": "4a948a057b012ccff695496f0c2dca9b5d153566b614ebf5a0cf725ba942195d",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/preview_197.png",
+      "sha256": "3e9b6301e7ef4dc8088cc748e7c757cde65b7f63aebabf3f4602151d17a324b4",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_000.png",
+      "sha256": "6a1fa8adb5dc9fc1cfb41f7b3bfedca0072d5ee8afc8221eb05cddd9c3c09d25",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_005.png",
+      "sha256": "6116c03b630fcc4ecec353f77a20260dba4a01e52e610381897b247d76440ef0",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_025.png",
+      "sha256": "6f08e4c1cf1276fc0d83aad7ddbbb309c64dcdea76970d023754d03bddfe6205",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_042.png",
+      "sha256": "4a8af1e87f43d63b09f77e749b53a0b3aaab73aee2d53e9cead2fd3fd3c42814",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_092.png",
+      "sha256": "4f2f3fbc3ab19d989df622740a6cfbeaf747357849c3d9a14d0cc170efa5a2b4",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/preview_197.png",
+      "sha256": "c6993fa5b3fb6c751e8a52780a9b461e00a31cfbb8e732b825ba5e46af36d399",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_000.png",
+      "sha256": "ab0be48ebc7b71c4a3dee19dc70c4de9cbc72448134606834850ee05bda6912c",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_005.png",
+      "sha256": "bd4c660e7581609e5fc300c266e3b4b5fa9f3b227f79e784889b2592042ca55c",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_025.png",
+      "sha256": "753a6e6914567f96cefe0f51475dd1bbbe53f0bef3b0a1d4071cd1e07936561a",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_042.png",
+      "sha256": "fba6a681a94c4981fbf4344d127ded59d17882f0a791a31934fbf484f5945afe",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_092.png",
+      "sha256": "eceb882aac6d6ad9397b5661d7f2ab040949cde7172abb0b4749960c6a77895f",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/preview_197.png",
+      "sha256": "1f4b9bc00a015a05bc88c61fe7dba8e5fe2bfaea48d7ad34d05717cd1cde124a",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_000.png",
+      "sha256": "0b9654676cd47c2d5120680f6234776e9a4e0ee904a47216f5e79f14589a27b4",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_005.png",
+      "sha256": "4083f3a5c2aae9c6ed5ca2264acb2dbe3d9cb2b6d4241b85132aeca9e969f927",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_025.png",
+      "sha256": "68eceaa895caac521bb4346acd1e175c93c13d099a3e15a6d54f72f2016c4c05",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_042.png",
+      "sha256": "25dad0d6a7f343986d30b06eac2bd0203cfdeb789039189b872480442cf08c08",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_092.png",
+      "sha256": "ed92d6644652d58e07d077c4180b31bc2462bddc648c097d6e1cc17db2fd11f3",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/preview_197.png",
+      "sha256": "e3dedcdf7233fdfc8ae527d8daa810e4b55326d418c545908c3fe7372406bd32",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_000.png",
+      "sha256": "f37480869136154da0883ec3c0ad9194c7b19169eadfdc34f53cabcc2b75bb2f",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_005.png",
+      "sha256": "51c563784872491c9b9538c4a8216779eea021553367a33b4412cce916e6dca2",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_025.png",
+      "sha256": "00059c88f67d2b15f23c212439424cf7402efbd9bd8cbbae0c358fb93f975cea",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_042.png",
+      "sha256": "3f25efca46af2ca2aeb30c51c56c216ed6e27c9d1e2d0579d5a2b7f251c590b9",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_092.png",
+      "sha256": "d71e658195979bf5431afe2c44f405af37c7633dc7f603761b569e99a5e403af",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/preview_197.png",
+      "sha256": "a635ac7cadd287db04f191b366d184b223f808ef096036b2b72b9f4df47c96ad",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_000.png",
+      "sha256": "6b4d81db85486fb9ffeb5a47b664bb725bac4c89b42ffa890e99708c481dda53",
+      "frame": 0,
+      "recorded_time_s": 0.0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_005.png",
+      "sha256": "57368d646a4bc0352cbb62711b847dd3a1a531b0fc66ba5a5e81b00c109b7365",
+      "frame": 5,
+      "recorded_time_s": 0.5000000000000003
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_025.png",
+      "sha256": "25e267cd85c71ae333eabb2a2f49f76ccd3834c687d1bfe59a66b3c47a96cbac",
+      "frame": 25,
+      "recorded_time_s": 2.4999999999998357
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_042.png",
+      "sha256": "c2bc476c33bc474e4b994e5776a2e87a5728ab47723f90b857df1b2174d3409e",
+      "frame": 42,
+      "recorded_time_s": 4.199999999999737
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_092.png",
+      "sha256": "1d200e2aa6a8c0d8549a7745b6c3598e8bec7ccc17f5ebed67cc554f7a3d17c9",
+      "frame": 92,
+      "recorded_time_s": 9.20000000000034
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/preview_197.png",
+      "sha256": "0ae9bc5b3bb500738b958b905431af70ff72ef3991f828c81b3f20e482560414",
+      "frame": 197,
+      "recorded_time_s": 19.700000000001094
+    }
+  ],
+  "numerical_outputs": [
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_center/per_frame.csv",
+      "sha256": "8298d6c1bf14512189d67d364018da591db8187830c882a310d90e2c30087bf1"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slow/per_frame.csv",
+      "sha256": "42ec18a5953471aabf2a3b52e4784001b34bb88928bc4a99716d7f09b781df52"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_close_slower/per_frame.csv",
+      "sha256": "69d14ca280de656c1a4a52ad0ffa7b4e57d77bb4b66fd8a6e488d618d20b8577"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_minus/per_frame.csv",
+      "sha256": "f5cd37418ebc4deacc6a4f64b4a5d7b0e91ef34e224558e82e130845af636d33"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_x_plus/per_frame.csv",
+      "sha256": "388ad79edb7ed718354ee27c08957c401441eb22699be665dd403c410a6ffa92"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_minus/per_frame.csv",
+      "sha256": "6450295bebac1f5cd7af2398a7a7edbda6f7082c0f0b2774dc13afbd4ff5841e"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/plain__vertical_y_plus/per_frame.csv",
+      "sha256": "84f418024d46c48af0eb0ed1cb8b8705d9ac0bad0b5a8eac215174df983b7a37"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_center/per_frame.csv",
+      "sha256": "a755a4a978dd3e645efb56db4dbea22da5d2b09c757662d3f2ef3a0683edc32d"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slow/per_frame.csv",
+      "sha256": "ef89c1dd60c31872f2d5d11dd6682f85cac7a0777b4c3fe1ce8f9898025080a6"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_close_slower/per_frame.csv",
+      "sha256": "c2c32ceede99943dcf38880bf3f11104aff3f0e1e48dc45abe4a3f8862527c36"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_minus/per_frame.csv",
+      "sha256": "84975403a84358466d708e8b3cccf94374637d84bee8018432f12ea277acec70"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_x_plus/per_frame.csv",
+      "sha256": "ba36807f69cce9af4635cc8b2c4b7a07edc4158fb96faa8ad26048bdad109e7b"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_minus/per_frame.csv",
+      "sha256": "aa3267b8701b26ade18aa87e473900a43955a05dbd34d908e340b64a083c6095"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/shallow__vertical_y_plus/per_frame.csv",
+      "sha256": "00d8173f4dd0819f2aec754bbcfd27cbd98e2f7768c93fd0e441606b58b49c84"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__plain__vertical_center/per_frame.csv",
+      "sha256": "cdf0156cf239e944e73edd1e905d092f6582b4219803e65b880e8a5ea094dd38"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms__shallow__vertical_center/per_frame.csv",
+      "sha256": "58705f58349d6afd354b08203312704c10423922661a425440e727b2745b7e4c"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__plain__vertical_center/per_frame.csv",
+      "sha256": "9e3820f33a09900233c6720d13da903b9039296819e412c3a238f1e77b8c63df"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/root_5ms_kp10__shallow__vertical_center/per_frame.csv",
+      "sha256": "2ae95707b1132e975ec0e2a6cf18cb729cf7b433960a9c3e9b584000927c7168"
+    }
+  ],
+  "postprocessors": [
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/upright-1mm-20261022/animations/label_controller_profiles.py",
+      "sha256": "8642e680afdad76788bf2f8e8ccd978a88d7325a4212fc97c772e80496b633c1",
+      "purpose": "Chinese controller-profile caption only; raw original-label intermediate retained and hashed. No changed physics or state timing."
+    }
+  ]
+}

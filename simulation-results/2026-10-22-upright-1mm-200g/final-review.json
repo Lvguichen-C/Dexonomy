@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "ready_for_delivery": true,
+  "review_state": "complete_and_frozen_ready_for_packaging_and_publication",
+  "scientific_failure_is_not_qa_failure": true,
+  "actual_physics_trials": 18,
+  "baseline_trials": 14,
+  "separate_controller_trials": 4,
+  "scientific_full_sequence_passes": 0,
+  "final_animation_files": 19,
+  "all_trial_execution_archive_and_model_checks_passed": true,
+  "all_final_media_source_cfr_and_decode_checks_passed": true,
+  "assistant_actual_visual_review": "passed",
+  "initial_hand_state": "All18actualMJBinitial states verified: positive farhand-object gap114.79–114.91mm, zero hand-object/hand-fixture/hand-plane contacts; all initial clearances positive.",
+  "continuous_protocol": "One initialization; all1msdiagnostics continuous; initialpause500steps/approach2000; closure0.7,1.4,2.1s preserved; loaded1000/lift5000/posthold5000steps; complete release.",
+  "support_and_geometry": "All18hold phases remain physically supported and have no hand-object contact. Perphase HOoverlap compared to0.5mmradius; no false grasp certification.",
+  "trials_with_overlap_at_least_one_radius": 13,
+  "maximum_overlap_fraction_of_radius": 1.716492423083561,
+  "actual_controller_models": "MJBrootweldsolref0.005 and gain/bias10x as declared; actuator force limits, object, fixture and contact parameters unchanged.",
+  "original4994_files_sha256_unchanged": true,
+  "previous_published_tilt_outputs_unchanged": true,
+  "tracked_repository_clean": true,
+  "report_and_pipeline_review": "Passed; counts, physical durations, reported no-success scope, finite-search limitations, static14IK/5892FK excluded from18physics, source provenance and microscale contact caveats accurate. Delivery-only addendum: current report/PIPELINE accurately describe the three-archive layout (core without MJB; plain/shallow model archives with 9 original models each). Current document hashes here supersede only the pre-split document bindings in the unchanged historical media/report audit.",
+  "artifacts": {
+    "trial_audit": {
+      "path": "independent-trial-audit.json",
+      "sha256": "812ed8bb4431fcdb9458d1919fb5356d3fff1cdfa35c1a5d8d146873872e3483"
+    },
+    "media_report_audit": {
+      "path": "independent-media-report-audit.json",
+      "sha256": "1be76ff916c2996d9a6c85eff23e24294b9bc8558be193c515e1aff363f5104d"
+    },
+    "report_sources": {
+      "UPRIGHT_1MM_REPORT.md": "43ad56d3a72ac2d8279828ea7953547ef2589d6d786fb0b5398316799a0c43c1",
+      "PIPELINE.md": "a7cf81f81f13f890d57c9ab2f326806b03b527aacfb0a952cc683d0449bb0c8b",
+      "experiment-summary.json": "3905348dde27df36b2a747ec995a0a42e3bb75bd00160936e9ba19c9192f097f",
+      "experiment-results.csv": "a3872338c3927b2e1dbae5bf36955b8bfad670f8c90f493d810c70fd24aeff55",
+      "summarize_upright.py": "49c96e3f94e74eb597192332015611d93a626643bc6296854c1bac69051ad7a9"
+    },
+    "package_split_review": {
+      "path": "package-split-review.json",
+      "sha256": "0f1c0dccc54ba4f5c648159892a9bf013a6894620297a31ab6939a856feea3a0"
+    }
+  },
+  "limitations": [
+    "No successful1mm/200gfree-object lift/hold/release was demonstrated.",
+    "Large soft-contact overlap and macro-scale torsional/impedance settings do not certify real-material micrograsp reliability.",
+    "Finite static search failure does not prove grasp impossibility; no unsupported new physics successes inferred."
+  ],
+  "physics_steps_executed_by_review": 0,
+  "pending": [],
+  "delivery_packaging_review": {
+    "ready_for_delivery": true,
+    "scientific_media_and_model_payloads_unchanged": true,
+    "core_archive_rebuild_to_include_final_qa_required": true,
+    "final_whole_archive_hashes_to_be_verified_externally": true
+  }
+}
