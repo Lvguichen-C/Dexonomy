@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "delivery_revision": "height_boundary_delivery_v1",
+  "benchmark": "D1mm 200g height-boundary search with declared geometry/control/preload profiles",
+  "file_size_cap_bytes": 35000000,
+  "actual_trial_count": 39,
+  "actual_video_count": 45,
+  "actual_video_streams": [
+    {
+      "archive_path": "h017_strict_success_plain.mp4",
+      "sha256": "50e91668f8e66b31a77d7652f12f3d1414aedb2c112dd1f168fbc9b5b97a885c",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/presentation_v6/normal_integrator_contact_axis_latch_preload5__h17__plain__h017_matched_h060_topminus2_v1_normal_contact_axis_latch_preload5__strict_reference_508cb416f48f/full_sequence.mp4",
+      "sha256": "1deaffec2b1ac296efd2e8b30bc9181555bc44f481a47fd54202b544850915ce",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/presentation_v6/normal_integrator_contact_axis_latch_preload5__h17__plain__h017_matched_h060_topminus2_v1_normal_contact_axis_latch_preload5__strict_reference_6d543b22bfcd/full_sequence.mp4",
+      "sha256": "1deaffec2b1ac296efd2e8b30bc9181555bc44f481a47fd54202b544850915ce",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/presentation_v6/normal_integrator_contact_axis_latch_preload5__h17__plain__h017_matched_h060_topminus2_v1_normal_contact_axis_latch_preload5__strict_reference_948177f60538/full_sequence.mp4",
+      "sha256": "1deaffec2b1ac296efd2e8b30bc9181555bc44f481a47fd54202b544850915ce",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h17__plain__h017_matched_h060_topminus2_v1_normal_contact_axis_preload5/full_sequence.mp4",
+      "sha256": "7549c71fd9955a3c3d8e57b12c1da6de4383eb18e9dd183cc7feac807acce678",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/presentation_v5/normal_integrator_contact_axis_latch_preload5__h17__shallow__h017_matched_h060_topminus2_v1_normal_contact_axis_latch_preload5/full_sequence.mp4",
+      "sha256": "c5f0eb9a25d292877f534ee8f90a0d29e6829804c93316f84a1bd2dd91ef65d3",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h17__shallow__h017_matched_h060_topminus2_v1_normal_contact_axis_preload5/full_sequence.mp4",
+      "sha256": "3fe59d6b8d793303d06574dc193313a36e34f844afed3c7df21c90bc13fcf8de",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/h20__plain__h020_coarse_mid_v1/full_sequence.mp4",
+      "sha256": "af6974407e5662f1f8f8c0d73d2dd6bd57c36dc7f776a671355cb048964716f8",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/h20__plain__h020_coarse_top_v1/full_sequence.mp4",
+      "sha256": "d2baebfeaba5d168e9917c30bed856d42adbc77460e143461f6d41d1dc3ab2e4",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/presentation_v5/normal_integrator_contact_axis_latch_preload5__h20__plain__h020_matched_h060_topminus2_v1_normal_contact_axis_latch_preload5/full_sequence.mp4",
+      "sha256": "efb2d0c05c45a7d1f11c79303ba554de2fc25f224e3385518e112eba8f763cc5",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h20__plain__h020_matched_h060_topminus2_v1_normal_contact_axis_preload5/full_sequence.mp4",
+      "sha256": "cd08780623fca32b4106fc587101745517fa004e11a92cdd6c6dd8ad9eb80165",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/presentation_v5/normal_integrator_contact_axis_latch_preload5__h20__shallow__h020_matched_h060_topminus2_v1_normal_contact_axis_latch_preload5/full_sequence.mp4",
+      "sha256": "e94a50e2ed61b0060a87e66abe5a0fa4c58a4b12f1f438d07d459af59699eb9c",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h20__shallow__h020_matched_h060_topminus2_v1_normal_contact_axis_preload5/full_sequence.mp4",
+      "sha256": "690895b63fa7a6195bf62164243ad07ced2c4899eb986535c78af787a2c0a9d5",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/h40__plain__h040_coarse_mid_v1/full_sequence.mp4",
+      "sha256": "59950688a288de5e5d352575684715bd9d31df8463ef84ccb2d2e0edaa294ed7",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/h40__plain__h040_coarse_top_v1/full_sequence.mp4",
+      "sha256": "b6ca331eeed1a0c1450680b0dffe7883005cd971207606ddecb6f14dc548010d",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_micro_anchor__h40__plain__h040_coarse_top_v1_normal_integral/full_sequence.mp4",
+      "sha256": "8823cdbf1b0ca6f693cc96faf8df33ef9653236dbebd9c15ff61bc09327498bb",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/h40__plain__h040_sidefit_14_Tripod_preshape0.1_f64/full_sequence.mp4",
+      "sha256": "dcb60300494cdf9baffc8ae31ef48aff7300a4682f093363615d3d8faf66fc5a",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/h60__plain__h060_d5_normalmapped_release_squeeze0/full_sequence.mp4",
+      "sha256": "e31b82fb3ee47ef36c0f6a00c0d616ad8568210070e5db387256bbd02d2f5820",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/presentation_v5/normal_integrator_contact_axis_latch_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_latch_preload5/full_sequence.mp4",
+      "sha256": "26b48907ffbb4ce3e6c9d3e36220d079c7f618fae01d2efc2063ed411d16637c",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_preload5/full_sequence.mp4",
+      "sha256": "8fc2496374ddc15bf3ead2c0c5f0d7b706a262ce9bbda25de7e3b2ea6491dec2",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_preload5__logger_reference_6ccd55a4620c/full_sequence.mp4",
+      "sha256": "8fc2496374ddc15bf3ead2c0c5f0d7b706a262ce9bbda25de7e3b2ea6491dec2",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_preload5__reference_2fa8da01470a/full_sequence.mp4",
+      "sha256": "8fc2496374ddc15bf3ead2c0c5f0d7b706a262ce9bbda25de7e3b2ea6491dec2",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_preload5__reference_88c797952d79/full_sequence.mp4",
+      "sha256": "8fc2496374ddc15bf3ead2c0c5f0d7b706a262ce9bbda25de7e3b2ea6491dec2",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_preload5__reference_db58a59f71d7/full_sequence.mp4",
+      "sha256": "8fc2496374ddc15bf3ead2c0c5f0d7b706a262ce9bbda25de7e3b2ea6491dec2",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_root_twist_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_root_twist_preload5/full_sequence.mp4",
+      "sha256": "6fd0d87298e1cb9e6dfe415955b7473c5e09a4f6c80e5f14ab9fa4a87f2e104f",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_twist_conditioned_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_twist_conditioned_preload5/full_sequence.mp4",
+      "sha256": "1cd71077c731fc05c74b9026578ab3c319c499662013211cb0c0d390c9998d3e",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_twist_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_twist_preload5/full_sequence.mp4",
+      "sha256": "12bc0ff7059859b322f4ca25b56d14a84017068f37fb97d515eb876c726e51e5",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_micro_anchor__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_integral/full_sequence.mp4",
+      "sha256": "e483d9f22954572e510be5fb0c69e0f0e62fa37817d03868e18a43525ef0051e",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_micro_anchor_preload5__h60__plain__h060_d5_normalmapped_release_squeeze0_normal_integral_preload5/full_sequence.mp4",
+      "sha256": "5927087a38d16b9c4c3f3207a35d68af5577346797f8ff60f56deb439e8c795d",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/h60__plain__h060_d5_palmar_side_release_squeeze0/full_sequence.mp4",
+      "sha256": "3cb1a039baf893b2d59b2a1ba7a5c94c7dabc242c0a83852ca92550aaee4abcc",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_micro_anchor__h60__plain__h060_d5_palmar_side_release_squeeze0_normal_integral/full_sequence.mp4",
+      "sha256": "57ab6fddb968b31d824269b5b424e28c85bb8400dc34b28d73d813417860ae2f",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/h60__shallow__h060_d5_normalmapped_release_squeeze0/full_sequence.mp4",
+      "sha256": "7377cc95a4b9d523128dc7d50e59557721777f6b7ed694d4822054c55865917b",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/presentation_v5/normal_integrator_contact_axis_latch_preload5__h60__shallow__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_latch_preload5/full_sequence.mp4",
+      "sha256": "90579b310452df2da39698bb95c1730512ce8780209a036e332557e323e0c836",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_contact_axis_preload5__h60__shallow__h060_d5_normalmapped_release_squeeze0_normal_contact_axis_preload5/full_sequence.mp4",
+      "sha256": "5c00d4f50ff094a8689f7a9d91943c9f324cf3307f7461d19e2b91dc22df518a",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_micro_anchor__h60__shallow__h060_d5_normalmapped_release_squeeze0_normal_integral/full_sequence.mp4",
+      "sha256": "b419a9920024ffc1695eebed9cdb6342fcb8c4e2bc4b385125e2fea4de3b900b",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/normal_integrator_micro_anchor_preload5__h60__shallow__h060_d5_normalmapped_release_squeeze0_normal_integral_preload5/full_sequence.mp4",
+      "sha256": "e24271a3e238de575998d104b717623400a8ee4fc5a5699759365367e41ea94c",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "animations/h60__shallow__h060_d5_palmar_side_release_squeeze0/full_sequence.mp4",
+      "sha256": "6340b9fabe1c57c4060654c9c078f469f3f4296e35dbd7bffd717211f10ca855",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/h80__plain__h080_coarse_mid_v1/full_sequence.mp4",
+      "sha256": "b4cc1f8fc42978a2cffaa3d8e7bafad278a28b17a02e512735c643da116e1456",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "animations/h80__plain__h080_coarse_top_v1/full_sequence.mp4",
+      "sha256": "753be199a1c3edb2311bd9c3a61c6764994edea973411c83be13f314b05a96d0",
+      "width": 640,
+      "height": 480,
+      "fps": 10.0,
+      "frames": 198,
+      "duration_s": 19.8
+    },
+    {
+      "archive_path": "height_boundary_overview.mp4",
+      "sha256": "cd60c4b340e640e9252315505035c8f7f37cd1c22232e90ef89e3a6fdb8deeb6",
+      "width": 1920,
+      "height": 1080,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "h017_latch_plain_vs_shallow.mp4",
+      "sha256": "b6240d0827a77ba467acd811df5c378009884ca4334b350c6be427dd3146c353",
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "h020_latch_plain_vs_shallow.mp4",
+      "sha256": "5082c6a2bd8fa2ef31b135db3e845dcea088633b8840d75475e6d5137738e19c",
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "h060_latch_plain_vs_shallow.mp4",
+      "sha256": "1e0860dd015832fc4f01221c533057d2d08706215c967cc607dcf0fb9c1b4de0",
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "h017_axis_vs_latch_plain.mp4",
+      "sha256": "97aa2d8192c1fa0664bfbfa863c5462f376fac0a4bbd18593fbda82ea369bff2",
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    },
+    {
+      "archive_path": "h060_contact_axis_plain_vs_shallow.mp4",
+      "sha256": "b252e74deb95e066cee745c79666b7a25578045cb8618d179981377190b465b0",
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "frames": 238,
+      "duration_s": 23.8
+    }
+  ],
+  "files": [
+    {
+      "name": "BOUNDARY_REPORT.md",
+      "bytes": 7953,
+      "sha256": "9eda91fe346c79220310aeb18c4f98511199d431bba5aff8b80f02ab4f16525f"
+    },
+    {
+      "name": "PIPELINE.md",
+      "bytes": 7949,
+      "sha256": "92ee9eadea1ae848d6f8c3c27681cd60ca64e259b5d9f66dbdcd21f36aa0e49a"
+    },
+    {
+      "name": "animation-index.json",
+      "bytes": 1678815,
+      "sha256": "09b45b26b64de67275c077f51b759d8ea44ba17a45c0b13921f589b1574cfcb4"
+    },
+    {
+      "name": "delivery-index.json",
+      "bytes": 220036,
+      "sha256": "cf771a3f713554900a5cf54007bde97679adac6cb4eedcc850ad5d664e5276a1"
+    },
+    {
+      "name": "execution-ledger-final-counts.json",
+      "bytes": 451,
+      "sha256": "1ae58e53664986414c334a2352fa19755c24c891a0d4721d7dad24b60a86ae07"
+    },
+    {
+      "name": "final-review.json",
+      "bytes": 6138,
+      "sha256": "30f5eeca06f08a54e2e8efb70cde93f23a17c08c7be69b41c48a0c0466f1dd01"
+    },
+    {
+      "name": "h017_axis_vs_latch_plain.mp4",
+      "bytes": 640175,
+      "sha256": "97aa2d8192c1fa0664bfbfa863c5462f376fac0a4bbd18593fbda82ea369bff2"
+    },
+    {
+      "name": "h017_latch_comparison.png",
+      "bytes": 150618,
+      "sha256": "4af5ddb9888da6524bac75d80f17bdb35ab1f8456c87c1628f6d3c913bb0b75f"
+    },
+    {
+      "name": "h017_latch_comparison.svg",
+      "bytes": 377090,
+      "sha256": "b1e2c7a18efc7d48e5f2a5ad13aecc038b21224a4c8872797d96a9cf028ce265"
+    },
+    {
+      "name": "h017_latch_plain_vs_shallow.mp4",
+      "bytes": 641097,
+      "sha256": "b6240d0827a77ba467acd811df5c378009884ca4334b350c6be427dd3146c353"
+    },
+    {
+      "name": "h017_strict_success_plain.mp4",
+      "bytes": 233979,
+      "sha256": "50e91668f8e66b31a77d7652f12f3d1414aedb2c112dd1f168fbc9b5b97a885c"
+    },
+    {
+      "name": "h020_latch_plain_vs_shallow.mp4",
+      "bytes": 668572,
+      "sha256": "5082c6a2bd8fa2ef31b135db3e845dcea088633b8840d75475e6d5137738e19c"
+    },
+    {
+      "name": "h060_contact_axis_plain_vs_shallow.mp4",
+      "bytes": 777930,
+      "sha256": "b252e74deb95e066cee745c79666b7a25578045cb8618d179981377190b465b0"
+    },
+    {
+      "name": "h060_latch_plain_vs_shallow.mp4",
+      "bytes": 745145,
+      "sha256": "1e0860dd015832fc4f01221c533057d2d08706215c967cc607dcf0fb9c1b4de0"
+    },
+    {
+      "name": "height_boundary_animations_and_docs.zip",
+      "bytes": 33063335,
+      "sha256": "529ac1f28c04755d58bd96d28bc07d4920f8b1b47b15bcf0e78deba7615227ab"
+    },
+    {
+      "name": "height_boundary_overview.mp4",
+      "bytes": 1876112,
+      "sha256": "cd60c4b340e640e9252315505035c8f7f37cd1c22232e90ef89e3a6fdb8deeb6"
+    },
+    {
+      "name": "height_boundary_qa_evidence.zip",
+      "bytes": 5332653,
+      "sha256": "dc2a0f9e98848ef6b56f4f093aa2bda38c70f0207cdf415dff1a96bbeffa6dad"
+    },
+    {
+      "name": "raw_h017_plain_part1_part1.zip",
+      "bytes": 29450441,
+      "sha256": "f81094a22d83e652b206e0cf09daf43d751d397eb913fb952eedfe470236f12d"
+    },
+    {
+      "name": "raw_h017_plain_part1_part2.zip",
+      "bytes": 29452128,
+      "sha256": "39c7e40972e68196ccbe7105a5859ea16ec4471db282b33872b616a0370b19c2"
+    },
+    {
+      "name": "raw_h017_plain_part2_part1.zip",
+      "bytes": 29452134,
+      "sha256": "5b6b747596cc2946e1f92d6941d17c24c7713459e3496fd7373d12c9cb49e5d7"
+    },
+    {
+      "name": "raw_h017_plain_part2_part2_part1.zip",
+      "bytes": 29452125,
+      "sha256": "68f3449aa2c2b584284c51356cbfc8af6d1be484c78fc78a2b09cc7670bdc3d8"
+    },
+    {
+      "name": "raw_h017_plain_part2_part2_part2.zip",
+      "bytes": 30713581,
+      "sha256": "2f3e7c6ef91785b52a97c7bff921a10ddfe767356b4effe14b5c2dcac114e999"
+    },
+    {
+      "name": "raw_h017_shallow_part1.zip",
+      "bytes": 29828240,
+      "sha256": "4e8dc4938f3d088f5450feb54a36dc24f5c1cd1c5ca6e0c79717b421e725c5aa"
+    },
+    {
+      "name": "raw_h017_shallow_part2.zip",
+      "bytes": 30836084,
+      "sha256": "88e1ed3f570e8c4b9fef36f7406b401ff3befa6861ea218028892a2ecd0e712e"
+    },
+    {
+      "name": "raw_h020_plain_part1.zip",
+      "bytes": 22475640,
+      "sha256": "b96bbfdb317d3cb8ffb314787b9db9a26a33eb783c25da904442774b74bb11f8"
+    },
+    {
+      "name": "raw_h020_plain_part2_part1.zip",
+      "bytes": 29791530,
+      "sha256": "95b835cb3f36c44ba5f9224449b4960d5789b34e098dcc1d06257bb946af5af1"
+    },
+    {
+      "name": "raw_h020_plain_part2_part2.zip",
+      "bytes": 30774900,
+      "sha256": "a535117ee577489877059bac9e4d80a1f4bbcbf86becdb209a60addc17b619e9"
+    },
+    {
+      "name": "raw_h020_shallow_part1.zip",
+      "bytes": 29826964,
+      "sha256": "1e77b236c247b8b7e7101146ce2e877daf5fa9fb5f7d67788bbf4665c396bda3"
+    },
+    {
+      "name": "raw_h020_shallow_part2.zip",
+      "bytes": 30856642,
+      "sha256": "7179fcba6119e9afa77abd5bbb5aa809edf3deebb2264b2887e6f493502bcc81"
+    },
+    {
+      "name": "raw_h040_plain_part1.zip",
+      "bytes": 22429869,
+      "sha256": "921059b0084f19374a279d1430cb3b49be7418901dc64ac0ac58db57f2479848"
+    },
+    {
+      "name": "raw_h040_plain_part2.zip",
+      "bytes": 27551956,
+      "sha256": "7676d666647d1fd382ebf9e3f62ce710fbdceb0bcaa7b9312b5e149459d5cafd"
+    },
+    {
+      "name": "raw_h060_plain_part1_part1_part1.zip",
+      "bytes": 11220974,
+      "sha256": "ff0b5afdd3e58203b2a49ca814528354d3903571fa061ec69c94551984584211"
+    },
+    {
+      "name": "raw_h060_plain_part1_part1_part2.zip",
+      "bytes": 31345584,
+      "sha256": "db71c2242ca08a793f9e9404bf74528980eae9cad170825f197b7a2ab63fd304"
+    },
+    {
+      "name": "raw_h060_plain_part1_part2_part1_part1.zip",
+      "bytes": 21160803,
+      "sha256": "cb375216bd63fa14802fa2d0ac755c4391a7592df7f44c6b86951f178be3ffbd"
+    },
+    {
+      "name": "raw_h060_plain_part1_part2_part1_part2.zip",
+      "bytes": 30941853,
+      "sha256": "119359bc4e717399d547ce4cee3a0ddec98689ca840941e26f3317cd6d7c0f12"
+    },
+    {
+      "name": "raw_h060_plain_part1_part2_part2_part1.zip",
+      "bytes": 21161965,
+      "sha256": "f00a4f108af6b1e2d4d395ee1ce90f6ec3c9a29693e3db41c7559aa2ac960b0c"
+    },
+    {
+      "name": "raw_h060_plain_part1_part2_part2_part2.zip",
+      "bytes": 21161964,
+      "sha256": "d6bbce49015c544bf61524fb30fc5f19c3aab99624780156d47c525141679dc2"
+    },
+    {
+      "name": "raw_h060_plain_part2_part1_part1.zip",
+      "bytes": 21161958,
+      "sha256": "8c2b5baf73c059c6c3dce41a2f584918abe17a18114285c895e4c80bd87e8fb1"
+    },
+    {
+      "name": "raw_h060_plain_part2_part1_part2_part1.zip",
+      "bytes": 25514165,
+      "sha256": "b09ce7d610c6dc03841a88892de3d0d90376eb06e86207984418936d350dc9f7"
+    },
+    {
+      "name": "raw_h060_plain_part2_part1_part2_part2.zip",
+      "bytes": 20654853,
+      "sha256": "56926e4f2b2e7a345304861582fb7e1317aad74d6d282d6eb104450b8ce65381"
+    },
+    {
+      "name": "raw_h060_plain_part2_part2_part1_part1.zip",
+      "bytes": 20606026,
+      "sha256": "48e824d5e378cc98010521facfb59befc514fdc0a862e00a6aa1d26725422774"
+    },
+    {
+      "name": "raw_h060_plain_part2_part2_part1_part2.zip",
+      "bytes": 16908044,
+      "sha256": "efd080494d25fb8695bae8ebe277c177a3c5f81384247b0a087e85aaf36b800f"
+    },
+    {
+      "name": "raw_h060_plain_part2_part2_part2_part1.zip",
+      "bytes": 16920574,
+      "sha256": "89de2f2e2d01a2b466f2df395683e837ed7ad0efddd20015ce0ad3ef8f040c23"
+    },
+    {
+      "name": "raw_h060_plain_part2_part2_part2_part2.zip",
+      "bytes": 19954900,
+      "sha256": "40bd4cd9571abbeb3039cede5e18d4814709534dafc6c6597d737c2b4d34112f"
+    },
+    {
+      "name": "raw_h060_shallow_part1_part1.zip",
+      "bytes": 11365157,
+      "sha256": "6a208799659312196dfa3ac5dda11e793af2ddaab07aa4208bf7d7490181c68e"
+    },
+    {
+      "name": "raw_h060_shallow_part1_part2_part1.zip",
+      "bytes": 11356978,
+      "sha256": "90c8b5fb7971420700ee9514d44004021f31c24d26d5fb1edbcffa061cd2bdd4"
+    },
+    {
+      "name": "raw_h060_shallow_part1_part2_part2.zip",
+      "bytes": 29896493,
+      "sha256": "ac3b2bb8787ab773d58b82b53ede2032ee4f2125c04d8334bdbc7ec57b22f482"
+    },
+    {
+      "name": "raw_h060_shallow_part2_part1.zip",
+      "bytes": 21181401,
+      "sha256": "b336be994a397261a905634dbe7089e752410ed8dbbcf564e9b0b1a535f5bbb8"
+    },
+    {
+      "name": "raw_h060_shallow_part2_part2_part1.zip",
+      "bytes": 16959544,
+      "sha256": "2509e8bc6c679e9314cfe9823289d7e1cfff961db348f2d692f640211e62edc5"
+    },
+    {
+      "name": "raw_h060_shallow_part2_part2_part2.zip",
+      "bytes": 20041415,
+      "sha256": "b59f43119bf0e08611b802d41a1ce590dafa9861aa3349ab129d07c1cf292a76"
+    },
+    {
+      "name": "raw_h080_plain.zip",
+      "bytes": 22420485,
+      "sha256": "e70ac64ce17f011bcd2d4dc2772801a96e5027739776f722acba836a32912e86"
+    },
+    {
+      "name": "search-results.csv",
+      "bytes": 46894,
+      "sha256": "a27926e097e604eb8a705532827bff55ca48b898a3bdd9d427da018db6b123a3"
+    },
+    {
+      "name": "search-results.json",
+      "bytes": 96046,
+      "sha256": "e741e82480492e9e22e801c792da2dfa3c169ab480d4df27c3273bba4890e3b9"
+    },
+    {
+      "name": "trial-profiles.json",
+      "bytes": 2013391,
+      "sha256": "15a90c83ff4afc13d9fa3328109615d80fd3e3588922a8751e1c2b75a2e7dc4c"
+    }
+  ]
+}

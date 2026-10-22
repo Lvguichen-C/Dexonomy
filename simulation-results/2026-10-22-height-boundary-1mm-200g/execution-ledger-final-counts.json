@@ -1,0 +1,10 @@
+{
+  "auditable_retained_independent_output_trial_records": 39,
+  "strict_passed_records": 4,
+  "distinct_strict_success_configurations": 1,
+  "documented_duplicate_execution_events": 1,
+  "additional_execution_with_no_separately_preserved_record": 1,
+  "duplicate_event_evidence": "/workspace/shadow-height-boundary-1mm-200g-20261022/execution-ledger/20261022-duplicate-v2-plain.json",
+  "formal_processes_at_freeze": [],
+  "integrity_failures": []
+}
