@@ -1,0 +1,90 @@
+{
+  "scope": "Own renderer outputs and exact selected-three-case source data only",
+  "renderer_index_sha256": "9f01bb975d79adcaa3e63efa1abdd59e076245041cc51648b2683da76dd50878",
+  "actual_video_streams": [
+    {
+      "file": "root_tilt_3cases_1x.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 111,
+      "fps": 10.0,
+      "avg_frame_rate": 10.0,
+      "r_frame_rate": 10.0,
+      "duration_s": 11.1,
+      "playback_speed": 1.0,
+      "source_time_start_s": 2.7,
+      "source_time_end_s": 13.7
+    },
+    {
+      "file": "root_tilt_3cases_0p5x.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 222,
+      "fps": 10.0,
+      "avg_frame_rate": 10.0,
+      "r_frame_rate": 10.0,
+      "duration_s": 22.2,
+      "playback_speed": 0.5,
+      "source_time_start_s": 2.7,
+      "source_time_end_s": 13.7
+    }
+  ],
+  "zip_entries": 51,
+  "files": [
+    {
+      "name": "ROOT_TILT_ANIMATION.md",
+      "bytes": 5410,
+      "sha256": "5fb5f3f86fb73a560f87fda056ebf1dff836682e5f336a9671dee3379da0de81"
+    },
+    {
+      "name": "index.json",
+      "bytes": 14950,
+      "sha256": "9f01bb975d79adcaa3e63efa1abdd59e076245041cc51648b2683da76dd50878"
+    },
+    {
+      "name": "root_tilt_3cases_1x.mp4",
+      "bytes": 508318,
+      "sha256": "a078c6bfff99d27bfdd9252865f860c8ad691b6ba54ae7a4aa26ce76e87d5c49"
+    },
+    {
+      "name": "root_tilt_3cases_0p5x.mp4",
+      "bytes": 614990,
+      "sha256": "ce705b55462c97dbb31c06a6fcf7a6259b2f27e22fcbc790229b9c34cf7c0cec"
+    },
+    {
+      "name": "per_frame.csv",
+      "bytes": 99536,
+      "sha256": "af34595cb76a993480d03dfd010dd31fcfde39ebd830f58dc82184eb939e3abc"
+    },
+    {
+      "name": "per_frame.npz",
+      "bytes": 24581,
+      "sha256": "9b5c7d591dade4cdca28a34975d912d8badda2640128ff16c3dbc28858903d58"
+    },
+    {
+      "name": "preview_loaded.png",
+      "bytes": 185931,
+      "sha256": "0c0d44cfb4893faa8f13b69fc93eee68d7de0ee03aa1bbc557aa70b6f7424400"
+    },
+    {
+      "name": "preview_lift_start.png",
+      "bytes": 182582,
+      "sha256": "ca4e694c56d670b510ab831c853393b1913f22c63622b6297a9469d00d190fa4"
+    },
+    {
+      "name": "preview_held.png",
+      "bytes": 204719,
+      "sha256": "3c377c8f3d998482aae890d2518ed05fa8894295fbf7f2876094145311c79a40"
+    },
+    {
+      "name": "video-verification.json",
+      "bytes": 845,
+      "sha256": "24af884fc348bd0b27e5d0e381ee901131b1d4c7908e08f623374acb5ad1da3a"
+    },
+    {
+      "name": "root_tilt_3sizes_200g.zip",
+      "bytes": 3877234,
+      "sha256": "507c0952d7ba989045c77e9768de0015fd27656620fc321599f424c6088a37dc"
+    }
+  ]
+}

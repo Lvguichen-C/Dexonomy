@@ -1,0 +1,33 @@
+{
+  "renderer_index_sha256": "9f01bb975d79adcaa3e63efa1abdd59e076245041cc51648b2683da76dd50878",
+  "actual_video_streams": [
+    {
+      "file": "root_tilt_3cases_1x.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 111,
+      "fps": 10.0,
+      "avg_frame_rate": 10.0,
+      "r_frame_rate": 10.0,
+      "duration_s": 11.1,
+      "playback_speed": 1.0,
+      "source_time_start_s": 2.7,
+      "source_time_end_s": 13.7
+    },
+    {
+      "file": "root_tilt_3cases_0p5x.mp4",
+      "width": 1920,
+      "height": 1080,
+      "frames": 222,
+      "fps": 10.0,
+      "avg_frame_rate": 10.0,
+      "r_frame_rate": 10.0,
+      "duration_s": 22.2,
+      "playback_speed": 0.5,
+      "source_time_start_s": 2.7,
+      "source_time_end_s": 13.7
+    }
+  ],
+  "source_case_count": 3,
+  "index_numbers_verified_against_actual_video": true
+}

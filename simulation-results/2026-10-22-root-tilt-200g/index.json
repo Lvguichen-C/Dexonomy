@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "benchmark_mass_kg": 0.2,
+  "source_time_start_s": 2.7,
+  "source_time_end_s": 13.7,
+  "lift_reference_time_s": 3.7,
+  "source_samples_per_case": 111,
+  "rendering": "Original saved qpos/ctrl/mocap replay followed by mj_forward only. No mj_step; physical orientation scale1x. Cyan root sphere is a display annotation.",
+  "timestamp_matching_tolerance_s": 1e-05,
+  "angle_definition": "Normalized quaternion shortest rotation angle 2*acos(abs(q0 dot qt)); total orientation change, not pitch alone.",
+  "rotation_z_definition": "r0=R0.T@(o0-h0), Dz=((Rt-R0)@r0).z; liftstart3.7s. This is a kinematic decomposition, not a counterfactual simulation.",
+  "object_position_source": "Original trace.object_pose; exact stage endpoints use corresponding original metrics float64 object poses, never interpolated.",
+  "prelift_display": "Relative-to-liftstart angle and rotation term are absent before3.7s; no future-referenced prelift curve.",
+  "held_endpoint_policy": "13.7s original release_open boundary is the held state before opening integration; displaylabel heldend(before release).",
+  "renderer": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/render_root_tilt.py",
+  "renderer_sha256": "3bccc24926d7ca2967b4226e88989a2cce0ec779fa2b2511a5df46f947f6c6e7",
+  "dependencies": {
+    "/workspace/shadow-lift-sweep-200g/evaluate_lifts.py": "164fd4e4eab1472a7cf4eb92bf5abf88747f78c1df58b19a0667ce8ce75f5d50",
+    "/workspace/Dexonomy/assets/hand/shadow/right.xml": "558852d62a72b388e38bbb7555e55055df5aa7cc0433447ce16e5adf974a0a07",
+    "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/kinematics-analysis.py": "c85e636a9a32cfe5f79149305b5552ea2a213e18bfc49d9d907661ac5f589cde"
+  },
+  "sources": [
+    {
+      "diameter_mm": 5,
+      "input": "/workspace/shadow-lift-sweep-200g/output/diameter_sweep_200g_shadow/grasp_data/9_Palmar_Pinch/cylinder_thin_table_5/scaledfull20_0_4_grasp.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/lift-evaluation/cylinder_thin_table_5/9_Palmar_Pinch/scaledfull20_0_4_grasp/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/lift-evaluation/cylinder_thin_table_5/9_Palmar_Pinch/scaledfull20_0_4_grasp/trace.npz",
+      "source_sha256": {
+        "selection_sha256": "6a3b97cc3f2f24bf21fa2a592cc220507f0006b29b4f6aa12fd7cf33edd3e27a",
+        "input_sha256": "f58b1680fcbe55966c24123330604e987a909ab4c122cae5ecd8b2e2199eebc8",
+        "metrics_sha256": "02044dfeff976f8a91e9cec1a9b4cd2cab2c0b1f9d4d5f95dd739d1b96854c7f",
+        "trace_sha256": "a0d426719992e27a0dec9e0e50460415245ce1eda00e442a03c8835d4c238ef4"
+      },
+      "compiled_coordinates": {
+        "nq": 36,
+        "nv": 34,
+        "hand_body_id": 1,
+        "hand_body_name": "hand-world",
+        "hand_root_joint_id": 0,
+        "hand_root_joint_name": "hand_freejoint",
+        "hand_root_joint_type": "free",
+        "hand_root_qpos_address": 0,
+        "hand_root_z_qpos_address": 2,
+        "weld_equality_id": 0,
+        "mocap_body_id": 25,
+        "mocap_body_name": "mocap_body",
+        "mocap_array_slot": 0,
+        "weld_equality_data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "weld_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "weld_solref": [
+          0.02,
+          1.0
+        ],
+        "weld_relative_orientation_identity_verified": true,
+        "object_joint_id": 23,
+        "object_joint_name": "cylinder_thin_freejoint",
+        "object_body_id": 26,
+        "object_body_name": "obj-cylinder_thinworld",
+        "object_qpos_address": 29,
+        "object_z_qpos_address": 31,
+        "compiled_object_mass_kg": 0.1999999891664342
+      },
+      "first_trace_index": 29,
+      "last_trace_index": 142,
+      "final_values": {
+        "frame": 110,
+        "diameter_mm": 5,
+        "video_time_1x_s": 11.0,
+        "grid_time_s": 13.7,
+        "recorded_time_s": 13.699999809265137,
+        "trace_index": 142,
+        "recorded_phase": "release_open",
+        "display_phase": "持握结束（释放前）",
+        "lift_reference_started": true,
+        "root_rotation_since_lift_start_deg": 2.7650361460880544,
+        "root_to_mocap_orientation_error_deg": 4.634175914536833,
+        "root_rotation_contribution_world_z_mm": -6.513609329944715,
+        "object_rise_since_initial_mm": 92.80020718673772,
+        "object_position_source": "held_object_pose",
+        "root_world_x_m": -0.07817655056715012,
+        "root_world_y_m": -0.11205124109983444,
+        "root_world_z_m": 0.18549348413944244,
+        "root_qw": 0.3695571493324992,
+        "root_qx": -0.10305332589739621,
+        "root_qy": 0.6839100849426101,
+        "root_qz": 0.6205437302177131,
+        "hand_object_contact_points": 2
+      },
+      "camera": {
+        "lookat": [
+          -0.04466000078118907,
+          -0.030238605722527977,
+          0.13440179813267672
+        ],
+        "distance": 0.5183001475802239,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      }
+    },
+    {
+      "diameter_mm": 90,
+      "input": "/workspace/shadow-lift-sweep-200g/output/diameter_sweep_200g_shadow/grasp_data/fingertip_large/cylinder_thin_table_90/0_6_grasp.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/lift-evaluation/cylinder_thin_table_90/fingertip_large/0_6_grasp/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/lift-evaluation/cylinder_thin_table_90/fingertip_large/0_6_grasp/trace.npz",
+      "source_sha256": {
+        "selection_sha256": "6a3b97cc3f2f24bf21fa2a592cc220507f0006b29b4f6aa12fd7cf33edd3e27a",
+        "input_sha256": "5797b2f18067ff67ad0809d1aafc91ac30f2c3dab6433f1ebd8434839fb1481e",
+        "metrics_sha256": "4ca87f8523fd17745df6cc9f29e4401e7f168ce635c72ff4e0b196da1db88b23",
+        "trace_sha256": "25adbf0fa703de42652c6b5085f9d164b28ac0c220a1a271494c2126c6b83435"
+      },
+      "compiled_coordinates": {
+        "nq": 36,
+        "nv": 34,
+        "hand_body_id": 1,
+        "hand_body_name": "hand-world",
+        "hand_root_joint_id": 0,
+        "hand_root_joint_name": "hand_freejoint",
+        "hand_root_joint_type": "free",
+        "hand_root_qpos_address": 0,
+        "hand_root_z_qpos_address": 2,
+        "weld_equality_id": 0,
+        "mocap_body_id": 25,
+        "mocap_body_name": "mocap_body",
+        "mocap_array_slot": 0,
+        "weld_equality_data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "weld_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "weld_solref": [
+          0.02,
+          1.0
+        ],
+        "weld_relative_orientation_identity_verified": true,
+        "object_joint_id": 23,
+        "object_joint_name": "cylinder_thin_freejoint",
+        "object_body_id": 26,
+        "object_body_name": "obj-cylinder_thinworld",
+        "object_qpos_address": 29,
+        "object_z_qpos_address": 31,
+        "compiled_object_mass_kg": 0.2000000196950172
+      },
+      "first_trace_index": 29,
+      "last_trace_index": 142,
+      "final_values": {
+        "frame": 110,
+        "diameter_mm": 90,
+        "video_time_1x_s": 11.0,
+        "grid_time_s": 13.7,
+        "recorded_time_s": 13.699999809265137,
+        "trace_index": 142,
+        "recorded_phase": "release_open",
+        "display_phase": "持握结束（释放前）",
+        "lift_reference_started": true,
+        "root_rotation_since_lift_start_deg": 2.118286468171855,
+        "root_to_mocap_orientation_error_deg": 5.005167085164413,
+        "root_rotation_contribution_world_z_mm": -5.689621334459722,
+        "object_rise_since_initial_mm": 94.6520954743828,
+        "object_position_source": "held_object_pose",
+        "root_world_x_m": -0.0382232628762722,
+        "root_world_y_m": -0.1528058797121048,
+        "root_world_z_m": 0.2373424619436264,
+        "root_qw": 0.30170557617631444,
+        "root_qx": -0.5943559548991875,
+        "root_qy": -0.32840854707525485,
+        "root_qz": -0.6692253509752253,
+        "hand_object_contact_points": 9
+      },
+      "camera": {
+        "lookat": [
+          0.0054192718816921115,
+          0.0010434619907755405,
+          0.22754975408315659
+        ],
+        "distance": 0.8807318391359765,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      }
+    },
+    {
+      "diameter_mm": 100,
+      "input": "/workspace/shadow-lift-sweep-200g/output/diameter_sweep_200g_shadow/grasp_data/fingertip_large/cylinder_thin_table_100/0_6_grasp.npy",
+      "metrics": "/workspace/shadow-lift-sweep-200g/lift-evaluation/cylinder_thin_table_100/fingertip_large/0_6_grasp/metrics.json",
+      "trace": "/workspace/shadow-lift-sweep-200g/lift-evaluation/cylinder_thin_table_100/fingertip_large/0_6_grasp/trace.npz",
+      "source_sha256": {
+        "selection_sha256": "6a3b97cc3f2f24bf21fa2a592cc220507f0006b29b4f6aa12fd7cf33edd3e27a",
+        "input_sha256": "82366e9136a7cd37f149cbc2a3b88c808325cc9bbb64ffeaa660414840f4a701",
+        "metrics_sha256": "9a0c6a020ff5eea3d9997d1f18a1c19859f09d4a59cc554e4bd636132f8f75c5",
+        "trace_sha256": "20cad626a33602914c8dc79cdc4daac71fe69a49adc6b77930a649673bef3184"
+      },
+      "compiled_coordinates": {
+        "nq": 36,
+        "nv": 34,
+        "hand_body_id": 1,
+        "hand_body_name": "hand-world",
+        "hand_root_joint_id": 0,
+        "hand_root_joint_name": "hand_freejoint",
+        "hand_root_joint_type": "free",
+        "hand_root_qpos_address": 0,
+        "hand_root_z_qpos_address": 2,
+        "weld_equality_id": 0,
+        "mocap_body_id": 25,
+        "mocap_body_name": "mocap_body",
+        "mocap_array_slot": 0,
+        "weld_equality_data": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "weld_solimp": [
+          0.9,
+          0.95,
+          0.001,
+          0.5,
+          2.0
+        ],
+        "weld_solref": [
+          0.02,
+          1.0
+        ],
+        "weld_relative_orientation_identity_verified": true,
+        "object_joint_id": 23,
+        "object_joint_name": "cylinder_thin_freejoint",
+        "object_body_id": 26,
+        "object_body_name": "obj-cylinder_thinworld",
+        "object_qpos_address": 29,
+        "object_z_qpos_address": 31,
+        "compiled_object_mass_kg": 0.19999999687303655
+      },
+      "first_trace_index": 29,
+      "last_trace_index": 142,
+      "final_values": {
+        "frame": 110,
+        "diameter_mm": 100,
+        "video_time_1x_s": 11.0,
+        "grid_time_s": 13.7,
+        "recorded_time_s": 13.699999809265137,
+        "trace_index": 142,
+        "recorded_phase": "release_open",
+        "display_phase": "持握结束（释放前）",
+        "lift_reference_started": true,
+        "root_rotation_since_lift_start_deg": 1.9358683434275492,
+        "root_to_mocap_orientation_error_deg": 4.91826990945255,
+        "root_rotation_contribution_world_z_mm": -5.225134699015041,
+        "object_rise_since_initial_mm": 94.8217489044203,
+        "object_position_source": "held_object_pose",
+        "root_world_x_m": 0.10821797698736191,
+        "root_world_y_m": 0.10909290611743927,
+        "root_world_z_m": 0.25207608938217163,
+        "root_qw": 0.7389346483706936,
+        "root_qx": 0.15117067349322547,
+        "root_qy": -0.6475945222488012,
+        "root_qz": 0.10837134153562476,
+        "hand_object_contact_points": 9
+      },
+      "camera": {
+        "lookat": [
+          -0.004374076845124364,
+          -0.0002816663914018136,
+          0.24761187285184863
+        ],
+        "distance": 0.9597197511248016,
+        "azimuth": 135.0,
+        "elevation": -20.0
+      }
+    }
+  ],
+  "previews": [
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/preview_loaded.png",
+      "sha256": "0c0d44cfb4893faa8f13b69fc93eee68d7de0ee03aa1bbc557aa70b6f7424400",
+      "frame": 0
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/preview_lift_start.png",
+      "sha256": "ca4e694c56d670b510ab831c853393b1913f22c63622b6297a9469d00d190fa4",
+      "frame": 10
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/preview_held.png",
+      "sha256": "3c377c8f3d998482aae890d2518ed05fa8894295fbf7f2876094145311c79a40",
+      "frame": 110
+    }
+  ],
+  "numerical_outputs": [
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/per_frame.csv",
+      "sha256": "af34595cb76a993480d03dfd010dd31fcfde39ebd830f58dc82184eb939e3abc"
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/per_frame.npz",
+      "sha256": "9b5c7d591dade4cdca28a34975d912d8badda2640128ff16c3dbc28858903d58"
+    }
+  ],
+  "videos": [
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/root_tilt_3cases_1x.mp4",
+      "sha256": "a078c6bfff99d27bfdd9252865f860c8ad691b6ba54ae7a4aa26ce76e87d5c49",
+      "width": 1920,
+      "height": 1080,
+      "fps": 10,
+      "frames": 111,
+      "duration_s": 11.1,
+      "playback_speed": 1.0,
+      "source_time_start_s": 2.7,
+      "source_time_end_s": 13.7,
+      "slowdown_policy": "One saved state per frame",
+      "full_decode_passed": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "111",
+            "nb_read_frames": "111"
+          }
+        ],
+        "format": {
+          "duration": "11.100000"
+        }
+      }
+    },
+    {
+      "path": "/workspace/shadow-lift-sweep-200g/height-diagnosis-20261022/tilt-overview/root_tilt_3cases_0p5x.mp4",
+      "sha256": "ce705b55462c97dbb31c06a6fcf7a6259b2f27e22fcbc790229b9c34cf7c0cec",
+      "width": 1920,
+      "height": 1080,
+      "fps": 10,
+      "frames": 222,
+      "duration_s": 22.2,
+      "playback_speed": 0.5,
+      "source_time_start_s": 2.7,
+      "source_time_end_s": 13.7,
+      "slowdown_policy": "Repeat each saved-state image twice, no interpolation",
+      "full_decode_passed": true,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "10/1",
+            "avg_frame_rate": "10/1",
+            "nb_frames": "222",
+            "nb_read_frames": "222"
+          }
+        ],
+        "format": {
+          "duration": "22.200000"
+        }
+      }
+    }
+  ]
+}
