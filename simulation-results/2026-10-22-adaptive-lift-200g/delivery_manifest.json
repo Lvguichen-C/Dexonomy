@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "scope": "Only own generated adaptive Shadow sweep outputs; excludes uploaded attachments, credentials and environments",
+  "archive_entries": 1785,
+  "archives": [
+    "adaptive_lift_results.zip"
+  ],
+  "files": [
+    {
+      "name": "adaptive_lift_summary.json",
+      "bytes": 3721442,
+      "sha256": "1c9ce6e132f8c92d0a579219251834bf189f8278d46302755ea499b7367ae61d"
+    },
+    {
+      "name": "ADAPTIVE_LIFT_REPORT.md",
+      "bytes": 11712,
+      "sha256": "d117b9ff3947d4e83020159092aa906896eac2b2e3ff0fa604192416b52b426c"
+    },
+    {
+      "name": "PROTOCOL_REVIEW.md",
+      "bytes": 5798,
+      "sha256": "b4b467b6980f0df0b4f32f3cd36592825490e238c0c40efb25d738d13551dee4"
+    },
+    {
+      "name": "motion-protocol-summary.json",
+      "bytes": 737669,
+      "sha256": "66c70423576844535b481d59a3190822dab2b05da5cee6e93d6785dbb55201d1"
+    },
+    {
+      "name": "LOAD_COMPARISON.md",
+      "bytes": 2195,
+      "sha256": "9ce076309bbf9439bde51d1e49b11a8dcf90d412b4860821b282d7ec6abb6415"
+    },
+    {
+      "name": "load-comparison.json",
+      "bytes": 1331209,
+      "sha256": "1aa29c1ea35dc1deadf1e96ae49621de5225d439f138dab9dc21c81f796c15c1"
+    },
+    {
+      "name": "MASS_VALIDATION.md",
+      "bytes": 2506,
+      "sha256": "a73a3cdf4511b3d5c35a74b49ad954df5fc7e4ec9c44fdd3277ad8c3a5babb37"
+    },
+    {
+      "name": "mass-validation.json",
+      "bytes": 16538,
+      "sha256": "4084369fed56d689c8efc5f3b776ca3194706b9668a989dc772c6e848cfba9df"
+    },
+    {
+      "name": "controlled-comparison-verification.json",
+      "bytes": 261113,
+      "sha256": "43d0288d297aa54161a7d94eff9b4ebe8f30343b5a5ae55905b32f38c8490a52"
+    },
+    {
+      "name": "FAILURE_ANALYSIS.md",
+      "bytes": 6503,
+      "sha256": "a21ac14911e5756e9fbd0e6df5d8d5b1e449886f149e580a2a129a07a7d6ef04"
+    },
+    {
+      "name": "FAILURE_ANALYSIS.json",
+      "bytes": 1041268,
+      "sha256": "a849b2cfebb2828e2934102a0d35d4a94bee24fab4e3b719ae21e9166f63e3d1"
+    },
+    {
+      "name": "all_12_diameters.mp4",
+      "bytes": 424285,
+      "sha256": "13bf43599bf54e751d20d9df9542e54bcb92dd58fbeb3c6a0e83528e5952b61c"
+    },
+    {
+      "name": "d001_full_sequence.mp4",
+      "bytes": 239383,
+      "sha256": "adff1a29d7f985c4334b2ba93a21944aaf0485854c9a5efe8bbe5078c860006f"
+    },
+    {
+      "name": "d005_full_sequence.mp4",
+      "bytes": 289033,
+      "sha256": "6ba4200b8b12fd7f332dfe12051ccd419d9731274927176ad26b9e8cda9033a6"
+    },
+    {
+      "name": "d010_full_sequence.mp4",
+      "bytes": 281918,
+      "sha256": "0a76f1ebd37ebc5e7c5d959a0cb12f37a925425b766fea73c614a720f0ac0827"
+    },
+    {
+      "name": "d020_full_sequence.mp4",
+      "bytes": 266529,
+      "sha256": "1fdf6280137853e60da3adee1ce4c057ec0542fa763cdeeb144429644db57333"
+    },
+    {
+      "name": "d030_full_sequence.mp4",
+      "bytes": 217566,
+      "sha256": "27d236f450f95cff7b125199c39aa256de95410d807ae239039cd918ecb173df"
+    },
+    {
+      "name": "d040_full_sequence.mp4",
+      "bytes": 223340,
+      "sha256": "4db683f03788a77f5f91424faa549dd548ca52da64b3ee38bd1786e58d1ddb24"
+    },
+    {
+      "name": "d050_full_sequence.mp4",
+      "bytes": 222717,
+      "sha256": "bd3431888a4027fd13d14451b9aa9290e21b26a97157c3c548fdda116582fa1f"
+    },
+    {
+      "name": "d060_full_sequence.mp4",
+      "bytes": 193843,
+      "sha256": "59d40fc178662d6547ba86078dc5d5d7844b26b3ea1f13603dc9bd92bea1ab69"
+    },
+    {
+      "name": "d070_full_sequence.mp4",
+      "bytes": 215344,
+      "sha256": "3556a802a318d349cc8bf4e71e44c23587a91caedec60359e8cfc266493c83c9"
+    },
+    {
+      "name": "d080_full_sequence.mp4",
+      "bytes": 210869,
+      "sha256": "b49fcbe3fd2a10b3b17649c60967b542d3ee06c8e5d4880aab88ec07fd1cd85c"
+    },
+    {
+      "name": "d090_full_sequence.mp4",
+      "bytes": 234985,
+      "sha256": "564681cfcf32a1b5e7bf578eaed7277ef7ac18c53bf8a01d56c544935e6a59bc"
+    },
+    {
+      "name": "d100_full_sequence.mp4",
+      "bytes": 199269,
+      "sha256": "a7870f7a77a1563ea432536ed2d2289330158d6ddf0fd64a97466d3038d5316e"
+    },
+    {
+      "name": "adaptive_lift_results.zip",
+      "bytes": 22900572,
+      "sha256": "6a2d7f104e11f2ef9c313ffe754fc8f58e96ca828c005abe806a1484bb919232"
+    }
+  ]
+}
