@@ -1,0 +1,1081 @@
+{
+  "schema_version": 1,
+  "purpose": "Relative archive mapping; original animation index/source paths remain byte-identical for provenance",
+  "actual_trials": 32,
+  "videos": [
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h04__plain__h004_24_Tip_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "archive_path": "animations/h04__plain__h004_24_Tip_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "source_trial_ids": [
+        "h04__plain__h004_24_Tip_Pinch_preshape0.1_f64"
+      ],
+      "sha256": "7fa7b06c84d6881b90e2d5ae0bedafa6c25c7910dfe2832703ef0cdcf5ad88f5"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro"
+      ],
+      "sha256": "f3be46e62f720553aba8b627784b85ecb6891030b7c2e97bfd56aed94c11f22c"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h04__plain__h004_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h04__plain__h004_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h04__plain__h004_source_top_aligned"
+      ],
+      "sha256": "e7db9b30ec8f5e19912b0289320c41cc02bef84bf66069ca2a256e81c9fb49aa"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "archive_path": "animations/h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "source_trial_ids": [
+        "h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64"
+      ],
+      "sha256": "d7590e803a8491409221c60feee6592209ebc06076061c674bdfaa8bd5cef219"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro"
+      ],
+      "sha256": "aff77ee7c749ff94233310005d54ecd1e23c55a4dc38f353d680262d82320940"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h04__shallow__h004_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h04__shallow__h004_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h04__shallow__h004_source_top_aligned"
+      ],
+      "sha256": "ae15189552e710d5ccf7e9b2a411b3d25deea7384971616b222890212fc63067"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "archive_path": "animations/h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "source_trial_ids": [
+        "h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64"
+      ],
+      "sha256": "435669f12b0ee46e0d5fa0e01722ea698b7931fc4a65ddd36bfc169e3c4206a5"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro"
+      ],
+      "sha256": "36268a6faf4be5b3b522496b4028c1abb9efbe7853298a660774750d8ec5d5f5"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h06__plain__h006_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h06__plain__h006_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h06__plain__h006_source_top_aligned"
+      ],
+      "sha256": "d3f5c620007edf1fea0ee1368d5dce80c03dc2bedf56584c311049a125421808"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "archive_path": "animations/h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64/full_sequence.mp4",
+      "source_trial_ids": [
+        "h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64"
+      ],
+      "sha256": "8846d33b9c8917e2bd94ff4ded66608e276f119417bec8433033a1487c5fb3a8"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro"
+      ],
+      "sha256": "6022c366c49731e9f8f056616281bbe542fab906f063f47389c52f3da019bc7b"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h06__shallow__h006_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h06__shallow__h006_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h06__shallow__h006_source_top_aligned"
+      ],
+      "sha256": "57b68cd78c3cde3bfa5bdf5e71919ff9ca1941ad5066c4f1c6a2957afba855ce"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h08__plain__h008_24_Tip_Pinch_preshape0_f64/full_sequence.mp4",
+      "archive_path": "animations/h08__plain__h008_24_Tip_Pinch_preshape0_f64/full_sequence.mp4",
+      "source_trial_ids": [
+        "h08__plain__h008_24_Tip_Pinch_preshape0_f64"
+      ],
+      "sha256": "d195beb57170d65c16f2f755145b174fd33becb359f3379d0a736f5f50dbf1fc"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro"
+      ],
+      "sha256": "e799de555a79a96ea80426023ec81b82c00f750a7caa3252c34ab0b24d8d7f4e"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h08__plain__h008_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h08__plain__h008_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h08__plain__h008_source_top_aligned"
+      ],
+      "sha256": "1f15abb643eaf31184a4f03851754fe3052d7b6c4871e8f840a7305e7b2ed352"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h08__shallow__h008_24_Tip_Pinch_preshape0_f64/full_sequence.mp4",
+      "archive_path": "animations/h08__shallow__h008_24_Tip_Pinch_preshape0_f64/full_sequence.mp4",
+      "source_trial_ids": [
+        "h08__shallow__h008_24_Tip_Pinch_preshape0_f64"
+      ],
+      "sha256": "f6613ca00487b18c9a3027727b6bad1c141cdd81c85397df6531274cc8ee41a2"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro"
+      ],
+      "sha256": "3e8295d98fc4a232b2ee907e87c54a94b5570cedd22a38ec025d288019871296"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h08__shallow__h008_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h08__shallow__h008_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h08__shallow__h008_source_top_aligned"
+      ],
+      "sha256": "335008b764b5f182aca1f74c5ab3cc89b5ab20133325ca763ed53322d78aa8c5"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__plain__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__plain__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64"
+      ],
+      "sha256": "52fc6572bcbc56c29dfc616a078ed282a6f6b20bf20ab41b7ee53f53f3a83238"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__plain__h010_palmar_oracle_v1_squeeze005/full_sequence.mp4",
+      "archive_path": "animations/h10__plain__h010_palmar_oracle_v1_squeeze005/full_sequence.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_palmar_oracle_v1_squeeze005"
+      ],
+      "sha256": "f092dbafd0aad71c676aa547fddca9124933427e455b816737ea0ecc52aa1c48"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp"
+      ],
+      "sha256": "e44f6400d3edc374e4dd024c46043886d14d4d38586838adfea789903a41c5c3"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_micro"
+      ],
+      "sha256": "fcfb2343f94302f508f569293f7c8cc91a61f060b474fb704e59f799cb705f8e"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro"
+      ],
+      "sha256": "6debba547c01f2ae99698fb472fa233cb4636f36b081b114e754787d294098dd"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__plain__h010_palmar_oracle_v1_squeeze005_micro_contact/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__plain__h010_palmar_oracle_v1_squeeze005_micro_contact/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_palmar_oracle_v1_squeeze005_micro_contact"
+      ],
+      "sha256": "b64cbcbdc6755895e99c6fc870ca68213e41a3713cd74e64cf2ce6abc13d912c"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__plain__h010_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h10__plain__h010_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_source_top_aligned"
+      ],
+      "sha256": "4b96679e3649e9bfd661014ce08d5e8284e1577e425da01bdca170e9a95a5a52"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__shallow__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__shallow__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__shallow__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64"
+      ],
+      "sha256": "352a5e62d5b4f5c9221ac9124b765d24efc7fe47d66548461e27762a5498d549"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__shallow__h010_palmar_oracle_v1_squeeze005/full_sequence.mp4",
+      "archive_path": "animations/h10__shallow__h010_palmar_oracle_v1_squeeze005/full_sequence.mp4",
+      "source_trial_ids": [
+        "h10__shallow__h010_palmar_oracle_v1_squeeze005"
+      ],
+      "sha256": "25af76fdf698fff05dbdd7a037d342935c5f98dd611ef19f9d70c57b73b278a2"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp"
+      ],
+      "sha256": "a6834fc98b003d011caf6cc3228e8d4c6481f2b41e62e655c1c06af20ff8d31c"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_micro"
+      ],
+      "sha256": "b13f810e114b4d72757745e93d69b52b1d180e18547f2195599174c95d291a14"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro"
+      ],
+      "sha256": "a2031f67166062ff0430ce0f6e68647ca87cc451cd6c6f55808b84b3c524d4c1"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_micro_contact/full_sequence_presented.mp4",
+      "archive_path": "animations/h10__shallow__h010_palmar_oracle_v1_squeeze005_micro_contact/full_sequence_presented.mp4",
+      "source_trial_ids": [
+        "h10__shallow__h010_palmar_oracle_v1_squeeze005_micro_contact"
+      ],
+      "sha256": "02bf085cb2cbc5ae32697271199b40cf51bd09e7ec395afd202e8ecee3d7092a"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10__shallow__h010_source_top_aligned/full_sequence.mp4",
+      "archive_path": "animations/h10__shallow__h010_source_top_aligned/full_sequence.mp4",
+      "source_trial_ids": [
+        "h10__shallow__h010_source_top_aligned"
+      ],
+      "sha256": "fd57d5af6fc0bbf86e58f26565b0e6d08d393e8bead12f29811a46a62cc9d705"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h04_plain_vs_shallow_final.mp4",
+      "archive_path": "h04_plain_vs_shallow_final.mp4",
+      "source_trial_ids": [
+        "h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro",
+        "h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro"
+      ],
+      "sha256": "0da9cea948885cd0c1007c1834e09aa487a25e802d85b986c478a05aa59bff61"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h06_plain_vs_shallow_final.mp4",
+      "archive_path": "h06_plain_vs_shallow_final.mp4",
+      "source_trial_ids": [
+        "h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro",
+        "h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro"
+      ],
+      "sha256": "426834f352ad16410ac464b290e5ded8e164a7409bf278f4d11a1e5ac4244465"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h08_plain_vs_shallow_final.mp4",
+      "archive_path": "h08_plain_vs_shallow_final.mp4",
+      "source_trial_ids": [
+        "h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro",
+        "h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro"
+      ],
+      "sha256": "95b31c8aac462cd45278e02976aa4bbded0b5b923d10cf926d0385c453d39118"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/h10_plain_vs_shallow_final.mp4",
+      "archive_path": "h10_plain_vs_shallow_final.mp4",
+      "source_trial_ids": [
+        "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro",
+        "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro"
+      ],
+      "sha256": "d630951f500659086b6521f37bb1f74b2f08a3a9ba00b2714b0fb454d82d9b67"
+    },
+    {
+      "original_path": "/workspace/shadow-height-gradient-1mm-200g-20261022/animations/all_8_conditions_final_policy.mp4",
+      "archive_path": "all_8_conditions_final_policy.mp4",
+      "source_trial_ids": [
+        "h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro",
+        "h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro",
+        "h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro",
+        "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro",
+        "h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro",
+        "h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro",
+        "h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro",
+        "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro"
+      ],
+      "sha256": "d73fbccb765d186dd3c5382a836a01305e52db23cc7ad729c9178ad15fae0ff6"
+    }
+  ],
+  "raw_condition_archives": {
+    "h004_plain": [
+      {
+        "archive": "raw_h004_plain_part1.zip",
+        "members": [
+          "inputs/h04__plain__h004_24_Tip_Pinch_preshape0.1_f64/h004_24_Tip_Pinch_preshape0.1_f64.npy",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64/diagnostics.npz",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64/metrics.json",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64/model.mjb",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64/model.xml",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64/result.json",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h004_plain_part2.zip",
+        "members": [
+          "additional_sources/h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/h004_24_Tip_Pinch_preshape0.1_f64.npy",
+          "inputs/h04__plain__h004_source_top_aligned/h004_source_top_aligned.npy",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/diagnostics.npz",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/force_feedback.npz",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/metrics.json",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/model.mjb",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/model.xml",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/result.json",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h004/plain/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/trace.npz",
+          "trials/h004/plain/h004_source_top_aligned/diagnostics.npz",
+          "trials/h004/plain/h004_source_top_aligned/metrics.json",
+          "trials/h004/plain/h004_source_top_aligned/model.mjb",
+          "trials/h004/plain/h004_source_top_aligned/model.xml",
+          "trials/h004/plain/h004_source_top_aligned/result.json",
+          "trials/h004/plain/h004_source_top_aligned/trace.npz"
+        ]
+      }
+    ],
+    "h004_shallow": [
+      {
+        "archive": "raw_h004_shallow_part1.zip",
+        "members": [
+          "inputs/h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64/h004_24_Tip_Pinch_preshape0.1_f64.npy",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64/diagnostics.npz",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64/metrics.json",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64/model.mjb",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64/model.xml",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64/result.json",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h004_shallow_part2.zip",
+        "members": [
+          "additional_sources/h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/h004_24_Tip_Pinch_preshape0.1_f64.npy",
+          "inputs/h04__shallow__h004_source_top_aligned/h004_source_top_aligned.npy",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/diagnostics.npz",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/force_feedback.npz",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/metrics.json",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/model.mjb",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/model.xml",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/result.json",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h004/shallow/h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro/trace.npz",
+          "trials/h004/shallow/h004_source_top_aligned/diagnostics.npz",
+          "trials/h004/shallow/h004_source_top_aligned/metrics.json",
+          "trials/h004/shallow/h004_source_top_aligned/model.mjb",
+          "trials/h004/shallow/h004_source_top_aligned/model.xml",
+          "trials/h004/shallow/h004_source_top_aligned/result.json",
+          "trials/h004/shallow/h004_source_top_aligned/trace.npz"
+        ]
+      }
+    ],
+    "h006_plain": [
+      {
+        "archive": "raw_h006_plain_part1.zip",
+        "members": [
+          "inputs/h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64/h006_9_Palmar_Pinch_preshape0.1_f64.npy",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64/diagnostics.npz",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64/metrics.json",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64/model.mjb",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64/model.xml",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64/result.json",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h006_plain_part2.zip",
+        "members": [
+          "additional_sources/h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/h006_9_Palmar_Pinch_preshape0.1_f64.npy",
+          "inputs/h06__plain__h006_source_top_aligned/h006_source_top_aligned.npy",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/diagnostics.npz",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/force_feedback.npz",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/metrics.json",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/model.mjb",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/model.xml",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/result.json",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h006/plain/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/trace.npz",
+          "trials/h006/plain/h006_source_top_aligned/diagnostics.npz",
+          "trials/h006/plain/h006_source_top_aligned/metrics.json",
+          "trials/h006/plain/h006_source_top_aligned/model.mjb",
+          "trials/h006/plain/h006_source_top_aligned/model.xml",
+          "trials/h006/plain/h006_source_top_aligned/result.json",
+          "trials/h006/plain/h006_source_top_aligned/trace.npz"
+        ]
+      }
+    ],
+    "h006_shallow": [
+      {
+        "archive": "raw_h006_shallow_part1.zip",
+        "members": [
+          "inputs/h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64/h006_9_Palmar_Pinch_preshape0.1_f64.npy",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64/diagnostics.npz",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64/metrics.json",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64/model.mjb",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64/model.xml",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64/result.json",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h006_shallow_part2.zip",
+        "members": [
+          "additional_sources/h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/h006_9_Palmar_Pinch_preshape0.1_f64.npy",
+          "inputs/h06__shallow__h006_source_top_aligned/h006_source_top_aligned.npy",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/diagnostics.npz",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/force_feedback.npz",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/metrics.json",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/model.mjb",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/model.xml",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/result.json",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h006/shallow/h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro/trace.npz",
+          "trials/h006/shallow/h006_source_top_aligned/diagnostics.npz",
+          "trials/h006/shallow/h006_source_top_aligned/metrics.json",
+          "trials/h006/shallow/h006_source_top_aligned/model.mjb",
+          "trials/h006/shallow/h006_source_top_aligned/model.xml",
+          "trials/h006/shallow/h006_source_top_aligned/result.json",
+          "trials/h006/shallow/h006_source_top_aligned/trace.npz"
+        ]
+      }
+    ],
+    "h008_plain": [
+      {
+        "archive": "raw_h008_plain_part1.zip",
+        "members": [
+          "inputs/h08__plain__h008_24_Tip_Pinch_preshape0_f64/h008_24_Tip_Pinch_preshape0_f64.npy",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64/diagnostics.npz",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64/metrics.json",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64/model.mjb",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64/model.xml",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64/result.json",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h008_plain_part2.zip",
+        "members": [
+          "additional_sources/h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/h008_24_Tip_Pinch_preshape0_f64.npy",
+          "inputs/h08__plain__h008_source_top_aligned/h008_source_top_aligned.npy",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/diagnostics.npz",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/force_feedback.npz",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/metrics.json",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/model.mjb",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/model.xml",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/result.json",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h008/plain/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/trace.npz",
+          "trials/h008/plain/h008_source_top_aligned/diagnostics.npz",
+          "trials/h008/plain/h008_source_top_aligned/metrics.json",
+          "trials/h008/plain/h008_source_top_aligned/model.mjb",
+          "trials/h008/plain/h008_source_top_aligned/model.xml",
+          "trials/h008/plain/h008_source_top_aligned/result.json",
+          "trials/h008/plain/h008_source_top_aligned/trace.npz"
+        ]
+      }
+    ],
+    "h008_shallow": [
+      {
+        "archive": "raw_h008_shallow_part1.zip",
+        "members": [
+          "inputs/h08__shallow__h008_24_Tip_Pinch_preshape0_f64/h008_24_Tip_Pinch_preshape0_f64.npy",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64/diagnostics.npz",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64/metrics.json",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64/model.mjb",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64/model.xml",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64/result.json",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h008_shallow_part2.zip",
+        "members": [
+          "additional_sources/h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/h008_24_Tip_Pinch_preshape0_f64.npy",
+          "inputs/h08__shallow__h008_source_top_aligned/h008_source_top_aligned.npy",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/diagnostics.npz",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/force_feedback.npz",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/metrics.json",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/model.mjb",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/model.xml",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/result.json",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h008/shallow/h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro/trace.npz",
+          "trials/h008/shallow/h008_source_top_aligned/diagnostics.npz",
+          "trials/h008/shallow/h008_source_top_aligned/metrics.json",
+          "trials/h008/shallow/h008_source_top_aligned/model.mjb",
+          "trials/h008/shallow/h008_source_top_aligned/model.xml",
+          "trials/h008/shallow/h008_source_top_aligned/result.json",
+          "trials/h008/shallow/h008_source_top_aligned/trace.npz"
+        ]
+      }
+    ],
+    "h010_plain": [
+      {
+        "archive": "raw_h010_plain_part1.zip",
+        "members": [
+          "additional_sources/h10__plain__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/processor_0_input_video/full_sequence.mp4",
+          "additional_sources/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp/processor_0_input_video/full_sequence.mp4",
+          "inputs/h10__plain__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64.npy",
+          "inputs/h10__plain__h010_palmar_oracle_v1_squeeze005/h010_palmar_oracle_v1_squeeze005.npy",
+          "inputs/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp/h010_palmar_oracle_v1_squeeze005.npy",
+          "trials/h010/plain/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/diagnostics.npz",
+          "trials/h010/plain/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/metrics.json",
+          "trials/h010/plain/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/model.mjb",
+          "trials/h010/plain/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/model.xml",
+          "trials/h010/plain/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/result.json",
+          "trials/h010/plain/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/trace.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005/diagnostics.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005/metrics.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005/model.mjb",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005/model.xml",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005/result.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005/trace.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/diagnostics.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/force_clamp_intervention.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/force_feedback.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/metrics.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/model.mjb",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/model.xml",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/result.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h010_plain_part2_part1.zip",
+        "members": [
+          "additional_sources/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/processor_0_input_video/full_sequence.mp4",
+          "additional_sources/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/h010_palmar_oracle_v1_squeeze005.npy",
+          "inputs/h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/h010_palmar_oracle_v1_squeeze005.npy",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/diagnostics.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/force_clamp_intervention.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/force_feedback.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/metrics.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/model.mjb",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/model.xml",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/result.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/trace.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/diagnostics.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/force_feedback.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/metrics.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/model.mjb",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/model.xml",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/result.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h010_plain_part2_part2.zip",
+        "members": [
+          "additional_sources/h10__plain__h010_palmar_oracle_v1_squeeze005_micro_contact/processor_0_input_video/full_sequence.mp4",
+          "inputs/h10__plain__h010_palmar_oracle_v1_squeeze005_micro_contact/h010_palmar_oracle_v1_squeeze005.npy",
+          "inputs/h10__plain__h010_source_top_aligned/h010_source_top_aligned.npy",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_micro_contact/diagnostics.npz",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_micro_contact/metrics.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_micro_contact/micro_contact_intervention.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_micro_contact/model.mjb",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_micro_contact/model.xml",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_micro_contact/result.json",
+          "trials/h010/plain/h010_palmar_oracle_v1_squeeze005_micro_contact/trace.npz",
+          "trials/h010/plain/h010_source_top_aligned/diagnostics.npz",
+          "trials/h010/plain/h010_source_top_aligned/metrics.json",
+          "trials/h010/plain/h010_source_top_aligned/model.mjb",
+          "trials/h010/plain/h010_source_top_aligned/model.xml",
+          "trials/h010/plain/h010_source_top_aligned/result.json",
+          "trials/h010/plain/h010_source_top_aligned/trace.npz"
+        ]
+      }
+    ],
+    "h010_shallow": [
+      {
+        "archive": "raw_h010_shallow_part1.zip",
+        "members": [
+          "additional_sources/h10__shallow__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/processor_0_input_video/full_sequence.mp4",
+          "additional_sources/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp/processor_0_input_video/full_sequence.mp4",
+          "inputs/h10__shallow__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64.npy",
+          "inputs/h10__shallow__h010_palmar_oracle_v1_squeeze005/h010_palmar_oracle_v1_squeeze005.npy",
+          "inputs/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp/h010_palmar_oracle_v1_squeeze005.npy",
+          "trials/h010/shallow/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/diagnostics.npz",
+          "trials/h010/shallow/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/metrics.json",
+          "trials/h010/shallow/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/model.mjb",
+          "trials/h010/shallow/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/model.xml",
+          "trials/h010/shallow/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/result.json",
+          "trials/h010/shallow/h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64/trace.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005/diagnostics.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005/metrics.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005/model.mjb",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005/model.xml",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005/result.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005/trace.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/diagnostics.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/force_clamp_intervention.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/force_feedback.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/metrics.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/model.mjb",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/model.xml",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/result.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h010_shallow_part2_part1.zip",
+        "members": [
+          "additional_sources/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/processor_0_input_video/full_sequence.mp4",
+          "additional_sources/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/processor_0_input_video/full_sequence.mp4",
+          "inputs/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_micro/h010_palmar_oracle_v1_squeeze005.npy",
+          "inputs/h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/h010_palmar_oracle_v1_squeeze005.npy",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/diagnostics.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/force_clamp_intervention.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/force_feedback.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/metrics.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/model.mjb",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/model.xml",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/result.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_micro/trace.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/diagnostics.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/force_clamp_intervention.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/force_feedback.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/metrics.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/model.mjb",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/model.xml",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/result.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/root_pose_feedback.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/root_pose_feedback_intervention.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro/trace.npz"
+        ]
+      },
+      {
+        "archive": "raw_h010_shallow_part2_part2.zip",
+        "members": [
+          "additional_sources/h10__shallow__h010_palmar_oracle_v1_squeeze005_micro_contact/processor_0_input_video/full_sequence.mp4",
+          "inputs/h10__shallow__h010_palmar_oracle_v1_squeeze005_micro_contact/h010_palmar_oracle_v1_squeeze005.npy",
+          "inputs/h10__shallow__h010_source_top_aligned/h010_source_top_aligned.npy",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_micro_contact/diagnostics.npz",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_micro_contact/metrics.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_micro_contact/micro_contact_intervention.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_micro_contact/model.mjb",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_micro_contact/model.xml",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_micro_contact/result.json",
+          "trials/h010/shallow/h010_palmar_oracle_v1_squeeze005_micro_contact/trace.npz",
+          "trials/h010/shallow/h010_source_top_aligned/diagnostics.npz",
+          "trials/h010/shallow/h010_source_top_aligned/metrics.json",
+          "trials/h010/shallow/h010_source_top_aligned/model.mjb",
+          "trials/h010/shallow/h010_source_top_aligned/model.xml",
+          "trials/h010/shallow/h010_source_top_aligned/result.json",
+          "trials/h010/shallow/h010_source_top_aligned/trace.npz"
+        ]
+      }
+    ]
+  },
+  "original_input_and_model_bindings": {
+    "h04__plain__h004_24_Tip_Pinch_preshape0.1_f64": {
+      "condition": "h004_plain",
+      "source_sha256": {
+        "metrics": "67e29250ba6cb32184566bb4d5c988ebb1e3c64cb992ceeb44df541b597afcb5",
+        "trace": "d3ffa6b839e3d186bde7154430673a34988c13ec5d7f6f7357fceefa10d01b21",
+        "model_mjb": "d4fb49819e878d175b61953bb9e91aafcaf8209242a18c444f57a857375b8ee4",
+        "model_xml": "2421a2cbd1a777eebfa08633f54f954bad1baa912c6054711c518a1094cab84f",
+        "input": "eff7b48ce758714a364c850a89462932b88de29e4d496aa295b5ef58b4c30591",
+        "diagnostics": "b2286351e92e8774dbbd0204365704934e689c47b91fa19850395a8bb4920088"
+      }
+    },
+    "h04__plain__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro": {
+      "condition": "h004_plain",
+      "source_sha256": {
+        "metrics": "e6aa80725ec7ceee8462ae6370bd88f382fc9121f7c3b580a9b688de70ee2551",
+        "trace": "51604dbe650cf6cb03f46ed9f1474e6a030ddd02c979a251fd5d9da33e8abb73",
+        "model_mjb": "c9cbfb82322f22147ecc6c20bd3c5339db461382e6212b3b967f583fd205ff09",
+        "model_xml": "308d7b4d3d47486ec0c74606d9b25a5aaa15f176721fcdd40e0677da821a93d5",
+        "input": "eff7b48ce758714a364c850a89462932b88de29e4d496aa295b5ef58b4c30591",
+        "diagnostics": "a0d882e67f39da7c64aaabdc238653117cdb868830f4a07f5c297ab342bbba9a",
+        "force_feedback": "8fe686a5d949c873219f0a57683429d4a076e8603bd25111f40b26ab17680485",
+        "root_pose_feedback": "49e660be92f2b9011ce18cf0220888c31954a3c35c05972bee2d475459a0711a"
+      }
+    },
+    "h04__plain__h004_source_top_aligned": {
+      "condition": "h004_plain",
+      "source_sha256": {
+        "metrics": "d06c138d31cf1ca07a731caaaa08874a4d667ea4a7291e82c5b7fac33f79c959",
+        "trace": "83c4dbf513eeb3f83ce81089ce51e8f36b0d045ad11ecc31008fa454b019ef2e",
+        "model_mjb": "1cce36ebc5e21980dc224caba203c85dba5abcc5f269c4221936d472ea20b34c",
+        "model_xml": "2421a2cbd1a777eebfa08633f54f954bad1baa912c6054711c518a1094cab84f",
+        "input": "74e7a4a571dc1ea6d78d69c49baefeeb4b17c4914822746107d1e7b27ca70efd",
+        "diagnostics": "9a32d108802975282abe8fd2a7e62809df949e3429ae3f09574744fbd09f9ba7"
+      }
+    },
+    "h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64": {
+      "condition": "h004_shallow",
+      "source_sha256": {
+        "metrics": "b2c1f091c4e2273fbf0c519fd48f6fd1733b97af9523e90c425f97d548756a8f",
+        "trace": "58f906abb04926b0e45895b50038958c1190891db47f91da5f37efb3f90f5e26",
+        "model_mjb": "3039ff6e57b830e8655fbd1a2018267a48dbb212fb7172f3dc98e30b38f721fd",
+        "model_xml": "3517155fc37b643b883d9698094e79d8f23e841d4def64b0d7e1bd97f69ebc6a",
+        "input": "eff7b48ce758714a364c850a89462932b88de29e4d496aa295b5ef58b4c30591",
+        "diagnostics": "f6954b01dcf2a78d05856c87b4daa6d6ce9b4371995b403fe849ebbcda2fe5fb"
+      }
+    },
+    "h04__shallow__h004_24_Tip_Pinch_preshape0.1_f64_force_clamp_root_micro": {
+      "condition": "h004_shallow",
+      "source_sha256": {
+        "metrics": "5582dece80e596d67ef777a81470d1f7008fd53dff4244b1f5fbb8d2d864f263",
+        "trace": "7c1d4f32482e4301bb36051dad5d7ae7de199b3335e906e7c073cc017999dd92",
+        "model_mjb": "7f2b7762c63709f0d41b1e79045e449d5af9a1e730b610559e7c9560af32c5fd",
+        "model_xml": "e2f872d8600a259ecff67e45bd1394eb6d321f67707a968d6c755f542d7429f5",
+        "input": "eff7b48ce758714a364c850a89462932b88de29e4d496aa295b5ef58b4c30591",
+        "diagnostics": "7f8ee090c232c14d8772f3e81f5b6efff853a9422da5f54d14489ab0b2639384",
+        "force_feedback": "951fc0f6bed476e742ce4cdc71d29502cd1624b39388f64c5eb868602c9409b2",
+        "root_pose_feedback": "d15d3458de6eb70969e46be06cf3c14cd6dec9754228e295bfb2416c2506a487"
+      }
+    },
+    "h04__shallow__h004_source_top_aligned": {
+      "condition": "h004_shallow",
+      "source_sha256": {
+        "metrics": "52399d3f3bfa3542b5c6dd460fbd05005aac7439003efa05059914d1c726bf8e",
+        "trace": "f79ef3f842f29b66a82ac2ff6f9865f5f77e097820866ed60d76cb7399cc72c1",
+        "model_mjb": "db5ad45ad0e6e42672b0198f61586efa1beb1f0ca38b64029a53cbea67ed4229",
+        "model_xml": "3517155fc37b643b883d9698094e79d8f23e841d4def64b0d7e1bd97f69ebc6a",
+        "input": "74e7a4a571dc1ea6d78d69c49baefeeb4b17c4914822746107d1e7b27ca70efd",
+        "diagnostics": "d9355c1c5c9f6d793f9fd25a50c3117e13c53b724df8b7176aeafc34078d3f67"
+      }
+    },
+    "h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64": {
+      "condition": "h006_plain",
+      "source_sha256": {
+        "metrics": "bc59f349955d6c8132e742d708d80c6424d5f9928a855a755b6b1a52f4b038e4",
+        "trace": "ac78aab3a11b64cd8662be53f2f8bd9c3cf28b8307eb790dbab0023cddba9c14",
+        "model_mjb": "3c19ebcf547afabcada9b8639672b565b4213ffabd0676a6398dea21f964a34e",
+        "model_xml": "68a740125e338b65ed58f5f8e217fe73efc0d72d5ab6bf6a31df5ed2d37f3080",
+        "input": "6e981b3dc1a7fa5ee943d016d60ae8b329948d02d414157d461fe8847fe7fd9b",
+        "diagnostics": "904677d099239f40ed0aab09d2d86d7acbb2313eb3bde2f13a5dbebba80e5512"
+      }
+    },
+    "h06__plain__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro": {
+      "condition": "h006_plain",
+      "source_sha256": {
+        "metrics": "1982fda8eb16562576179852ae79e416919a8203f053824fb34943a89ee9d244",
+        "trace": "5df4969c93b62a42af2bbdd22fa3247c108e58205abd3d5a62a9725ed009fa3d",
+        "model_mjb": "b523cd4f8639f80f59d2785f366d69a47e5ba7e29799e4f80c9fc899c7e75bdc",
+        "model_xml": "cf818e24c1f09a80af92388808e0b97237659141a6a0b42033363f28222dab3e",
+        "input": "6e981b3dc1a7fa5ee943d016d60ae8b329948d02d414157d461fe8847fe7fd9b",
+        "diagnostics": "ca2831a65de7b739996bf61f12b2cc6e668da405750bc4041be90e05aae64898",
+        "force_feedback": "fc5a5cf97022d9c701fdf6fbbf5b221f43807be4de5e3f27d1eeeb09186bc955",
+        "root_pose_feedback": "e5d608d2f3a08870a59666e92329ce1f6aa1560f38ce67ade6d1df64a8b053ed"
+      }
+    },
+    "h06__plain__h006_source_top_aligned": {
+      "condition": "h006_plain",
+      "source_sha256": {
+        "metrics": "ce27a2f42681db00ec0a5568ff2be8bad0fb037661c38dd27df380b20c13ccb7",
+        "trace": "3406ddaebb1d52bb6772c16f624cfa0bd76adc8eba2e07b6cb4fcf8d10b4508d",
+        "model_mjb": "9cdf96b88661ad4d01c98fb39dbc6e69efd9c3dfa4dce67d71ec2119f92251b0",
+        "model_xml": "68a740125e338b65ed58f5f8e217fe73efc0d72d5ab6bf6a31df5ed2d37f3080",
+        "input": "3166af12d2d137e2092632bed1b2b20769a0e4a7fba933f011ce030b3ded3d07",
+        "diagnostics": "0217c9ef262fdb3ac61f942b09b10c0d15099652a9b9171c55cc7511d0ac4c36"
+      }
+    },
+    "h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64": {
+      "condition": "h006_shallow",
+      "source_sha256": {
+        "metrics": "fc03b5d993bbad83517d2e3aedb706f505d842039e90ae8db09add59222242cf",
+        "trace": "7245f608102b1139be9322140e817ed446fe044ec931317e904e1dda04a008f9",
+        "model_mjb": "ecfb0651f38125785fb04448424c47a2921368a53953948d0841e97e2caada5f",
+        "model_xml": "41709ddc07000c471a27b3a6e17152de10b30dba3101a47edcf4cdf6c2a6e9e7",
+        "input": "6e981b3dc1a7fa5ee943d016d60ae8b329948d02d414157d461fe8847fe7fd9b",
+        "diagnostics": "fcda653140052d64c1de5bb1ca5f79eb06c289897080fd86c181506090daaf1b"
+      }
+    },
+    "h06__shallow__h006_9_Palmar_Pinch_preshape0.1_f64_force_clamp_root_micro": {
+      "condition": "h006_shallow",
+      "source_sha256": {
+        "metrics": "056d9c6142a7f44b9b805959cc6c4860395d8d557ef17a7605b56db003276496",
+        "trace": "916b938a40b622ae2de00f2dab7559ced3da184a1ed9161c329bd0952e154d59",
+        "model_mjb": "a97f6b9624265bc30ae54a4214d87a80c1d9ad1246e0503fe8fb7725e8a374d2",
+        "model_xml": "2246f01325f7b2a73e04ef46f98ac3de6a1e429c9724cea4d61b45d5c9ad469f",
+        "input": "6e981b3dc1a7fa5ee943d016d60ae8b329948d02d414157d461fe8847fe7fd9b",
+        "diagnostics": "2e03d63022acd5b3fa46e08a64184668db6363f9a010f3032c77f59b83a4c2f0",
+        "force_feedback": "6d754b26bf751a9c7eae4f3c0d33dccb89ee247e98353422fd48b4c2cf6830e6",
+        "root_pose_feedback": "c789177aecbf157ed98806dac3e6df92b6fb3991c0385aea9235819ad1734a93"
+      }
+    },
+    "h06__shallow__h006_source_top_aligned": {
+      "condition": "h006_shallow",
+      "source_sha256": {
+        "metrics": "1260c9efe0427ef57bc64ca764c71e5c412dde9a8ad6456f6e8f91397e63fb19",
+        "trace": "44df80c08e2d3cb4aa57264a0b5371a35106b567424a0545b4619ec6f480a270",
+        "model_mjb": "739346f78fa89d5f582da10ab5ab70b3d232f2224c5412bdd9016d54c8092130",
+        "model_xml": "41709ddc07000c471a27b3a6e17152de10b30dba3101a47edcf4cdf6c2a6e9e7",
+        "input": "3166af12d2d137e2092632bed1b2b20769a0e4a7fba933f011ce030b3ded3d07",
+        "diagnostics": "410193fedd4a53420871726b1873e88f94db1b0076291692a504c2b926c09211"
+      }
+    },
+    "h08__plain__h008_24_Tip_Pinch_preshape0_f64": {
+      "condition": "h008_plain",
+      "source_sha256": {
+        "metrics": "432fd82c46af4ea338a7d141956b660bb0a21b27364e1b2e704f59dc4677c1c2",
+        "trace": "32764f2f21d20c859ed5158144afff3cd68436cde83776da5da803ad81a9d31a",
+        "model_mjb": "6791e3d278bdfd6d4a43a76d712729b41c9cac3f377dd950a54d793e991566f1",
+        "model_xml": "6859d3d775475982db8f0a2974d6f39ece265ccdccdd02d1b4a9ba6bb8a113a3",
+        "input": "bf834f8179741c4a0fcc3659830f1a749a198ff13bfd2ee190132acfcd01aae6",
+        "diagnostics": "098a3ca8d57e287b814429e3075548c3f4125319b06fed302857b2c71c6381ba"
+      }
+    },
+    "h08__plain__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro": {
+      "condition": "h008_plain",
+      "source_sha256": {
+        "metrics": "56aae214995ab8c580aa9319be89eb9dc1e62fa5482616c5dbae8c2126487853",
+        "trace": "d20856d540da6c2475cb48f4f077dd08b84add0490c4aea01ffb66dc3d0fee7b",
+        "model_mjb": "72dd68b37a7c90eec6517dfdaa8eaac6311d250c2416edd66d8d0fe23d9dec44",
+        "model_xml": "70f55a588422ecc8e8fbed20b189530b875b5d5ec5d64d15b9723c4d55829ef6",
+        "input": "bf834f8179741c4a0fcc3659830f1a749a198ff13bfd2ee190132acfcd01aae6",
+        "diagnostics": "10957ce3262cb4aa39b3215dc6c346d401c4d447f9bb9992bbdb993cf0df61c6",
+        "force_feedback": "2dee57dffb978d8f7a0f69b62c0aee73077377f61d378bb7ddf55f53b5a7ad31",
+        "root_pose_feedback": "771c003fd8965562f1435f1d803d58608dbaf0a787b17dcd9d31ef5f44b8f698"
+      }
+    },
+    "h08__plain__h008_source_top_aligned": {
+      "condition": "h008_plain",
+      "source_sha256": {
+        "metrics": "ddda5fdb2d7fec178f65ab8ac800d38b132c9a605ff09b650f8159e2e7da406d",
+        "trace": "7b7f09588a4dbda7692672e3c18feb2435efd1f10679e4f5839e54b517a0c921",
+        "model_mjb": "c6967f202fd49b0c098a1139f9e88e179d20da81ea3e48a2ba64792638bc4f63",
+        "model_xml": "6859d3d775475982db8f0a2974d6f39ece265ccdccdd02d1b4a9ba6bb8a113a3",
+        "input": "a7600e2d90089287b8557bab879c1d0ae094be68cd172d0bd9604b1b28df3199",
+        "diagnostics": "056868c38a04cf1cabb775dbb79948d6e1ef8f3a1091630b674b5017d80b578e"
+      }
+    },
+    "h08__shallow__h008_24_Tip_Pinch_preshape0_f64": {
+      "condition": "h008_shallow",
+      "source_sha256": {
+        "metrics": "27cd3f1d06f1268f5c317409a8005182f0ed977e4d1af53144daf2513b78bc38",
+        "trace": "5959a0297597e107b2544471d0b4176aa0c67192a915d6a5afd088edf0e209db",
+        "model_mjb": "75d410dac7b78f0a87d07e07ecadbabc55d03acb88339d12282c4657745eec4c",
+        "model_xml": "befde42896bbaf8e722238eadd59f4eaf2f1777e36d0493418cd6fc76ec23bbb",
+        "input": "bf834f8179741c4a0fcc3659830f1a749a198ff13bfd2ee190132acfcd01aae6",
+        "diagnostics": "30e4125b1cae24e63a870e44bd62fad8e7ce07b5d520f50ecdc362d611e8fd14"
+      }
+    },
+    "h08__shallow__h008_24_Tip_Pinch_preshape0_f64_force_clamp_root_micro": {
+      "condition": "h008_shallow",
+      "source_sha256": {
+        "metrics": "fe9a1525c4d70374824aac9971c7b4ee060bc038e03c943a8b40d66a3dd0385e",
+        "trace": "00c46d0e12f64bc1b9193e347376a8c105511b9ef009acf211e43be060d367d5",
+        "model_mjb": "a1f412b90a6da43803a097649c89a53a74cff8c728036bd854b4862044a03354",
+        "model_xml": "a71d9c73b4d2e7c8ec778a8be44c20899b47d1ecba7b4a29ed6c300ae576df40",
+        "input": "bf834f8179741c4a0fcc3659830f1a749a198ff13bfd2ee190132acfcd01aae6",
+        "diagnostics": "9f362d45b24d71113b9e952526c7dea8b04a42bf6c37dc9531267acf69ab2fd4",
+        "force_feedback": "e2ead354e44276d6eccbeec5815a2ef750d3a7563053a385e34590f1db233ad9",
+        "root_pose_feedback": "641df0d44817d6af2dda4a373508dd1819c6a939dd60a6818d6f401d9719d54a"
+      }
+    },
+    "h08__shallow__h008_source_top_aligned": {
+      "condition": "h008_shallow",
+      "source_sha256": {
+        "metrics": "6988f70bb86be8f2c30436212ed82173bbf92706284e6bd6fea3c01283d7b920",
+        "trace": "6162863916bac7e748970ff07ea464ea64dd7bfb10f12d036c39c0a05963cf1b",
+        "model_mjb": "6fd80e6e6ec73798efc0a2e9cfde714a5de4ff525bfc2933c45c9176631a6960",
+        "model_xml": "befde42896bbaf8e722238eadd59f4eaf2f1777e36d0493418cd6fc76ec23bbb",
+        "input": "a7600e2d90089287b8557bab879c1d0ae094be68cd172d0bd9604b1b28df3199",
+        "diagnostics": "e2f13872877598fc4ec825124ec844f8280cd968bf0ecab715e220de48bcb8eb"
+      }
+    },
+    "h10__plain__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64": {
+      "condition": "h010_plain",
+      "source_sha256": {
+        "metrics": "3447e478f7d997b66ac666d84df5527af052cf39122ac6461acb0396f7d8e117",
+        "trace": "f7b4685ab42169e4072e8610c1b6821932c299882189861152d8e570090f4f7d",
+        "model_mjb": "6c7100e44610f18d796038b3d65b20e5d5d3287df3561d8d1eec78121587e43d",
+        "model_xml": "1057921310ab9f88d7048432b3bb9c8c864fb910bd855800eb2feab11ced590b",
+        "input": "1ee4c2f5f99bf086f4d731100aeac051953450023c31bf61e489b35020e86c6e",
+        "diagnostics": "3f671a937d89b4c119c386d9437be820153d5e8879113466737334ec804fb6f7"
+      }
+    },
+    "h10__plain__h010_palmar_oracle_v1_squeeze005": {
+      "condition": "h010_plain",
+      "source_sha256": {
+        "metrics": "77f43b285b83d0d2bdd33860d8c956c8b612bf470b3140bbb08093c093c64909",
+        "trace": "9c32bcc75e2d1b2c5c0cb9027d2918f685a4c8030a39841ba5f12636f5138e08",
+        "model_mjb": "10ac850efe5a7c88d74fb3bbb745ea04d5cd85a7ce134495e93f2bc9982e83f9",
+        "model_xml": "1057921310ab9f88d7048432b3bb9c8c864fb910bd855800eb2feab11ced590b",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "c91107c9ea54e2c9133f3f751bcba9872aed95a2cd9d234851aae770e00676f4"
+      }
+    },
+    "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp": {
+      "condition": "h010_plain",
+      "source_sha256": {
+        "metrics": "e07307c0844949ad68bfe195ed4e6cc791c20f5aa370b7d1dc1ea527e4df8df1",
+        "trace": "0f6aec2bbd513795537fefdc18f5c91e2a3221febfe00143836cdc3e29badbf5",
+        "model_mjb": "10ac850efe5a7c88d74fb3bbb745ea04d5cd85a7ce134495e93f2bc9982e83f9",
+        "model_xml": "1057921310ab9f88d7048432b3bb9c8c864fb910bd855800eb2feab11ced590b",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "8b2db215bb94fd9c9332bea908cf636497ff65a7d6e5570c995d1719013d6202",
+        "force_feedback": "bdca6a2a7b1f8c8c07445e70d4e5ade4ada768547958e2239d4ddf30515ebf47"
+      }
+    },
+    "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_micro": {
+      "condition": "h010_plain",
+      "source_sha256": {
+        "metrics": "ec11756f51fdfe0743c49ead1db55bb804adb4619ef0035aa701666755f566be",
+        "trace": "aaa998fc5bbb128bd0b09617b518de45d166079ec8a9f2a2148c191054494404",
+        "model_mjb": "0aa2c00b0745ae4db6e42f439f65a8713a05a1fc9b10e1b22e35ae38f3814728",
+        "model_xml": "846ef806ffa1fdca6fc76cc9d61da408482eb8e10fbabb43069f5f8fe1fbcf4b",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "ceb821311a45bd9c0534cab13af2169a4c51404a5b06b7bbba4e535276b22431",
+        "force_feedback": "b40510c4fed5254e35dee4ff21eb3ea2466b30bef844db7c02e9c1cfa6b8f26d"
+      }
+    },
+    "h10__plain__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro": {
+      "condition": "h010_plain",
+      "source_sha256": {
+        "metrics": "8e36ff00afff8222faf4882f031c30ccab10bcb7441851dcfc5990ceed6e4c6d",
+        "trace": "b799f8bae08fb92929dae28cc62b1815265e0414e4fcf5b776b8ac4142ac3b06",
+        "model_mjb": "0aa2c00b0745ae4db6e42f439f65a8713a05a1fc9b10e1b22e35ae38f3814728",
+        "model_xml": "846ef806ffa1fdca6fc76cc9d61da408482eb8e10fbabb43069f5f8fe1fbcf4b",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "1cb2b84f3eb1dfcd674361c0a3ad1c40c296beb0c10d3b47dc683b09ae8686fd",
+        "force_feedback": "3cbd8c084f805a6b9a59f2f9971a8e9d31e9bb8aefd0f83c2f21a6c6e6a59355",
+        "root_pose_feedback": "63d0c7a36c1f56aa80a1195eb19a4f50599147522abe7e8d8a744e9d09bbe939"
+      }
+    },
+    "h10__plain__h010_palmar_oracle_v1_squeeze005_micro_contact": {
+      "condition": "h010_plain",
+      "source_sha256": {
+        "metrics": "f2994487bd9706e01288db7389d937c28c2937e6000f4fa36a410cd04b7ed354",
+        "trace": "e27b5b6a43898c4ceeb79c50c1ffff20b093e48e57e471cc740130ae5f58f360",
+        "model_mjb": "0aa2c00b0745ae4db6e42f439f65a8713a05a1fc9b10e1b22e35ae38f3814728",
+        "model_xml": "846ef806ffa1fdca6fc76cc9d61da408482eb8e10fbabb43069f5f8fe1fbcf4b",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "069369b1282da0638012f3bcd24131de09c728bcf520b5ae84fb198116f71d2b"
+      }
+    },
+    "h10__plain__h010_source_top_aligned": {
+      "condition": "h010_plain",
+      "source_sha256": {
+        "metrics": "caf745b1c1e31e483b1cdb6b9015eb6eca564a62a72efa9a549df2ec91fa82c9",
+        "trace": "6a1f1d86fdd0f97add21f6815d5516fbfbf0aac8f7d36503a73c8d9fa5062d69",
+        "model_mjb": "617ae50986226e2886989fd5a59e13176d1292369970427480cb91d18fab0e1a",
+        "model_xml": "1057921310ab9f88d7048432b3bb9c8c864fb910bd855800eb2feab11ced590b",
+        "input": "fbedce0c795b2dc3bf708beb218a6a4c8ab834d88d61b1344f5323bd3646bfaa",
+        "diagnostics": "80941df894a6572f575d57ea4ad5a06c238b19cbb2c9f7917e11ad30e4269c59"
+      }
+    },
+    "h10__shallow__h010_9_Palmar_Pinch_preshape0.25_hhbuffer_z20um_sq010_f64": {
+      "condition": "h010_shallow",
+      "source_sha256": {
+        "metrics": "02cb5c356bb18c45bcb4d871c1334e89b08287a8b89ee4c1609950d012fcc00e",
+        "trace": "b3747d9fb9665f943b79aad7ced44df183a083bf6cf05d3a60b1a4ab8955bf80",
+        "model_mjb": "70467da00582b33c94f35a7714f1b08d6929e060cd17afe9d5fa06936cbe838c",
+        "model_xml": "7a96a15ab15f17727e1f349b75ed26dc766b387b541d6ad1a1f0afb333b6b876",
+        "input": "1ee4c2f5f99bf086f4d731100aeac051953450023c31bf61e489b35020e86c6e",
+        "diagnostics": "c0908c72b4cfe75e5aa7894a7da4d3474ea99ff7bc6edf79eaa23397a5a331f3"
+      }
+    },
+    "h10__shallow__h010_palmar_oracle_v1_squeeze005": {
+      "condition": "h010_shallow",
+      "source_sha256": {
+        "metrics": "767d93e6a6aeeb8497367f747cb37953945332e1941da6f9843e9c7392a87629",
+        "trace": "a7fe3225ceec8ba81520166d51e5d9e4105324259adb105c7bb05b17f0b5e739",
+        "model_mjb": "a0c77c392cb0addc9b2ed2ee4330dac183f38e1c2a34895d192c99053a828978",
+        "model_xml": "7a96a15ab15f17727e1f349b75ed26dc766b387b541d6ad1a1f0afb333b6b876",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "a20cb277bc8c6fbe215b483f0c7e26c692c6237a527d2a1ced81965e4c8ecc41"
+      }
+    },
+    "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp": {
+      "condition": "h010_shallow",
+      "source_sha256": {
+        "metrics": "3e080efbb2dd72e6ab69974ddebfb189c178d6fb172ef80ff0eb5578c45d2316",
+        "trace": "5800a230aa5bd743dfd99f201d9d80fc4c471a879b99faa0f1c8f5926879195f",
+        "model_mjb": "a0c77c392cb0addc9b2ed2ee4330dac183f38e1c2a34895d192c99053a828978",
+        "model_xml": "7a96a15ab15f17727e1f349b75ed26dc766b387b541d6ad1a1f0afb333b6b876",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "cd9dcd2e19c0f600280d8622260f7462c6757d83c48977212acc66f7ab67e090",
+        "force_feedback": "0e0eb86a001e653d0375d3092c41cffdec547d639ef0e6f9ed5e69b123c88505"
+      }
+    },
+    "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_micro": {
+      "condition": "h010_shallow",
+      "source_sha256": {
+        "metrics": "9b5ec234e186306df2f0ccb9cbb5fb5fe06dcf39751c72fbd5e67caf27b88d5e",
+        "trace": "2b558bf5b69d42e56b89b61b269c647bd9cec71afec216fddbc1429f2d57e722",
+        "model_mjb": "e3765f0bb47917bcac8361dab1d67191ff2a73f85b74141968842bd2b52fdcd1",
+        "model_xml": "f8837fad850e3cad4bc28a562514f9d89cc26563c992e8837a52f995467115fc",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "9ee063a6e7fa384034c0dbf0e92b23d22e0f86317e7af272c3eef1a36d7991b5",
+        "force_feedback": "14610c9184f0a9f32facaa4751a66c90f1d96a2b94d9022f1202a7bd41596ae7"
+      }
+    },
+    "h10__shallow__h010_palmar_oracle_v1_squeeze005_force_clamp_root_micro": {
+      "condition": "h010_shallow",
+      "source_sha256": {
+        "metrics": "5fe6527b72f53b95243a4f053ee8ea76ff2800470bc6f0bd5a1b646ab00cbea9",
+        "trace": "d04a19a48544115a310afadb0e6ee935e29aae75b7697b4d72a617d91c28f75a",
+        "model_mjb": "e3765f0bb47917bcac8361dab1d67191ff2a73f85b74141968842bd2b52fdcd1",
+        "model_xml": "f8837fad850e3cad4bc28a562514f9d89cc26563c992e8837a52f995467115fc",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "2bdb6d3c3b618fc9f8e4735bce3a6c1481ecd89b8427e97d05c295afe028f095",
+        "force_feedback": "4f292252208f9836336358150f2cef04cd461966023ffddbe231b8058e4317c1",
+        "root_pose_feedback": "5b24846c2ed498889480e473db2426a471fd8f06e5b5bc88bb8f8d97b428ec6d"
+      }
+    },
+    "h10__shallow__h010_palmar_oracle_v1_squeeze005_micro_contact": {
+      "condition": "h010_shallow",
+      "source_sha256": {
+        "metrics": "d77af6ad023db883153aa17449e7af6e671a3380395c79d373f96f3518ed7311",
+        "trace": "ed30706fc5724cd8d4c1bd97ba7491a32ce52166a3494edbc22d16010739707e",
+        "model_mjb": "e3765f0bb47917bcac8361dab1d67191ff2a73f85b74141968842bd2b52fdcd1",
+        "model_xml": "f8837fad850e3cad4bc28a562514f9d89cc26563c992e8837a52f995467115fc",
+        "input": "e6174ddd9e97dfec14b2921c10bd17c11f78f92d80f4ea8a2e13a6ea89484726",
+        "diagnostics": "c29d653f3fba32829c05b89b51484440362bd766c25fbc630cc7701cc590248d"
+      }
+    },
+    "h10__shallow__h010_source_top_aligned": {
+      "condition": "h010_shallow",
+      "source_sha256": {
+        "metrics": "3bbfc119b73807c112c1578cf182046b8a98fc8715f7cf3e7993bd851edc2db0",
+        "trace": "2f7450fee181366eb43c2c13e72f3fb8c9357fecd225a3324d298b88487e9f35",
+        "model_mjb": "11f2c19acb1ee627b7cd57b0ddb8a553161c0441a99b4cd9911b353e406de070",
+        "model_xml": "7a96a15ab15f17727e1f349b75ed26dc766b387b541d6ad1a1f0afb333b6b876",
+        "input": "fbedce0c795b2dc3bf708beb218a6a4c8ab834d88d61b1344f5323bd3646bfaa",
+        "diagnostics": "3fe44745c11223b4ffee86c7774111dfbf6d6cbb837391d3f476b494c9e45070"
+      }
+    }
+  },
+  "main_archives": [
+    "height_gradient_animations_and_docs.zip"
+  ]
+}
